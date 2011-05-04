@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea un n&#250;mero de nuevas rutas alternativas en base a una ruta original, uniendo los mismos puntos de inicio y final." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="ROUTE" text="la capa de ruta original. Si la capa tiene varias l&#237;neas, se toma la primera de ellas como ruta base." description="Ruta original" type="3">
+		</element>
+		<element name="NROUTES" text="establecer el n&#250;mero de nuevas rutas." description="N&#250;mero de nuevas rutas" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* Movimiento browniano restringido&#10;* Recombinaci&#243;n" description="M&#233;todo" type="3">
+		</element>
+		<element name="SINUOSITY" text="relaci&#243;n entre la distancia total y la distancia euclidea para las rutas resultantes, si se usa el m&#233;todo de  movimiento browniano restringido." description="Sinuosidad" type="3">
+		</element>
+		<element name="USESINUOSITY" text="si se selecciona esta opci&#243;n el campo anterior no tiene efecto, y se emplea la sinuosidad de la ruta base." description="USar sinuosidad de la ruta base" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Rutas" type="2">
+			<image description="Movimiento browniano restringido (Capa de v&#237;as de comunicaci&#243;n con 10 nuevas rutas)" file="generar_rutas_alternativas_mov_browniano.jpg">
+			</image>
+			<image description="Recombinaci&#243;n (Capa de v&#237;as de comunicaci&#243;n con 10 nuevas rutas)" file="generar_rutas_alternativas_recombinacion.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

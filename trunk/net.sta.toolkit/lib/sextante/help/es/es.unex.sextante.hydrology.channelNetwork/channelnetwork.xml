@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera dos nuevas capas (raster y vectorial) con el trazado de los cauces a partir de un MDE y una capa con informaci&#243;n adicional." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="*D. P. Tarboton, D.G.; Ames. Advances in the mapping of  flow networks from digital elevation data. In World Water and Environmental Resources Congress,2001.&#10;*D. Mark. Automated detection of drainage networks from digital elevation models. Cartographica, 21:168-178, 1984." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="THRESHOLDLAYER" text="una capa con una variable a a emplear para localizar el inicio de cauces. La acumulaci&#243;n de flujo es la variable m&#225;s utilizada para esta tarea." description="Capa umbral" type="3">
+		</element>
+		<element name="METHOD" text="condici&#243;n que tienen que cumplir las celdas de la capa umbral para el inicio de un cauce.&#10;* Mayor que&#10;* Menor que&#10; " description="Tipo de umbral" type="3">
+		</element>
+		<element name="THRESHOLD" text="valor umbral para aplicar la anterior condici&#243;n. Debe estar en las mismas unidades que la capa umbral. " description="Valor umbral" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="NETWORK" text="los valores de las celdas indican el orden jer&#225;rquico (de Strahler) del cauce que fluye a trav&#233;s de cada una de ellas. En las celdas por donde no se define un cauce, aparece el valor de sin datos." description="Red de drenaje" type="2">
+			<image description="Red de drenaje (capa raster)" file="red de drenaje_raster.jpg">
+			</image>
+		</element>
+		<element name="NETWORKVECT" text="misma estructura que la capa raster Red de drenaje, pero en formato vectorial de l&#237;neas." description="Red de drenaje" type="2">
+			<image description="Red de drenaje (capa vectorial)" file="red de drenaje_vectorial.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

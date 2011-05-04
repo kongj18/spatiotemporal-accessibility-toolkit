@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera un MDT artificial (terreno con aspecto realista) de acuerdo a dos variables que controlan c&#243;mo se crea el terreno." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="RADIUS" text="el radio de la ventana de an&#225;lisis (en celdas), es decir, la extensi&#243;n del &#225;rea modificada en cada iteraci&#243;n." description="Radio [en celdas]" type="3">
+		</element>
+		<element name="ITERATIONS" text="n&#250;mero de veces a repetir, cuantas m&#225;s iteraciones se realicen, m&#225;s tiempo ser&#225; necesario para completar la ejecuci&#243;n del m&#243;dulo y m&#225;s evolucionado ser&#225; el terreno resultante." description="Iteraciones" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="2">
+			<image description="Ejemplo: nuevo MDT artificial (radio 100; iteraciones 500), con un sombreado a&#241;adido para dar mayor efecto de relieve." file="generar_mdt_artificial.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

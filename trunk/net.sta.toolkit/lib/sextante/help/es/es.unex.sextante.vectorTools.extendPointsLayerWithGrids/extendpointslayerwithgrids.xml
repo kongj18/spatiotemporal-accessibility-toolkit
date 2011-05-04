@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo extrae los valores de celda de una capa raster sobre una capa de puntos." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text=" la capa puntos sobre los que se quieren extraer los valores de celda." description="Capa de puntos" type="3">
+		</element>
+		<element name="GRIDS" text="conjunto de capas raster de las que se tomar&#225; la informaci&#243;n a a&#241;adir a la capa vectorial." description="Capas raster" type="3">
+		</element>
+		<element name="INTERPOLATE" text="si se selecciona esta opci&#243;n el valor de celda de los puntos es calculado mediante interpolaci&#243;n. Si no se selecciona, se toma el valor del centro de celda. " description="Usar interpolaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La misma capa de entrada, pero con atributos adicionales que representan el valor de capa una de las capas de entrada en los distintos puntos." description="Puntos muestreados" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

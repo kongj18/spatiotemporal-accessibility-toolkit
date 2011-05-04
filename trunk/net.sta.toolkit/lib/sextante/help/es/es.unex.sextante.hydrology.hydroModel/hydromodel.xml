@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo aplica un modelo hidrol&#243;gico distribuido para calcular hidrogramas de tormenta correspondientes a una serie de eventos definidos. Los eventos se definen mediante hietogramas de c&#225;lculo." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="TIMEOUT" text='Una capa con tiempos de salida expresados en horas hasta el punto donde se desean calcular los hidrogramas. Puede generarse con el algoritmo "Tiempos de salida" tambi&#233;n incluido en SEXTANTE.' description="Tiempo de salida" type="3">
+		</element>
+		<element name="CN" text="Una capa con valores de N&#250;mero de Curva para el c&#225;lculo de la escorrent&#237;a en funci&#243;n de la precipitaci&#243;n" description="N&#250;mero de Curva" type="3">
+		</element>
+		<element name="STATIONS" text="Una tabla de puntos con las estaciones donde se han recogido los datos empleados para la obtenci&#243;n de los hietogramas de tormenta." description="Estaciones" type="3">
+		</element>
+		<element name="FIELD" text="Un campo en la capa de estaciones en el que se recoge el nombre de la tabla que contiene los hietogramas correspondientes a cada estaci&#243;n para unos periodos de retorno dados." description="Nombre de tabla con hietograma" type="3">
+		</element>
+		<element name="TABLES" text='Un conjunto de tablas que contienen los hietogramas de tormenta de las distintas estaciones y periodos de retorno.&#10;&#10;Cada tabla debe tener tantas columnas como periodos de retorno deseen analizarse. Cada columna tendr&#225; por nombre el nombre identificativo del periodo de retorno y contendr&#225; el hietograma de tormenta correspondiente a &#233;ste. Cada valor en la columna representa la precipitaci&#243;n en el un intervalo, definido en el campo "Intervalo en hidrogramas (minutos)".&#10;&#10;Todas las tablas deben contener un mismo n&#250;mero de columnas. Es decir, en todas las estaciones se ha de disponer de un hietograma para cada uno de los periodos de retorno que se desea estudiar.' description="Tablas" type="3">
+		</element>
+		<element name="INTERVALHYDRO" text="El intervalo a utilizar para la creaci&#243;n de los hidrogramas de tormenta, expresado en minutos." description="Intervalo en hidrogramas (minutos)" type="3">
+		</element>
+		<element name="INTERVALHYETO" text="El intervalo empleado en los hietogramas de tormenta contenidos en las tablas especificadas, expresado en minutos. Debe ser &#250;nico para todas ellas." description="Intervalo en hietogramas (minutos)" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="El algoritmo produce tantas tablas como periodos de retorno hayan sido analizados. Las tablas tienen dos columnas, una con el tiempo (T) correspondiente al intervalo en cuesti&#243;n, y otra con el caudal (Q) calculado para ese intervalo." description="Descripci&#243;n" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

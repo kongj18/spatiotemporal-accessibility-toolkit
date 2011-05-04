@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo permite determinar la relaci&#243;n entre dos variables cuantitativas. Una de ellas, en una capa vectorial, contiene los valores de una variable conocida, y otra se utiliza como predictor. En base a esta segunda, y a la relaci&#243;n existente con la primera en los puntos de &#233;sta,  se estiman los valores de la primera en los puntos desconocidos, cre&#225;ndose una nueva capa raster.&#10;" description="Descripci&#243;n" type="0">
+			<image description="" file="regresion.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="la capa con valores conocidos." description="Puntos" type="3">
+		</element>
+		<element name="FIELD" text="Campo con la variable a estimar. Se estimar&#225;n los valores de esta variable a partir de los valores conocidos y la relaci&#243;n entre estos y los del predictor" description="Campo" type="3">
+		</element>
+		<element name="RASTER" text="capa que act&#250;a como predictor." description="Capa raster" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* y = a + b &#183; x&#10;* y = a + b / x&#10;* y = a / (b -x)&#10;* y = a &#183; x^b&#10;* y = a e^(b &#183; x)&#10;* y = a + b &#183; ln(x)" description="Tipo de ecuaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESIDUALS" text="Capa de puntos con informaci&#243;n de valor del predictor, valor estimado, diferencia y varianza en su tabla de atributos asociada." description="Residuos" type="2">
+		</element>
+		<element name="RESULT" text="Capa raster con valores de la variable recogida en el campo seleccionado de la capa vectorial, como resultado del an&#225;lisis de regresi&#243;n" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

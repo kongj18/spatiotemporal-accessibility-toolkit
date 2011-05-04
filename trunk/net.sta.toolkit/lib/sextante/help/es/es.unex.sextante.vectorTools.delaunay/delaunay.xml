@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una triangulaci&#243;n de Delaunay a partir de una capa de puntos, generando una nueva capa de pol&#237;gonos.&#10;&#10;De entre todas las posibles triangulaciones, la triangulaci&#243;n de Delaunay es aquella que maximiza los &#225;ngulos interiores de los tri&#225;ngulos. Todos los triangulos cumplen que la circunferencia circunscrita en sus v&#233;rtices solo contiene dichos v&#233;rtices y ning&#250;n otro." description="Descripci&#243;n" type="0">
+			<image description="" file="delaunay.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya &amp; Michael Michaud" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="La capa de puntos de entrada." description="Capa de puntos" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="TRIANGLES" text="La triangulaci&#243;n de Delaunay" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

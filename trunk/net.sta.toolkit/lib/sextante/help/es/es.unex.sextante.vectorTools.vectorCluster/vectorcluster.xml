@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo clasifica el conjunto de entidades de una capa en una serie dada de grupos, cuyo n&#250;mero establece el usuario, de forma que estos grupos resulten lo m&#225;s homog&#233;neos posibles.&#10;" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa con las entidades a clasificar. La tabla de atributos de la capa debe contener las variables en funci&#243;n de las cuales se quiere realizar esa clasificaci&#243;n" description="Capa" type="3">
+		</element>
+		<element name="FIELDS" text="Los campos con las variables a emplear en la clasificaci&#243;n. Pueden utilizarse tantos como se desee, a&#241;adiendo su nombre y separando &#233;stos mediante comas" description="Campos" type="3">
+		</element>
+		<element name="NUMCLASS" text="El n&#250;mero de clases totales deseado." description="N&#250;mero de clases" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa vectorial resultante es igual a la de entrada, pero contiene en su tabla de atributos un campo adicional, en el cual se especifica la clase en la que se incluye cada entidad" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

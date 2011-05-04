@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo emplea diferentes m&#233;todos de an&#225;lisis de predicci&#243;n para crear un modelo estad&#237;stico de comportamiento futuro sobre un hecho geogr&#225;fico concreto. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="*Busby, J.R. (1991) BIOCLIM - A Bioclimatic Analysis and Prediction System. In: Margules, C.R.&amp; M.P. Austin (eds.) Nature Conservation: Cost Effective Biological Surveys and Data Analysis.pp. 64-68. Canberra: CSIRO." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="Una o varias capas que act&#250;an como factores condicionantes." description="Predictores" type="3">
+		</element>
+		<element name="POINTS" text="Capa de puntos con entidades allí donde se tiene constancia de la presencia de un fenomeno geogr&#225;fico." description="Puntos de presencia" type="3">
+		</element>
+		<element name="METHOD" text="A elegir entre:&#10;* Distancia a la media&#10;* Distancia de Mahalanobis&#10;* BIOCLIM&#10;" description="M&#233;todo" type="3">
+		</element>
+		<element name="CUTOFF" text="Punto de corte para el m&#233;todo BIOCLIM" description="Punto de corte (BIOCLIM)" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa resultante refleja la idoneidad de cada celda para que en ella aparezca el fenomeno descrito por la capa de puntos de presencia.&#10;&#10;En las siguientes figuras se puede ver un ejemplo del resultado seg&#250;n el m&#233;todo seleccionado." description="Idoneidad" type="2">
+			<image description="Distancia a la media" file="modelosPred_1metodo.jpg">
+			</image>
+			<image description="Distancia de Mahalonobis" file="modelosPred_2metodo.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

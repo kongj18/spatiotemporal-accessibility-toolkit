@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera una capa tem&#225;tica (clasificada) a partir de un conjunto de im&#225;genes, clasificando sus valores en grupos (clases). Todas estas im&#225;genes deben contener informaci&#243;n de una misma zona, conteniendo diferentes par&#225;metros de la misma. El caso m&#225;s habitual es emplear diferentes bandas de un sensor remoto multiespectral.&#10;&#10;Se debe proporcionar al m&#243;dulo informaci&#243;n conocida previamente sobre parte de un conjunto de datos de entrada, para que pueda extender ese conocimiento de forma autom&#225;tica al resto de la extensi&#243;n analizada. Es decir, ayudar al m&#243;dulo mostr&#225;ndole algunas &#225;reas (denominadas zonas de entrenamiento) que se conocen de antemano y que presentan caracter&#237;sticas comunes (clase homog&#233;nea). &#10;&#10;En base a lo anterior se realiza la extracci&#243;n de la firma espectral de cada clase (los valores que la definen), y posteriormente se clasifican las restantes celdas en funci&#243;n de a qu&#233; firma espectral se asemejan m&#225;s su valores&#10;&#10;La siguiente figura muestra un esquema del proceso de clasificaci&#243;n supervisada:" description="Descripci&#243;n" type="0">
+			<image description="" file="clasSuper.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text='A continuaci&#243;n se amplia, de manera b&#225;sica, las ideas sobre clasificaci&#243;n supervisada. &#10;&#10;Para intentar entender las el proceso de zonas de entrenamiento, podemos suponer que clasificamos una capa de usos del suelo. Se debe digitalizar algunas &#225;reas con un mismo tipo de suelo (por ejemplo bosques), para que la extensi&#243;n pueda "aprender" las caracter&#237;sticas principales de este tipo de zonas y reconocer otras &#225;reas forestales fuera de la zona digitalizada. En otras palabras, es necesario dar a la extensi&#243;n informaci&#243;n que se conoce previamente sobre una parte del conjunto de datos de entrada, para que &#233;l pueda extender ese conocimiento de forma autom&#225;tica al resto de la extensi&#243;n analizada.&#10;&#10;Este proceso se conoce como extraer la firma espectral de cada clase, e incluye una serie de an&#225;lisis estad&#237;sticos para los valores encontrados en cada zona de entramiento y en cada una de las capas de entrada. Una vez que se conoce esta firma, se emplea para asignar valores a otras celdas que contienen una similar (ver la figura de introducci&#243;n).&#10;&#10;' description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="un conjunto de bandas con los valores a emplear para la clasificaci&#243;n." description="Bandas para clasificaci&#243;n" type="3">
+		</element>
+		<element name="POLYGONS" text="capa con zonas de entrenamiento." description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="FIELD" text="el valor que define la clase de cada entidad en la capa de zonas de entrenamiento. Debe ser un campo num&#233;rico. " description="Campo con valor clase" type="3">
+		</element>
+		<element name="METHOD" text='La asignaci&#243;n de valor a las celdas fuera de las zonas depende tambi&#233;n del criterio de decisi&#243;n empleado, y este m&#243;dulo incorpora tres de ellos:&#10;* Paralelep&#237;pedo&#10;* Distancia m&#237;nima: clasifica cada celda por la distancia euclidiana m&#237;nima al centroide de cada grupo de celdas.&#10;* M&#225;xima similitud: clasifica cada celda empleando conceptos probabil&#237;sticos.&#10;&#10;El usuario debe comparar cu&#225;l de los algoritmos produce una mejor clasificaci&#243;n de la imagen (ello depende de las &#225;reas de entrenamiento escogidas, as&#237; como de las propias caracter&#237;sticas de la imagen), contrastando algunas celdas directamente para ver si los valores asignados a ellas son correctas. &#10;&#10;La bondad de la clasificaci&#243;n puede comprobarse despues con la extensi&#243;n "Clasificaci&#243;n cruzada"&#10;' description="M&#233;todo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="CLASSES" text="nueva tabla alfanum&#233;rica con los atributos nombre, media y desviaci&#243;n t&#237;pica de cada clase generada" description="Clases" type="2">
+		</element>
+		<element name="CLASSIFICATION" text="nueva capa raster categ&#243;rica con las clases creadas. En las siguientes figuras se puede ver el resultado seg&#250;n el m&#233;todo elegido:" description="Clasificaci&#243;n" type="2">
+			<image description="Capa de entrada: bandas para clasificaci&#243;n" file="clasSuper_landsat_b4.jpg">
+			</image>
+			<image description="Paralelep&#237;pedo" file="clasSuper_paralelepipedo.jpg">
+			</image>
+			<image description="Distancia m&#237;nima" file="clasSuper_distancia_minima.jpg">
+			</image>
+			<image description="M&#225;xima similitud" file="clasSuper_maxima_similitud.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

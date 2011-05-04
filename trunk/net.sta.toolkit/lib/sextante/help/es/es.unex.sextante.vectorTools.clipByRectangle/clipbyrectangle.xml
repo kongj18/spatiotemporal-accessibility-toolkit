@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo recorta una capa vectorial empleando un rect&#225;ngulo definido por sus coordenadas extremas. La capa resultante contiene unicamente las geometr&#237;as que interesecan con el rect&#225;ngulo, y recortadas en caso de que s&#243;lo una parte de ellas sea interior a &#233;ste. Su uso puede resultar interesante en scripts y en procesamiento por lotes." description="Descripci&#243;n" type="0">
+			<image description="Figura: Ejemplo de 'Recorte por rect&#225;ngulo'" file="clipByRectangle.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Juan Ignacio Varela (Nacho Uve)" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Nacho Varela" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa vectorial a recortar" description="Capa a recortar" type="3">
+		</element>
+		<element name="XMIN" text="La coordenada X m&#237;nima del rect&#225;ngulo de recorte" description="X Min" type="3">
+		</element>
+		<element name="XMAX" text="La coordenada X m&#225;xima del rect&#225;ngulo de recorte" description="X Max" type="3">
+		</element>
+		<element name="YMIN" text="La coordenada Y m&#237;nima del rect&#225;ngulo de recorte" description="Y Min" type="3">
+		</element>
+		<element name="YMAX" text="La coordenada Y m&#225;xima del rect&#225;ngulo de recorte" description="Y Max" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa recortada por en ese &#225;rea" description="Capa_recortada" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

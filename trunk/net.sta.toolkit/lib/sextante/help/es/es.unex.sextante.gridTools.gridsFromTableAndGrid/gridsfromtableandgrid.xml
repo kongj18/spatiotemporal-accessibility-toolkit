@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una serie de capas raster a partir de un grid clasificado y una tabla alfanum&#233;rica. Para cada clase de la capa raster, se busca informaci&#243;n sobre &#233;sta en la tabla y se crean nuevas capas raster con las distintas variables sobre las cuales se tenga informaci&#243;n de dicha clase seg&#250;n la tabla." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="una capa raster con las distintas clases." description="Capa origen" type="3">
+		</element>
+		<element name="TABLE" text="tabla con la informaci&#243;n de las distintas clases." description="Tabla de correspondencias" type="3">
+		</element>
+		<element name="FIELD" text="el campo que contiene el identificador de la clase, que es el que debe aparecer en la capa raster de origen. Si el valor de una celda en la capa origen coincide con el valor en este campo en un registro de la tabla, se considera que pertenece a dicha clase, y los valores de las capas resultantes se toman de ese registro." description="Campo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="* Se crean tantas capas raster como campos existan en la tabla de atributos alfanum&#233;rica (a excepci&#243;n del campo elegido para identificar las clases).&#10;&#10;" description="Descripci&#243;n general" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

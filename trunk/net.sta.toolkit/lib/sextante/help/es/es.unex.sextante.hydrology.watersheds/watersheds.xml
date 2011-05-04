@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo extrae la cuenca hidrol&#243;gica asociada a una red de drenaje, y su divisi&#243;n en subcuencas, " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones. " description="MDE" type="3">
+		</element>
+		<element name="NETWORK" text="codificada seg&#250;n lo siguiente:&#10;* Valor de sin datos en las celdas que no son de cauce.&#10;* Otros valores excepto -1 en las de cauce.&#10;* Valor -1 en las celdas donde se quiera establecer un punto de salida. Adem&#225;s de estos puntos establecidos, se definir&#225;n como puntos de salida todos los correspondientes a las intersecciones entre tramos de la red.&#10; " description="Red de drenaje" type="3">
+		</element>
+		<element name="MINSIZE" text="se puede evitar la creaci&#243;n de entidades de peque&#241;o tama&#241;o, estableciendo un tama&#241;o m&#237;nimo (en celdas)." description="Tama&#241;o m&#237;nimo de subcuenca (celdas)" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="WATERSHEDS" text="las celdas de una misma cuenca contienen un mismo valor, que corresponde a un identificador asignado a cada una de ellas. " description="Cuencas" type="2">
+			<image description="Cuencas" file="cuencas.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

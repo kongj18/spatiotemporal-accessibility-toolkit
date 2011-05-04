@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo a&#241;ade valores de elevaci&#243;n a una capa con curvas de nivel que carezcan de dichos valores. Para ello se sirve de lineas directrices que identifican tramos ascendentes, automatizando el proceso de asignar cota a todas las l&#237;neas que cortan a dicha directriz.&#10;&#10;Cada l&#237;nea directriz ha de tener asociado un valor de elevaci&#243;n inicial (la cota de la primera curva de nivel que corta) y una equidistancia. El algoritmo analiza las curvas que cortan a cada directriz y a&#241;ade valores sucesivos de elevaci&#243;n a &#233;stas." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="CONTOURS_LAYER" text="La capa con las curvas de nivel a las que asignar cota" description="Curvas de nivel" type="3">
+		</element>
+		<element name="UPHILL_LAYER" text="La lineas de ascenso. Deben estar digitalizadas en sentido ascendente, de tal forma que el punto inicial de la l&#237;nea sea el de menor cota." description="Lineas de ascenso" type="3">
+		</element>
+		<element name="CONTOURS_LAYER_FIELD" text="El campo en la capa de curvas de nivel en el que almacenar las cotas calculadas" description="Campo de elevaci&#243;n" type="3">
+		</element>
+		<element name="UPHILL_LAYER_FIELD" text="El campo asociado a cada l&#237;nea directriz que indica la elevaci&#243;n de la primera curva de nivel a la que corta." description="Campo de elevaci&#243;n" type="3">
+		</element>
+		<element name="UPHILL_LAYER_INTERVAL_FIELD" text="El campo asociado a cada l&#237;nea directriz que indica la equidistancia entre las lineas a las que corta." description="Campo de equidistancia" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa de salida, con las curvas de nivel con elevaciones. Aquellas curvas de nivel que no corten a ninguna curva directriz tendr&#225;n el valor que tuvieran en la capa original. Las restantes tendr&#225;n el valor calculado, incluso si &#233;ste es distinto del previamente existente." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

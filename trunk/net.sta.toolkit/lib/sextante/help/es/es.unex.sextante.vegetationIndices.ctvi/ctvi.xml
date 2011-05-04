@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula el &#237;ndice de vegetaci&#243;n Corrected Transformed Vegetation Index (CTVI) (Perry and Lautenschlager, 1984) para corregir la posibilidad de valores negativos en el Transformed Vegetation Index (TVI). El &#237;ndice es el resultado de la siguiente formula:" description="Descripci&#243;n" type="0">
+			<image description="" file="ctvi.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYERRED" text="seleccionar la capa raster con valores de la banda del rojo." description="Capa rojo" type="3">
+		</element>
+		<element name="BANDRED" text="seleccionar la banda del rojo." description="Banda rojo" type="3">
+		</element>
+		<element name="LAYERNIR" text="seleccionar la capa raster con valores de la banda del infrarrojo cercano." description="Capa infrarrojo cercano" type="3">
+		</element>
+		<element name="BANDNIR" text="seleccionar la banda del infrarrojo." description="Banda infrarrojo cercano" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

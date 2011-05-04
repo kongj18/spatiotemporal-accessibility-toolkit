@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo corta una serie de grids a partir de una capa de pol&#237;gonos." description="Descripci&#243;n" type="0">
+			<image description="" file="cortar_grids_con_capa_de_poligonos1.jpg">
+			</image>
+			<image description="" file="cortar_grids_con_capa_de_poligonos2.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="capas raster a cortar." description="Capa a cortar" type="3">
+		</element>
+		<element name="POLYGONS" text="capa base que delimita las zonas a recortar." description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="las celdas fuera de cualquier pol&#237;gono pero que quedan dentro de los limites rectangulares de la capa tienen valor de sin datos." description="Capa recortada" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

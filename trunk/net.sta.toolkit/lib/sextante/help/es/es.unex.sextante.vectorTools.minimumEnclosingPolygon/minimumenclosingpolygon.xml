@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="A partir de un conjunto dado de puntos, este algoritmo lleva a cabo la delimitaci&#243;n de un contorno m&#237;nimo que los englobe." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="capa de puntos de entrada." description="Puntos" type="3">
+		</element>
+		<element name="FIELD" text="el campo de la tabla de atributos de la anterior capa empleado para dividir en clases los puntos." description="Campo" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* M&#237;nima envolvente convexa: define el pol&#237;gono convexo de menor &#225;rea dentro del cual se contienen todos los puntos del conjunto.&#10;* M&#237;nimo c&#237;rculo: define aquel c&#237;rculo que contiene a todos los puntos de un conjunto dado con el menor radio posible.&#10;* M&#237;nimo rect&#225;ngulo: define el rect&#225;ngulo de menor &#225;rea que cubre todos los puntos de un conjunto dado." description="Tipo de envolvente" type="3">
+		</element>
+		<element name="USECLASSES" text="si se selecciona esta opci&#243;n se crea tantas envolventes como clases distintas existan. Las clases se definen seg&#250;n los valores del campo de la tabla de atributos seleccionado en un par&#225;metro anterior. Las envolventes se corresponden, cada una de ellas, al conjunto de puntos de una misma clase." description="Crear un pol&#237;gono para cada clase" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Nueva capa de pol&#237;gonos. A continuaci&#243;n se puede ver el resultado seg&#250;n el tipo de envolvente seleccionado." description="Envolvente m&#237;nima" type="2">
+			<image description="M&#237;nima envolvente convexa" file="minima_envolvente_convexa.jpg">
+			</image>
+			<image description="M&#237;nimo c&#237;rculo" file="minimo_circulo.jpg">
+			</image>
+			<image description="M&#237;nimo rect&#225;ngulo" file="minimo_rectangulo.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

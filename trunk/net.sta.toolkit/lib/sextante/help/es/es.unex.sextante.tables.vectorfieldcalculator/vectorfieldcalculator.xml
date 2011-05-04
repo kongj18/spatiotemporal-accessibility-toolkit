@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n Calculadora de campos permite realizar operaciones algebraicas con los atributos alfanum&#233;ricos de capas vectoriales, obteniendo informaci&#243;n derivada en forma de nuevas capas de datos geogr&#225;ficos.&#10;&#10;En la parte izquierda de la ventana aparecen todos los elementos que pueden ser seleccionados: campos, funciones, operadores, constantes. Los campos var&#237;an en funci&#243;n de la capa seleccionada.&#10;&#10;Haciendo doble click sobre un elemento en cuesti&amp;oacute;n se a&amp;ntilde;ade al cuadro de texto Expresi&amp;oacute;n.Por ejemplo, para a&amp;ntilde;adir un campo a la f&amp;oacute;rmula,simplemente desplegar el elemento Campos y hacer doble click sobre el campo seleccionada. Tambi&amp;eacute;n pueden teclearse directamente sobre dicho cuadro de texto las distintas expresiones y valores (ver m&amp;aacute;s abajo sobre sintaxis general). &#10;      &#10;En la parte derecha de la ventana aparecen por un lado los operadores m&amp;aacute;s habituales de c&amp;aacute;lculo, y por otro lado los distintos botones de selecci&amp;oacute;n de n&amp;uacute;meros.&#10;" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="" description="Extensi&#243;n creada por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa que se desea ampliar con los resultados del c&#225;lculo, y de cuyos campos se tomar&#225;n los valores para &#233;ste." description="Capa" type="3">
+		</element>
+		<element name="FORMULA" text="La formula a utilizar. &#10;&#10;Los campos se introducen con su nombre, que es el que aparece en la cabecera de la tabla correspondiente&#10;&#10;Pueden emplearse las siguiente funciones:&#10;&#10;* sin(x): devuelve el seno de x (x debe estar en radianes).&#10;* cos(x): devuelve el coseno de x (x debe estar en radianes).&#10;* tan(x): devuelve la tangente de x (x debe estar en radianes).&#10;* asin(x): devuelve el arcoseno de x (x debe estar en radianes).&#10;* acos(x): devuelve el arcocoseno de x (x debe estar en radianes).&#10;* atan(x): devuelve la arcotangente de x (x debe estar en radianes).&#10;* atan2(x/y): devuelve la arcotangente de x/y (x/y debe estar en radianes).&#10;* sinh(x): devuelve el seno hiperb&#243;lico de x (x debe estar en radianes).&#10;* cosh(x): devuelve el coseno hiperb&#243;lico de x (x debe estar en radianes).&#10;* atanh(x): devuelve la tangente hiperb&#243;lica inversa de x (x debe estar en radianes).&#10;* In(x): devuelve el logaritmo neperiano de x.&#10;* log(x): devuelve el logaritmo en base 10.&#10;* exp(x): devuelve la funci&#243;n exponencial de x.&#10;* abs(x): devuelve el valor absoluto de x.&#10;* rand(): devuelve un valor aleatorio en coma flotante, en el rango 0 a 1.0.&#10;* mod(x/y): devuelve el m&#243;dulo de x/y.&#10;* sqrt(x): devuelve la raiz cuadrada no negativa de x.&#10;* if(): devuelve 1 si es verdadera la expresion dentro del par&#233;ntesis, 0  en caso contrario.&#10;Los siguientes operadores pueden emplearse, y la precedencia de operadores es la habitual : suma y resta se eval&#250;an tras multiplicaci&#243;n y divisi&#243;n, y &#233;stos despu&#233;s del operador de potencia. Usar par&#233;ntesis en caso de duda, para estar seguro de c&#243;mo el programa evaluar&#225; la f&#243;rmula introducida.&#10;* + (suma*&#10;* - (resta)&#10;* (multiplicaci&#243;n)&#10;* / (divis&#243;n)&#10;*  % (porcentaje)&#10;* ! (NOT)&#10;*  ^ (elevado a)&#10;* &amp;&amp; (AND)&#10;* || (OR)&#10;* &lt; (menor que)&#10;* &gt; (mayor que)&#10;* &lt;= (menor o igual que)&#10;* &gt;= (mayor o igual que)&#10;*  == (igual a)&#10;* != (distinto de)" description="F&#243;rmula" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="con nuevos campos de atributos." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

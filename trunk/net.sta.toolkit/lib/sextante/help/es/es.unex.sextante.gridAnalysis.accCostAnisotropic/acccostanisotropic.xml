@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la superficie de coste acumulado empleando un coste unitario anisotr&#243;pico, es decir, un coste unitario dependiente de la direcci&#243;n de desplazamiento. El valor en cada celda resultante es el coste hasta el punto de destino mas cercano (entendida esta cercan&#237;a no como cercania geogr&#225;fica, sino en t&#233;rminos de coste)." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="COST" text="La capa que contiene una superficie de fricci&#243;n o coste unitario, correspondiente al coste de cruzar cada celda en la direcci&#243;n de m&#225;ximo coste correspondiente" description="Coste unitario m&#225;ximo" type="3">
+		</element>
+		<element name="COSTDIR" text="la capa que contiene las direcciones de m&#225;ximo coste en grados desde el norte y en sentido horario. Por ejemplo, desplaz&#225;ndose en contra del viento o hacia arriba de la ladera por la l&#237;nea de m&#225;xima pendiente." description="Direcci&#243;n de m&#225;ximo coste unitario [grados]" type="3">
+		</element>
+		<element name="FEATURES" text="los puntos deben se&#241;alarse con celdas con un valor v&#225;lido cualquiera. Las restantes celdas han de tener valor de sin datos." description="Puntos de origen/destino" type="3">
+		</element>
+		<element name="THRESHOLD" text="a&#241;adir un valor si se quiere marcar el valor m&#237;nimo de la diferencia existente entre rutas. Si la diferencia es menor a ese umbral, la ruta se considera id&#233;ntica y no se recalcula. Si tiene valor 0, tal y como sucede por defecto, la precisi&#243;n es m&#225;xima, as&#237; como el tiempo de proceso." description="Umbral para diferenciaci&#243;n de rutas" type="3">
+		</element>
+		<element name="KFACTOR" text="valor K en la siguiente ecuaci&#243;n, que regula la forma en la que , a partir de los valores de coste m&#225;ximo (Fs)  y direccion de coste m&#225;ximo, se obtiene el coste en una direccion cualquiera desviada de la de coste m&#225;ximo un &#225;ngulo dado (alpha)." description="Factor K" type="3">
+			<image description="" file="costeAcumAnisotropico_ecuacion.jpg">
+			</image>
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="ACCCOST" text="La superficie de coste acumulado, que contiene el coste desde cada celda hasta el punto de destino m&#225;s cercano." description="Coste acumulado" type="2">
+			<image description="" file="costeAcumAnisotropico.jpg">
+			</image>
+		</element>
+		<element name="CLOSESTPOINT" text="Esta capa indica cu&#225;l de los puntos de destino es el m&#225;s cercano en cada caso. El valor de celda representa el n&#250;mero de dicho punto." description="Punto m&#225;s cercano" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

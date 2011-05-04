@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text='Este algoritmo calcula el rect&#225;ngulo envolvente (bounding box) de un conjunto de entidades. A diferencia del m&#237;nimo rect&#225;ngulo envolvente, que puede obtenerse utilizando el algoritmo "Envolventes m&#237;nimas", en este caso no se trata de una envolvente de &#225;rea m&#237;nima. El bounding box se caracteriza por estar orientados sus lados segun los ejes X e Y. ' description="Descripci&#243;n" type="0">
+			<image description="Figura: Ejemplo de Bounding Box" file="boundingbox.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="Palabras relacionadas: envelope, boundary" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Juan Ignacio Varela (Nacho Varela)" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa vectorial de entrada" description="Capa de entrada" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La caja envolvente m&#237;nima (bounding box)" description="Bounding Box" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

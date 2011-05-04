@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo modifica los valores de una capa y genera una nueva capa seg&#250;n con los valores establecidos por el usuario en una tabla de asignaci&#243;n, que establecen la conversion entre valores originales y valores finales." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="La capa a reclasificar" description="Capa a reclasificar" type="3">
+		</element>
+		<element name="METHOD" text="a eleguir entre:&#10;* Min &amp;lt&lt; x &amp;lt&lt; Max:&#10;* Min &amp;lt x &amp;lt= Max: &#10; " description="Criterio" type="3">
+		</element>
+		<element name="LUT" text='la tabla contiene los campos "Valor m&#237;nimo", "Valor m&#225;ximo" y "Nuevo valor", que se utilizar&#225;n seg&#250;n el criterio seleccionado en el campo anterior.' description="Tabla de asignaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RECLASS" text="nueva capa raster con los valores reclasificados." description="Reclasificaci&#243;n" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

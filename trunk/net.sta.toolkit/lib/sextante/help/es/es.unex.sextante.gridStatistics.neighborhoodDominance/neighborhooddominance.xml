@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula una nueva capa con valores de dominancia. La dominancia dentro de una ventana de analisis es:" description="Descripci&#243;n" type="0">
+			<image description="siendo n el numero de clases diferentes en la ventana." file="dominancia_formula.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="la capa de entrada a analizar" description="Capa" type="3">
+		</element>
+		<element name="RADIUS" text="el radio de la ventana de an&#225;lisis (en celdas)." description="Radio" type="3">
+		</element>
+		<element name="NODATA" text="si se selecciona esta opci&#243;n, la aparici&#243;n de una celda con valor de sin datos anula el c&#225;lculo, asign&#225;ndosele a la celda de resultado el mismo valor de sin datos. En caso de no seleccionarse, las celdas sin datos se ignoran, y se opera con las restantes que posean datos validos." description="Forzar valor de sin datos" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Dominancia" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

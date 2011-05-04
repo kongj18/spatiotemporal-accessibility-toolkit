@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La línea de comandos</TITLE>
+<META NAME="description" CONTENT="La línea de comandos">
+<META NAME="keywords" CONTENT="ManualElementosSEXTANTE">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="ManualElementosSEXTANTE.css">
+
+</HEAD>
+
+<BODY >
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html205"
+  HREF="node7.html#SECTION00710000000000000000">Introducción</A>
+<LI><A NAME="tex2html206"
+  HREF="node7.html#SECTION00720000000000000000">La interfaz</A>
+<UL>
+<LI><A NAME="tex2html207"
+  HREF="node7.html#SECTION00721000000000000000">Obtener información sobre los datos</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html208"
+  HREF="node7.html#SECTION00730000000000000000">Obtener información sobre los algoritmos de análisis geográfico</A>
+<LI><A NAME="tex2html209"
+  HREF="node7.html#SECTION00740000000000000000">Ejecutando algoritmos</A>
+<LI><A NAME="tex2html210"
+  HREF="node7.html#SECTION00750000000000000000">Ajustar las características de la capa raster de salida</A>
+<LI><A NAME="tex2html211"
+  HREF="node7.html#SECTION00760000000000000000">Ejecutando modelos</A>
+<LI><A NAME="tex2html212"
+  HREF="node7.html#SECTION00770000000000000000">Manejo de capas desde la consola</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00700000000000000000">
+La l&#237;nea de comandos</A>
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION00710000000000000000">
+Introducci&#243;n</A>
+</H1>
+
+<P>
+La <SPAN  CLASS="textit">l&#237;nea de comandos</SPAN> de SEXTANTE permite a los usuarios m&#225;s avanzados hacer un uso mas &#225;gil del programa y automatizar tareas mediante la creaci&#243;n de sencillos scripts.
+
+<P>
+
+<H1><A NAME="SECTION00720000000000000000">
+La interfaz</A>
+</H1>
+
+<P>
+Para empezar a utilizar la l&#237;nea de comandos en SEXTANTE haz clic en el icono correspondiente y podr&#225;s ver lo siguiente:
+
+<P>
+<DIV ALIGN="CENTER">
+
+
+</DIV>
+
+<P>
+La l&#237;nea de comandos de SEXTANTE est&#225; basada en BeanShell. BeanShell es un interprete de c&#243;digo de Java en modo script que permite ejecutar din&#225;micamente la sintaxis est&#225;ndar de Java y comandos comunes, como los de Perl y JavaScript. 
+
+<P>
+Si se quiere profundizar y conocer BeanShell puedes visitar tu p&#225;gina web. En este cap&#237;tulo s&#243;lo haremos menci&#243;n a los elementos de BeanShell relacionados con los algoritmos de an&#225;lisis geogr&#225;fico de SEXTANTE. 
+
+<P>
+SEXTANTE a&#241;ade nuevos comandos que permiten ejecutar los algoritmos y obtener nueva informaci&#243;n geogr&#225;fica de los datos que se est&#233;n usando, entre otras cosas.
+
+<P>
+Los usuarios de Java pueden crear peque&#241;os scripts y programas combinando los elementos de Java con los comandos de SEXTANTE. Sin embargo, quien no este familiarizado con Java puede usar la l&#237;nea de comandos de SEXTANTE para ejecutar un proceso o un conjunto de ellos, simplemente llamando al correspondiente m&#233;todo del algoritmo. 
+
+<P>
+En las pr&#243;ximas l&#237;neas se puede encontrar una descripci&#243;n detallada de todos los comandos de SEXTANTE. 
+
+<P>
+
+<H2><A NAME="SECTION00721000000000000000">
+Obtener informaci&#243;n sobre los datos</A>
+</H2>
+
+<P>
+Todos los algoritmos necesitan datos para ser ejecutados con &#233;xito. Las capas geogr&#225;ficas y tablas son identificadas usando el nombre que tienen en la tabla de contenidos de la aplicaci&#243;n SIG que se este usando. 
+
+<P>
+El comando <TT>data()</TT> escribe una lista de todos los objetos de datos disponibles que pueden ser usados, junto con el nombre particular de cada uno de ellos. Llamando a un dato se obtendr&#225; algo como esto:
+
+<P>
+<PRE>
+RASTER LAYERS
+-----------------
+mdt25.asc
+
+VECTOR LAYERS
+-----------------
+Curvas de nivel
+
+TABLES
+-----------------
+</PRE>
+
+<P>
+Hay que tener en cuenta que algunos SIG permiten tener varias capas de informaci&#243;n (datos) con el mismo nombre. SEXTANTE coger&#225; el primero de esos nombres, por tanto seria conveniente renombrar los datos para cada uno de ellos si tuvieran el mismo nombre.
+
+<P>
+El comando <TT>describe</TT> (nombre del objeto) permite obtener informaci&#243;n sobre un objeto o dato concreto. Para referirnos a ese objeto, usamos el nombre que tiene en la tabla de contenidos. A continuaci&#243;n se muestra una serie de ejemplos con este comando donde se obtiene informaci&#243;n sobre una capa vectorial, una capa raster y una tabla.
+
+<P>
+<PRE>
+&gt;describe points.shp
+Type: Vector layer - Point
+Number of entities: 300
+Table fields: | ID | X | Y | SAND | SILT | CLAY | SOILTYPE | EXTRAPOLAT |
+
+&gt;describe dem25.asc
+Type: Raster layer 
+X min: 262846.525725
+X max: 277871.525725
+Y min: 4454025.0
+Y max: 4464275.0
+Cellsize X: 25.0
+Cellsize Y: 0.0
+Rows: 410
+Cols: 601
+
+&gt;describe spatialCorrelation.dbf
+Type: TableNumber of records: 156
+Table fields: | Distance | I_Moran | c_Geary | Semivariance |
+</PRE>
+
+<P>
+
+<H1><A NAME="SECTION00730000000000000000">
+Obtener informaci&#243;n sobre los algoritmos de an&#225;lisis geogr&#225;fico</A>
+</H1>
+
+<P>
+Una vez descritos los datos vamos a ver a continuaci&#243;n los algoritmos que se pueden usar para extraer el m&#225;ximo provecho posible para el an&#225;lisis. 
+
+<P>
+Cuando se ejecuta un algoritmo con el gestor de extensiones de SEXTANTE, se usa la ventana de par&#225;metros con varios campos, cada uno de ellos corresponden a un s&#243;lo par&#225;metro. En SEXTANTE cada algoritmo de an&#225;lisis espacial es identificado por un comando. Cuando se usa la l&#237;nea de comandos de SEXTANTE, se debe conocer que par&#225;metros son necesarios, para pasar los valores correctos y usar el m&#233;todo que haga correr el algoritmo. SEXTANTE posee un m&#233;todo para describir en detalle un algoritmo. Pero antes necesitamos conocer el nombre del algoritmo, y para ello utilizamos el comando <TT>algs()</TT>. Se muestra a continuaci&#243;n una parte de los algoritmos de SEXTANTE.
+
+<P>
+<PRE>
+bsh % algs();
+acccost-------------------------------: Accumulated cost(isotropic)
+acccostanisotropic--------------------: Accumulated cost (anisotropic)
+acccostcombined-----------------------: Accumulated cost (combined)
+accflow-------------------------------: Flow accumulation
+acv-----------------------------------: Anisotropic coefficient of variation
+addeventtheme-------------------------: Points layer from table
+aggregate-----------------------------: Aggregate
+aggregationindex----------------------: Aggregation index
+ahp-----------------------------------: Analytical Hierarchy Process (AHP)
+aspect--------------------------------: Aspect
+buffer--------------------------------: Buffer
+</PRE>
+
+<P>
+En la izquierda hay una lista con el nombre de cada algoritmo. Este nombre es el que se tiene que usar para hacer referencia en la l&#237;nea de comandos. En la derecha se puede ver el nombre del algoritmo en el actual lenguaje, el cual es el mismo nombre que identifica el algoritmo en el Gestor de extensiones. Sin embargo, el nombre no es el mismo ya que depende del lenguaje actual en la aplicaci&#243;n SIG, y por lo tanto puede ser usado para llamar al algoritmo.
+
+<P>
+A continuaci&#243;n vamos a ver como obtener una lista de par&#225;metros que un algoritmo necesita para que se ejecute con &#233;xito. Para ver la descripci&#243;n de los par&#225;metros que requiere un algoritmo usa el comando <TT>describealg(nombre_del_algoritmo)</TT>. Recordar que se debe usar el nombre del algoritmo (lado izquierdo), no la descripci&#243;n del algoritmo (lado derecho).
+
+<P>
+Por ejemplo, si queremos calcular la acumulaci&#243;n de flujo desde un MDE, necesitamos ejecutar el correspondiente modulo, el cual, de acuerdo a la lista de algoritmos <TT>ags()</TT>, es identifacado como <TT>accflow</TT>. Una descripci&#243;n de las entradas y salidas de dicho algoritmo podemos ver a continuaci&#243;n: 
+
+<P>
+<PRE>
+&gt;describealg("accflow")
+Usage: accflow(DEM[Raster Layer]
+               WEIGHTS[Optional Raster Layer]
+               METHOD[Selection]
+               CONVERGENCE[Numerical Value]
+               FLOWACC [output raster layer])
+</PRE>              
+
+<P>
+
+<H1><A NAME="SECTION00740000000000000000">
+Ejecutando algoritmos</A>
+</H1>
+
+<P>
+Para ejecutar los algoritmos utilizamos el comando <TT>runalg</TT>. La sintaxis es la siguiente:
+
+<P>
+<PRE>
+&gt; runalg{name_of_the_algorithm, param1, param2, ..., paramN)
+</PRE>
+
+<P>
+La lista de par&#225;metros para a&#241;adir depende del algoritmo que quieras ejecutar. Para ver una lista de par&#225;metro debemos utilizar el comando <TT>describealg</TT>.
+
+<P>
+Los valores se introducen de manera diferente, dependiendo del tipo de par&#225;metro. Veamos los diferentes tipos de par&#225;metros y c&#243;mo deben introducirse sus valores correspondientes para ejecutar con &#233;xito el algoritmo.
+
+<P>
+Si se quiere utilizar un valor por defecto de un par&#225;metro de entrada hay que escribir una almohadilla (#). En los par&#225;metros opcionales, el uso del valor por defecto es equivalente a no utilizar entrada alguna.
+
+<P>
+
+<UL>
+<LI>Raster Layer,  Vector Layer o Table. Simplemente introduce el nombre que identifica el objeto a usar. Si la entrada es opcional y no se quiere a&#241;adir ning&#250;n objeto, escribir ``#''. 
+</LI>
+<LI>Numerical value. Valor num&#233;rico. 
+</LI>
+<LI>Selection. Escribe el n&#250;mero correspondiente a la opci&#243;n deseada, como muestra el comando <TT>options</TT>.
+</LI>
+<LI>String. Cadena de texto.
+</LI>
+<LI>Boolean. Escribe cualquier de los dos valores true o false (incluidas comillas). 
+</LI>
+<LI>Multiple selection - tipo_datos. Se necesita un grupo de objetos como par&#225;metro para ejecutar el modulo, separados por comas y encerrados entre comillas.
+
+<P>
+Por ejemplo, para el algoritmo <TT>maxvaluegrid</TT>:
+
+<P>
+<PRE>
+
+Usage: runalg("maxvaluegrid",
+                   INPUT[Multiple Input - Raster Layer]
+                   NODATA[Boolean],
+                   RESULT[Output raster layer])
+</PRE>
+
+<P>
+La siguiente l&#237;nea muestra un ejemplo de uso:
+
+<P>
+<PRE>
+&gt; runalg("maxvaluegrid", "lyr1, lyr2, lyr3", "false", "#")
+</PRE>
+
+<P>
+Por supuesto, lyr1, lyr2, lyr3 deben ser una capas raster v&#225;lidas ya cargadas. En el caso de [<TT>Multiple Input - Band</TT>] (m&#250;ltiples bandas), cada par&#225;metro es definido por un par de valores (<SPAN  CLASS="textit">capa, banda</SPAN>). Por ejemplo, para el algoritmo <TT>cluster</TT>.
+
+<P>
+<PRE>
+Usage: runalg( "cluster",
+               INPUT[Multiple Input - Band],
+               NUMCLASS[Numerical Value],
+               RESULTLAYER[output raster layer],
+               RESULTTABLE[output table],
+               );
+</PRE>
+
+<P>
+Un ejemplo v&#225;lido es la siguiente l&#237;nea:
+
+<P>
+<PRE>
+&gt; runalg("cluster, "lyr1, 1, lyr1, 2, lyr2, 2", 5, "#", "#")
+</PRE>
+
+<P>
+El algoritmo usar&#225; 3 bandas, dos de ellas de lyr1 (bandas 1 y 2), y una de lyr2 (banda 2).
+
+<P>
+</LI>
+<LI>Table Field from XXX . Escribe el nombre del campo de una capa vectorial o una tabla. 
+</LI>
+<LI>Fixed Table  Tabla fija. Simplemente introduce todos los valores de las celdas de la tabla, separados por comas y entre comillas. Primero los valores de la fila superior, de izquierda a derecha, luego los de la segunda, y as&#237; sucesivamente. La siguiente l&#237;nea muestra un ejemplo de uso de tabla fija con la extensi&#243;n <SPAN  CLASS="textit">Filtro 3 X 3 definido por el usuario</SPAN>:
+
+<P>
+<PRE>
+runalg("kernelfilter", mdt25.asc, "-1, -1, -1, -1, 9, -1, -1, -1, -1", "#")
+</PRE>
+
+<P>
+</LI>
+<LI>Point . Las dos coordenadas de un punto deben estar separadas por comas y encerradas entre comillas. Ejemplo: ``220345, 4453616'' 
+
+<P>
+</LI>
+</UL>
+
+<P>
+Los par&#225;metros de entrada como las cadenas de texto o los valores num&#233;ricos tiene valores por defecto. Para usar estos, escribir ``#'' en la entrada correspondiente en lugar del valor de expresi&#243;n.
+
+<P>
+Los objetos de salida, como la ruta de salida, pueden ser salvadas a un fichero temporal usando el signo ``#''.  Si lo que quieres es salvar la capa de salida a un fichero permanente, escribe el nombre del fichero de salida.
+
+<P>
+
+<H1><A NAME="SECTION00750000000000000000">
+Ajustar las caracter&#237;sticas de la capa raster de salida</A>
+</H1>
+
+<P>
+Si intentas ejecutar cualquier algoritmo que genere nuevas capas raster, las crear&#225; con un tama&#241;o de celda y una extensi&#243;n autom&#225;tica calculada a partir de la capa raster de entrada. Este funcionamiento puede ser modificado usando el comando <TT>autoextent</TT>.
+
+<P>
+<PRE>
+&gt; autoextent("true"/"false)
+</PRE>
+
+<P>
+Por defecto, tiene valor verdadero (<TT>true</TT>). Sin embargo, si quieres definir una extensi&#243;n y tama&#241;o de celda en particular para todas las capas raster de salida, debes usar el comando <TT>extent</TT>.
+
+<P>
+<PRE>
+Usage: extent(raster layer[string])
+       extent(vector layer[string], cellsize[double])
+       extent(x min[double], y min[double],
+              x max[double], y max[double], 
+              cell size[double])
+Type "autoextent" to use automatic extent fitting when possible
+</PRE>
+
+<P>
+Al establecer una extensi&#243;n fija, autom&#225;ticamente se desactiva el ajuste autom&#225;tico (es decir, como si ejecutaras un comando <TT>autoextent false</TT>).
+
+<P>
+
+<H1><A NAME="SECTION00760000000000000000">
+Ejecutando modelos</A>
+</H1>
+
+<P>
+Para ejecutar un modelo desde la l&#237;nea de comandos debe utilizarse el comando <TT>model</TT>, con una sintaxis similar al comando <TT>runalg</TT>. En este caso, en lugar del nombre del algoritmo como primer par&#225;metro, debe introducirse el nombre del fichero donde est&#225; almacenado el modelo, que obligatoriamente debe encontrarse en la carpeta de modelos establecida en la configuraci&#243;n de SEXTANTE. Los restantes par&#225;metros son los correspondientes en cada caso al propio modelo, del mismo modo que en el caso de ejecutar un algoritmo con el comando <TT>runalg</TT>;
+
+<P>
+
+<H1><A NAME="SECTION00770000000000000000">
+Manejo de capas desde la consola</A>
+</H1>
+
+<P>
+Puedes realizar algunas operaciones de gesti&#243;n de capas desde la interfaz en l&#237;nea de comandos, como por ejemplo:
+
+<P>
+
+<UL>
+<LI>Cerrar una capa. Utiliza el comando <TT>close(nombre_capa)</TT>
+</LI>
+<LI>Cambiar el valor de sin datos de una capa raster. Utiliza el comando <TT>setnodata(nombre_capa, nuevo_valor)</TT>
+</LI>
+<LI>Cambiar el nombre de una capa. Utiliza el comando <TT>rename(nombre_capa,nuevo_nombre_capa)</TT>
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Victor Olaya
+2010-02-18
+</ADDRESS>
+</BODY>
+</HTML>

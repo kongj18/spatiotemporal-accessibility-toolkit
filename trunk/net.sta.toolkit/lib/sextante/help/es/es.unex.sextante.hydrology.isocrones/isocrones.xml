@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera una nueva capa con los valores de tiempo desde cada celda hasta el punto de salida de una cuenca definida. Es decir, calcula el tiempo que tarda el flujo en abandonar una cuenca dada desde cada una de sus celdas interiores. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones. " description="MDE" type="3">
+		</element>
+		<element name="NETWORK" text="la capa con la red de drenaje." description="Red de drenaje" type="3">
+		</element>
+		<element name="RATIO" text="Si se emplea una red de drenaje, la velocidad en el cauce se considera diferente que aquella fuera de &#233;l. La velocidad media calculada se aplica s&#243;lo a las celdas de cauce, mientras que las exteriores tiene un valor proporcional. El valor de este par&#225;metro expresa la relacion entre esas velocidades." description="Relaci&#243;n velocidades r&#237;o / ladera" type="3">
+		</element>
+		<element name="OUTLET" text="Las coordenadas del punto de salida de la cuenca" description="Punto de salida" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="TIME" text="los valores de celda expresan el tiempo en horas que tarda el flujo en llegar desde la celda al punto de salida seleccionado. Las celdas fuera de la cuenca tiene valor de sin datos." description="Tiempo de salida" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

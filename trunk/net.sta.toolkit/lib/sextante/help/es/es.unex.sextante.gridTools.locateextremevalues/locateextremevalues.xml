@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Esta extensi&#243;n localiza el valor m&#225;ximo de celda para cada una de las entidades de una capa de pol&#237;gonos. El resultado es una nueva capa de puntos donde cada punto esta localizado en el valor m&#225;ximo de celda." description="Descripci&#243;n" type="0">
+			<image description="" file="locateextremevalues_es.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POLYGONS" text="La capa de pol&#237;gonos." description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="GRID" text="La capa raster." description="Grid" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Nueva capa de puntos con el valor m&#225;ximo de celda para punto en cada pol&#237;gono." description="Pol&#237;gonos" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
