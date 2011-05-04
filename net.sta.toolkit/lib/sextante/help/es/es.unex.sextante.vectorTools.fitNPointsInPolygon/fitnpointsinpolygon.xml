@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una nueva capa con un n&#250;mero dado de puntos, en la que &#233;stos se ajustan a la extensi&#243;n de una superficie concreta definida mediante una capa de pol&#237;gonos.&#10;" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POLYGONS" text='Los pol&#237;gonos en los que se quieren ajustar los puntos. Se situar&#225;n en cada pol&#237;gono tantos como se definan en el campo "n&#250;mero de puntos"&#10;' description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="NPOINTS" text="El n&#250;mero de puntos a a&#241;adir en la extensi&#243;n de cada pol&#237;gono. " description="N&#250;mero de puntos" type="3">
+		</element>
+		<element name="METHOD" text="A elegir entre:&#10;* En malla regular. En este caso puede no resultar posible ajustar exactamente el n&#250;mero de puntos especificado.&#10;* Aleatoria" description="Disposici&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa resultante." description="Puntos" type="2">
+			<image description="Malla regular (cuatro puntos)" file="ajustar_n_puntos_en_poligono_mallaregular.jpg">
+			</image>
+			<image description="Aleatoria (cuatro puntos)" file="ajustar_n_puntos_en_poligono_aleatoria.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

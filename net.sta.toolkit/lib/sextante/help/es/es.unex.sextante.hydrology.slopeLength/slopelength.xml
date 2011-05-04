@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula en cada celda la m&#225;xima distancia de flujo aguas arriba de la misma." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaci&#243;n." description="MDE" type="3">
+		</element>
+		<element name="THRESHOLD" text="si se selecciona el campo Utilizar umbral, el valor no es la longitud m&#225;xima de la pendiente, sino la m&#225;xima longitud de flujo a lo largo de la cual no se producen variaciones relativas de la pendiente superiores a este umbral." description="Relaci&#243;n umbral de variaci&#243;n de pendiente" type="3">
+		</element>
+		<element name="USETHRESHOLD" text="en caso de seleccionarse, se utilizar&#225; el umbral del punto anterior para el c&#225;lculo de la longitud de pendiente." description="Utilizar umbral" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="SLOPELENGTH" text="las distancias de la capa de salida se refieren a distancias de flujo m&#225;ximas." description="Longitud de pendiente" type="2">
+			<image description="Longitud de pendiente" file="longitud_de_pendiente.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n Pendiente calcula el &#225;ngulo existente entre el vector normal a la superficie en ese punto y la vertical. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="K.H. Jones. A comparison of eight algorithms used to compute slopes as a local property of the dem. In Proceedings of the GIS Research UK 1996 Conference, pages 7-12, 1996." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" name="EXTENSION_AUTHOR" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Antonio Ord&#243;&#241;ez " description="Ayuda creada por" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="METHOD" text=" el m&#233;todo a utilizar, a elegir entre los siguientes:&#10;* M&#225;xima pendiente (Travis et al. 1975).&#10;* M&#225;xima pendiente por tri&#225;ngulos (Tarboton 1997).&#10;* Plano de ajuste (Costa-Cabral &amp; Burges 1996).&#10;* Ajuste a Polinomio de Grado 2 (Bauer, Rohdenburg, Bork 1985).&#10;* Ajuste a Polinomio de Grado 2 (Heerdegen &amp; Beran 1982).&#10;* Ajuste a Polinomio de Grado 2 (Zevenbergen &amp; Thorne 1987).&#10;* Ajuste a Polinomio de Grado 3 (Haralick 1983).&#10; &#10;" description="M&#233;todo" type="3">
+		</element>
+		<element name="UNITS" text="a elegir entre radianes, grados y porcentaje." description="Unidades:" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="SLOPE" text="los valores de pendiente se expresan en las unidades seleccionadas.&#10;" description="Pendiente" type="2">
+			<image description="Pendiente" file="pendiente.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

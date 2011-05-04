@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo toma los valores necesarios para definir una funci&#243;n de miembro, y en funci&#243;n de ella asigna valores en el intervalo (0, 1) a todas las celdas de una capa con informaci&#243;n cuantitativa." description="Descripci&#243;n" type="0">
+			<image description="El significado de los puntos de control puede entenderse viendo la presente figura" file="MemberFunctionFuzzyLinear.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="seleccionar una capa raster." description="Capa de entrada" type="3">
+		</element>
+		<element name="FUNCTIONTYPE" text="a elegir entre:&#10;* Lineal: formulaci&#243;n lineal para definir las transiciones entre los valores 0 y 1 a ambos lados de la gr&#225;fica (es el m&#233;todo de la figura anterior).&#10;* Sigmoidal. Formulaci&#243;n sigmoidal para las transiciones&#10;* En forma de J." description="Tipo de funci&#243;n de miembro" type="3">
+		</element>
+		<element name="A" text="" description="Punto de control A" type="3">
+		</element>
+		<element name="B" text="" description="Punto de control B" type="3">
+		</element>
+		<element name="C" text="" description="Punto de control C" type="3">
+		</element>
+		<element name="D" text="" description="Punto de control D" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="nueva capa raster con valores entre 0 y 1 obtenidos a partir de la aplicaci&#243;n de la funci&#243;n de miembro definida" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Dada una capa de pol&#237;gonos y una capa raster, este algoritmo localiza la celda de mayor valor de entre todas las situadas dentro de cada pol&#237;gono. &#10;&#10;El resultado del algoritmo es una capa vectorial de puntos situados sobre dichas celdas de m&#225;ximo valor, y con el valor en concreto en la tabla de atributos asociada." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POLYGONS" text="Una capa de pol&#237;gonos dentro de los cuales se deben localizar los puntos de valor m&#225;ximo" description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="GRID" text="Una capa raster en la que buscar los valores m&#225;ximos" description="Grid" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Capa de puntos con entidades en los lugares donde se localizan las celdas de valor m&#225;ximo de cada pol&#237;gono." description="Pol&#237;gonos" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

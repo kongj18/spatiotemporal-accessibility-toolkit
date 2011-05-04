@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo modifica una capa raster reflejandola horizontal o verticalmente, o bien invirtiendo  su valores (los valores mas altos pasan a ser los mas bajos, y viceversa). &#10;&#10;Siguiente figura: a) capa origen; b1) resultado m&#233;todo reflejo horizontal; b2) resultado m&#233;todo reflejo vertical; c) resultado m&#233;todo reflejo invertir." description="Descripci&#243;n" type="0">
+			<image description="" file="reflejar_invertir.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="" description="Capa origen" type="3">
+		</element>
+		<element name="METHOD" text="el m&#233;todo a utilizar, a elegir entre los siguientes:&#10;* Reflejo horizontal: modifica la posici&#243;n de las celdas en horizontal.&#10;* Reflejo vertical: modifica la posici&#243;n de las celdas en vertical.&#10;* Invertir: modifica los valores Z de dichas celdas.&#10; " description="M&#233;todo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

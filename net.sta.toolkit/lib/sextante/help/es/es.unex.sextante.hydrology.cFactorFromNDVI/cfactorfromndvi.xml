@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text='Este algoritmo calcula una capa con valores del coeficiente de la Ecuaci&#243;n Universal de P&#233;rdidas de Suelo (USLE), a partir de una capa con valores del &#237;ndice de vegetaci&#243;n NDVI. Est&#233; indice puede calcularse a partir de imagenes con bandas correspondientes al rojo y el infrarrojo cercano con el algoritmo "NDVI", tambi&#233;n incluido dentro de SEXTANTE.&#10;&#10;El valor del coeficiente C se calcula seg&#250;n la siguiente expresi&#243;n:&#10;&#10;C = e^(-alpha &#183; NDVI / (beta - NDVI))' description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="* http://eusoils.jrc.ec.europa.eu/ESDB_Archive/pesera/pesera_cd/pdf/er_it_new.pdf" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="NDVI" text="La capa con valores de NDVI." description="NDVI" type="3">
+		</element>
+		<element name="ALPHA" text="El coeficiente alfa a emplear en la formula presentada anteriormente." description="Alpha" type="3">
+		</element>
+		<element name="BETA" text="El coeficiente beta a emplear en la formula presentada anteriormente." description="Beta" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="CFACTOR" text="La capa resultado con valores del par&#225;metro C" description="C" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

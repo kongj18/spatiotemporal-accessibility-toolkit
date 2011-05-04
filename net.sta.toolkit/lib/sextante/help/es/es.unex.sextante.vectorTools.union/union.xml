@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La uni&#243;n es equivalente al operador l&#243;gico OR (O), ya que la capa resultante mantiene todas las entidades en ambas capas de entrada (igual que la intersecci&#243;n), y junto a &#233;stas, tambi&#233;n aquellas zonas que aparecen &#250;nicamente en una de las capas de origen. Las entidades o geometr&#237;as han de ser de tipo pol&#237;gono. &#10;&#10;Se genera una nueva capa de pol&#237;gonos donde las geometr&#237;as se han dividido. De esta forma, y al unir dos capas de pol&#237;gonos, encontraremos en la capa resultante zonas que est&#225;n cubiertas por uno de ellos perteneciente a la primera capa, o bien por uno de la segunda capa, o bien por pol&#237;gonos de ambas capas. La tabla de atributos resultante contiene tantos campos como el conjunto de las dos capas de partida. &#10;" description="Descripci&#243;n" type="0">
+			<image description="" file="union.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER1" text="primera capa de entrada." description="Capa 1" type="3">
+		</element>
+		<element name="LAYER2" text="segunda capa de entrada." description="Capa 2" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Capa unión" description="Capa unión" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n zona de influencia mediante umbral permite obtener un &#225;rea de influencia (buffer) mediante un umbral definido por el usuario para una variable umbral dada. En este caso, el &#225;rea de influencia se basa en los valores de las propias celdas contenidas dentro del &#225;rea de influencia." description="Descripci&#243;n" type="0">
+			<image description="Zona de influencia mediante umbral" file="zona_de_influencia_mediante_umbral.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="FEATURES" text="seleccionar una capa raster que contenga informaci&#243;n sobre los elementos alrededor de los cuales definir dicho &#225;rea de influencia. Estos elementos deben contener cualquier valor num&#233;rico a excepci&#243;n de cero, mientras que las restantes celdas deben tener cero o bien ser celdas sin datos." description="Capa origen" type="3">
+		</element>
+		<element name="VALUES" text="seleccionar capa que se quiere emplear para establecer el umbral." description="Capa de par&#225;metro umbral" type="3">
+		</element>
+		<element name="THRESHOLD" text='si se utiliza un umbral variable, esta capa contiene el umbral a aplicar en cada celda. Este es un umbral referido a la variable contenida en la capa anterior: "par&#225;metro umbral".' description="Capa de umbrales" type="3">
+		</element>
+		<element name="METHOD" text="en ambos caso, el buffer se expande a partir de cada celda v&#225;lida hacia las circundantes, deteni&#233;ndose &#250;nicamente cuando se cumple una condici&#243;n relativa a los valores de dichas celdas circundantes en la capa que contiene el par&#225;metro umbral.&#10;* Absoluto: todas las celdas circundantes hacia las que se expande el buffer pasar&#225;n a formar parte de &#233;ste si el valor del par&#225;metro umbral en las mismas es menor que dicho umbral.&#10;* Relativo al valor de celda: en este caso, se seleccionan las celdas contiguas para las que la diferencia entre ellas y la celda inicial es menor que el umbral para la misma. &#10; " description="Tipo de umbral" type="3">
+		</element>
+		<element name="ABSOLUTETHRESHOLD" text="introducir el valor para definir el umbral (valor referido sobre la capa de par&#225;metro umbral). Si se utiliza una capa de umbrales, este valor se ignora, y se toma en cada celda el correspondiente a esa capa." description="Umbral absoluto" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="BUFFER" text="las celdas del elemento original tienen valor 1, las del buffer valor 2, y las restantes valor 0." description="Buffer" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

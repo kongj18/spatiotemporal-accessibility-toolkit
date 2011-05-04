@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n calibrar una imagen reduce los efectos de diferencias de sensor cuando se comparan im&#225;genes de dos series temporales. &#10;&#10;Se puede realizar la calibraci&#243;n de dos formas, bien a partir de valores de media y desviaci&#243;n t&#237;pica deseados para la imagen resultante, o bien, con valores de amplificaci&#243;n y desfase.&#10;&#10;En el primer caso, la f&#243;rmula empleada para convertir un Nivel Digital ND en un Nivel Digital Calibrado NDC es:&#10;&#10;NDC = (((ND - media) / desviaci&#243;n_t&#237;pica_imagen) x desviaci&#243;n_tipica) + media_imagen&#10;&#10;En el segundo, la formula empleada es:&#10;&#10;NDC = amplificaci&#243;n x ND + desfase" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="elegir la imagen a calibrar." description="Imagen a calibrar" type="3">
+		</element>
+		<element name="METHOD" text="A elegir entre:&#10;* Media y desviaci&#243;n t&#237;pica&#10;* Amplificaci&#243;n y desfase" description="M&#233;todo" type="3">
+		</element>
+		<element name="STDDEV" text="Desviaci&#243;n t&#237;pica que se desea en la imagen calibrada" description="Resulting standard deviation" type="3">
+		</element>
+		<element name="MEAN" text="Media que se desea en la imagen calibrada" description="Media resultante" type="3">
+		</element>
+		<element name="GAIN" text="Amplificaci&#243;n" description="Amplificaci&#243;n" type="3">
+		</element>
+		<element name="OFFSET" text="Desfase" description="Desfase" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="CALIBRATED" text="" description="Imagen calibrada" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

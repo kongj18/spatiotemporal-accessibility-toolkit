@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una superficie de valores estimados a partir de una serie de valores puntuales, mediante el m&#233;todo de interpolaci&#243;n Kriging.&#10;&#10;El m&#233;todo se basa en un an&#225;lisis previo de la autocorrelaci&#243;n espacial de la variable a trav&#233;s del variograma te&#243;rico. Por ello se requiere, asimismo, que exista un n&#250;mero suficiente de puntos para estimar correctamente el variograma. A partir de los valores del variograma, se estima un vector de pesos que, multiplicado por el vector de valores de los puntos de influencia, da el valor estimado." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="la capa de puntos que se desea interpolar." description="Capa de puntos" type="3">
+		</element>
+		<element name="FIELD" text="el campo que contiene el valor a interpolar para cada punto.  " description="Campo" type="3">
+		</element>
+		<element name="DIST" text="la distancia dentro del cual se consider&#225;n todos los puntos de observaci&#243;n (unidades propias de la capa). S&#243;lo los puntos dentro del radio de b&#250;squeda se utilizan, por lo que es conveniente utilizar un radio m&#237;nimo que asegure que alrededor de todas las celdas se encuentra un n&#250;mero suficiente de puntos." description="Radio de b&#250;squeda" type="3">
+		</element>
+		<element name="MINPOINTS" text="el m&#237;nimo n&#250;mero de puntos que se van a utilizar en la predicci&#243;n. Si existen menos puntos cercanos que este m&#237;nimo, la celda recibe el valor de sin datos." description="M&#237;nimo n&#250;mero de puntos" type="3">
+		</element>
+		<element name="MAXPOINTS" text="el m&#225;ximo n&#250;mero de puntos que se van a utilizar en la predicci&#243;n." description="M&#225;ximo n&#250;mero de puntos" type="3">
+		</element>
+		<element name="MODEL" text="el modelo del semivariograma a ser usado:&#10;* Esf&#233;rico (&#233;ste es el usado por defecto)&#10;* Exponencial&#10;* Gaussiano" description="Modelo" type="3">
+		</element>
+		<element name="NUGGET" text="el valor en el que el modelo del semivariograma intersecta el eje-y." description="Nugget" type="3">
+		</element>
+		<element name="SILL" text="el valor del semivariograma para el rango. El m&#225;ximo del variograma. Representa la m&#225;xima variabilidad en ausencia de dependencia espacial." description="Sill" type="3">
+		</element>
+		<element name="RANGE" text="la distancia a la que deja de haber correlaci&#243;n espacial." description="Rango" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="CROSSVALIDATION" text="contiene los siguientes campos: X, Y, valor real, valor estimado, diferencia. El valor estimado es el valor que le corresponder&#237;a a un punto si se interpola todos los puntos menos el punto en cuesti&#243;n." description="Validaci&#243;n cruzada" type="2">
+			<image description="" file="kriging_tabla.jpg">
+			</image>
+		</element>
+		<element name="VARIANCE" text="" description="Varianzas" type="2">
+			<image description="" file="kriging_varianzas.jpg">
+			</image>
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+			<image description="" file="kriging_interpolado.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

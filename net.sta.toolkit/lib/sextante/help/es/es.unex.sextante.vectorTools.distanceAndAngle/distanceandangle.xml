@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la distancia y el &#225;ngulo entre entidades de capas vectoriales.&#10;Como entradas se requiere dos capas vectoriales A y B (no necesariamente distintas) con sus respectivos atributos ID (UID_A y UID_B) para identificar cada elemento en capa de salida. Se recomienda usar como atributos ID campos que sean &#250;nicos para cada elemento.&#10;&#10;La capa de salida resultante ser&#225; una l&#237;nea que unir&#225; el centroide de cada entidad de la capa de entrada A con el centroide de la capa de entrada B. Esta capa de salida tendr&#225; los siguientes atributos:&#10;&#10;- UID_A: ID de la capa de entrada A&#10;- UID_B: ID de la capa de entrada B&#10;- MIN_DIST: M&#237;nima distancia entre las geometr&#237;as&#10;- CENTR_DIST: Distancia entre los centroides&#10;- HAUSD_DIST: Aproximaci&#243;n a la distancia de Hausdorff&#10;- BEARING: Rumbo en grados correspondiente al &#225;ngulo medido en el plano horizontal entre el norte y el sentido de avance (medido de 0&#186; a 360&#186; entre los centroides). Devuelve '-1' en caso de no existir rumbo.&#10;&#10;En caso de que existan geometr&#237;as con muchos v&#233;rtices puede resultar recomendable utilizar las opciones de aplicar Convex Hull a las capas de entrada. Esta simplificaci&#243;n incrementar&#225; la velocidad de ejecuci&#243;n del algoritmo." description="Descripci&#243;n" type="0">
+			<image description="Figura: Ejemplo de c&#225;lculo de distancia y &#225;ngulos" file="distanceAndAngles.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="La aproximaci&#243;n a la distancia de Hausdorff se ha hecho usando la librer&#237;a JCS (Java Conflation Suite) de vividsolutions. &#10;&#10;M&#225;s informaci&#243;n en:&#10;http://en.wikipedia.org/wiki/Hausdorff_distance&#10;http://en.wikipedia.org/wiki/Bearing_%28navigation%29&#10;&#10;" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Juan Ignacio Varela (Nacho Uve)" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Nacho Varela" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER1" text="Capa vectorial de entrada 1" description="Capa 1" type="3">
+		</element>
+		<element name="ID1" text="Atributo identificativo de la capa 1" description="Atributo ID 1" type="3">
+		</element>
+		<element name="CONVEXHULL1" text="Simplificar geometr&#237;as de la capa 1 con la operaci&#243;n ConvexHull" description="ConvexHull de capa 1" type="3">
+		</element>
+		<element name="LAYER2" text="Capa vectorial de entrada 2" description="Capa 2" type="3">
+		</element>
+		<element name="ID2" text="Atributo identificativo de la capa 2" description="Atributo ID 2" type="3">
+		</element>
+		<element name="CONVEXHULL2" text="Simplificar geometr&#237;as de la capa 2 con la operaci&#243;n ConvexHull" description="ConvexHull de capa 2" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="LINES" text="" description="Lineas_Dist_Angulos" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text='Este algoritmo analiza la l&#237;nea de visi&#243;n entre dos puntos para una onda electromagn&#233;tica de unas caracter&#237;sticas dadas. Para ello, traza la denominada "zona de Fresnel", que representa el volumen entre el emisor y el receptor para el cual el desfase de las ondas dentro de dicho volumen no supera los 180&#186;. PAra garantizar la recepci&#243;n de la onda por parte del receptor no basta el que exista una linea directa de visi&#243;n entre &#233;ste y el emisor, sino que toda la zona de Fresnel ha de estar libre de obst&#225;culos.&#10;' description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="* http://es.wikipedia.org/wiki/Zona_de_Fresnel&#10;* http://asterion.almadark.com/2008/11/30/las-zonas-fresnel-y-el-alcance-de-los-equipos-de-radio-frecuencia/" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="Un Modelo Digital de Elevaciones" description="MDE" type="3">
+		</element>
+		<element name="POINT" text="Las coordenadas del punto emisor" description="punto 1" type="3">
+		</element>
+		<element name="POINT2" text="Las coordenadas del punto receptor" description="punto 2" type="3">
+		</element>
+		<element name="HEIGHT" text="La altura del elemento emisor sobre la elevaci&#243;n propia del terreno" description="Altura del punto1" type="3">
+		</element>
+		<element name="HEIGHT2" text="La altura del elemento receptor sobre la elevaci&#243;n propia del terreno" description="Altura del punto2" type="3">
+		</element>
+		<element name="LAMBDA" text="La longitud de la onda a estudiar" description="Longitud de onda" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="GRAPH" text="Un gr&#225;fico con el perfil de la l&#237;nea receptor-emisor, la zona de Fresnel y la l&#237;nea de visi&#243;n directa entre emisor y receptor." description="L&#237;nea de visi&#243;n" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

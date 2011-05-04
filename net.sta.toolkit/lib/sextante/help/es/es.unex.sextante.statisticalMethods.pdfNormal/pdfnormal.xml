@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula, a partir de una capa raster, la probabilidad de ocurrencia del valor en cada celda, seg&#250;n una funci&#243;n de probabilidad normal." description="Descripci&#243;n" type="0">
+			<image description="" file="dis_prob_normal3.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="la capa con los valores de los que se quiere conocer su probabilidad." description="Capa raster" type="3">
+		</element>
+		<element name="MEAN" text="" description="Media" type="3">
+		</element>
+		<element name="STDDEV" text="" description="Desviaci&#243;n t&#237;pica" type="3">
+		</element>
+		<element name="CDF" text="si se activa esta opci&#243;n el modulo extrae la probalidad acumulada." description="Probabilidad acumulada" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="PROBABILITY" text="nueva capa raster de distribuci&#243;n de probabilidad normal." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

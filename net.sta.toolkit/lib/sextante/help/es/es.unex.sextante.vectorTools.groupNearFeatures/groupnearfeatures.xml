@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo agrupa (clasifica) entidades a una distancia pr&#243;xima. Para ello, crea una copia de la capa vectorial de entrada y asigna a cada entidad un n&#250;mero en el atributo 'GROUP_ID' dependiendo de su pertenencia a un grupo u otro. El algoritmo requiere como par&#225;metro de entrada un valor de tolerancia que determinar&#225;n la zona de influencia de las agrupaciones. &#10;&#10;El n&#250;mero resultante de grupos (clases) no es un par&#225;metro seleccionable por el usuario, sino que el algoritmo lo calcula de forma din&#225;mica en tiempo de ejecuci&#243;n." description="Descripci&#243;n" type="0">
+			<image description="Figura: Ejemplo de Agrupaci&#243;n de entidades cercanas" file="groupnearfeatures.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="Palabras relacionadas: clasificar, clasificaci&#243;n, cluster" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Juan Ignacio Varela (Nacho Uve)" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Nacho Varela" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de entrada a agrupar" description="Capa" type="3">
+		</element>
+		<element name="TOLERANCE" text="Distancia de zona de influencia de los grupos" description="Torelance" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa de salida con un campo 'GROUP_ID'" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

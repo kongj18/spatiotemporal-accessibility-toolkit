@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula el centro mediano, se&#241;alandolo como la intersecci&#243;n entre dos l&#237;neas, una vertical y otra horizontal. Las l&#237;neas del centro mediano dividen el conjunto de puntos en partes iguales.&#10;&#10;Por ejemplo, para la vertical que pasa por la componente en x del centro mediano, y si se trabaja con una serie de puntos que representan poblaciones, ponderando &#233;stos seg&#250;n su n&#250;mero de habitantes, esta l&#237;nea divide el territorio en dos zonas igualmente pobladas. La mitad de los habitantes viven a un lado de ella, y la otra mitad al otro lado." description="Descripci&#243;n" type="0">
+			<image description="" file="centro_mediano.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="La capa de puntos de entrada" description="Puntos" type="3">
+		</element>
+		<element name="FIELD" text="seleccionar un campo num&#233;rico de la tabla de atributos de la capa de entrada Puntos con el que se quiere realizar una ponderaci&#243;n. En caso de elegir el metodo de Centro mediano  en lugar de Centro mediano ponderado, este campo se ignora." description="Ponderaci&#243;n" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* Centro mediano.&#10;* Centro mediano ponderado." description="M&#233;todo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="crea una nueva capa representando el centro mediano y con l&#237;neas de divisi&#243;n pasando por &#233;ste, las cuales dividen el conjunto de puntos en dos partes iguales a este y oeste, y norte y sur, respectivamente." description="Centro mediano" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

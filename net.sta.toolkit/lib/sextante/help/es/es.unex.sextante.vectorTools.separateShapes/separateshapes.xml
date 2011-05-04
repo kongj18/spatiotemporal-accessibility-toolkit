@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Dada una capa con multiples entidades, este algoritmo genera tantas capas como entidades existan, una para cada una de ellas." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="Este algoritmo genera un numero de capas de salida variable, en funci&#243;n del n&#250;mero de entidades de la capa de entrada. Por ello, no puede emplearse en el modelizador." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa a separar" description="Capa" type="3">
+		</element>
+		<element name="FIELD" text="Un campo de la capa de entrada a utilizar para nombrar las capas resultantes." description="Campo para etiquetado" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text='En el campo "Resultado" debe seleccionarse el nombre de un fichero de salida. &#201;ste sera utilizado como patr&#243;n para nombrar todos los ficheros generados, que llevar&#225;n el mismo nombre, a&#241;adi&#233;ndole el valor correspondiente a la entidad que contiene la capa, tomada del campo seleccionado en "Campo para etiquetado".' description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

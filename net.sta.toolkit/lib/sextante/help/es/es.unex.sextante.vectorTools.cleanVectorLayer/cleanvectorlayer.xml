@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo elimina de una capa vectorial aquellas entidades que presenten elementos erroneos en su tabla, tales como valores inexistentes. Se crea una nueva capa que contiene solo las entidades con registros v&#225;lidos.&#10;&#10;Este algoritmo no comprueba errores de otro tipo, tales como errores geom&#233;tricos o errores topol&#243;gicos." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa a limpiar" description="Capa" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa resultante, con todos sus registros v&#225;lidos. Esta capa puede emplearse con seguridad como entrada en otro algoritmo de SEXTANTE que use capas vectoriales." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

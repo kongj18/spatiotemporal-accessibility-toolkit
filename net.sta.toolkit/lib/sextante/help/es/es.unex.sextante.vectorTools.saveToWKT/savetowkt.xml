@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo exporta una capa vectorial en formato Well Known Text (WKT)" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="http://es.wikipedia.org/wiki/Well_Known_Text" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa a exportar" description="Capa" type="3">
+		</element>
+		<element name="FILENAME" text="El archivo de salida en el que se desea exportar la capa seleccionada." description="Archivo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="El algoritmo no produce salidas, ya que el archivo creado no es abierto posteriormente." description="Descripci&#243;n" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo suaviza una capa de lineas, a&#241;adiendo nodos adicionales que definen un trazado m&#225;s redondeado y menos anguloso.&#10;&#10;El suavizado se realiza empleando funciones matem&#225;ticas, existiendo diversas opciones." description="Descripci&#243;n" type="0">
+			<image description="En negro, l&#237;nea original. En rojo, l&#237;nea suavizada" file="lines.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de l&#237;neas a suavizar" description="L&#237;neas" type="3">
+		</element>
+		<element name="INTERMEDIATE_POINTS" text="Numero de puntos intermedios a a&#241;adir. Un valor mayor de este par&#225;metro implica un mayor suavizado, pero tambi&#233;n un mayor volumen de datos resultante, al aumentar el n&#250;mero de nodos de la l&#237;nea." description="Puntos intermedios" type="3">
+		</element>
+		<element name="CURVE_TYPE" text="Tipo de funci&#243;n matem&#225;tica a emplear para el suavizado." description="Tipo de curva" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Capa resultante con l&#237;neas suavizadas." description="L&#237;neas suavizadas" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo ampl&#237;a la tabla de atributos de una capa vectorial, a&#241;adiendo los valores que aparecen en los extremos de cada l&#237;nea en una serie de capas raster.&#10;&#10;El resultado es una nueva capa raster con las mismas lineas y campos nuevos en su tabla de atributos, dos por cada capa raster seleccionada, correspondientes al valor de dicha capa en los puntos inicial y final de la l&#237;nea." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Nacho Varela" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de entrada" description="Capa_de_lineas" type="3">
+		</element>
+		<element name="GRIDS" text="Las capas raster de las que tomar los valores." description="Capas raster" type="3">
+		</element>
+		<element name="INTERPOLATE" text="si se selecciona esta opci&#243;n el valor de celda de los puntos es calculado mediante interpolaci&#243;n. Si no se selecciona, se toma el valor del centro de celda." description="Usar interpolaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa resultante, con campos adicionales en su tabla de atributos" description="L&#237;neas con puntos extremos muestreados" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

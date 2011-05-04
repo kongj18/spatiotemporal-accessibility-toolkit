@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo a&#241;ade un nuevo campo a la tabla de atributos de una capa vectorial" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Antonio Falciano" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="La capa en cuya tabla de atributos se quiere a&#241;adir un nuevo campo" description="Capa" type="3">
+		</element>
+		<element name="FIELD_NAME" text="El nombre del campo a a&#241;adir" description="Nombre de campo" type="3">
+		</element>
+		<element name="FIELD_TYPE" text="El tipo de campo que se desea a&#241;adir, a elegir entre las siguiente opciones:&#10;&#10;" description="Tipo de campo" type="3">
+		</element>
+		<element name="FIELD_LENGTH" text="El tama&#241;o del campo" description="Field length" type="3">
+		</element>
+		<element name="FIELD_PRECISION" text="La precisi&#243;n (n&#250;mero de cifras decimales) en el caso de que el campo sea de tipo Double" description="Field_precision_Double_only)" type="3">
+		</element>
+		<element name="DEFAULT_VALUE" text="Valor por defecto. Una vez creado el campo, se rellenar&#225; con ese valor para todas las entidades." description="Valor por defecto" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa vectorial resultante, con las mismas geometr&#237;as que la capa de entrada y una tabla de atributos extendida con el campo definido y el valor por defecto establecido." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo une subtramos de lineas recogidos en geometr&#237;as distintas, en una &#250;nica geometr&#237;a. Para ello, se sirve de una tolerancia establecida por el usuario, de forma que dos geometrias se consideran parte de una misma l&#237;nea si el punto final de la primera y el inicial de la segunda est&#225;n a una distancia menor que dicha tolarancia.&#10;&#10;Para que, situ&#225;ndose a una distancia menor de la tolerancia, dos l&#237;neas se unan, tienen que estar digitalizadas en el mismo sentido. Si la l&#237;nea resultante esta formada por m&#225;s de dos l&#10;&#10;La l&#237;nea resultante de la uni&#243;n tiene asociados los atributos de la primera sub-geometr&#237;a, siendo &#233;sta la primera en el sentido en el que se encuentran digitalizadas." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa con los tramos de l&#237;neas a unir" description="Capa de entrada" type="3">
+		</element>
+		<element name="TOLERANCE" text="La distancia m&#225;xima para considerar que dos l&#237;neas deben unirse. Esta es la distancia m&#225;xima que debe existir entre los puntos inicial y final de ambas l&#237;neas." description="Tolerancia" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa con las l&#237;neas unidas." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula una serie de par&#225;metros que definen la relaci&#243;n entre el valor de una variable existente en un punto dado y los de la misma variable en el entorno cercano de dicho punto. &#10;&#10;Estos par&#225;metros permiten establecer si existe alguno de los siguientes tipos de autocorrelaci&#243;n espacial:&#10;&#10;* Autocorrelaci&#243;n espacial positiva: si las entidades cercanas se parecen mucho entre s&#237;.&#10;* Autocorrelaci&#243;n espacial negativa: si las entidades cercanas difieren mucho entre s&#237;.&#10;* Ausencia de autocorrelaci&#243;n espacial (independencia)." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="Informaci&#243;n adicional los par&#225;metros calculados se puede encontrar en las siguientes referencias&#10;&#10;c de Geary&#10;&#10;*http://en.wikipedia.org/wiki/Geary%27s_C [en ingl&#233;s]&#10;*Geary, R.C. (1954), The Contiguity Ratio and Statistical Mapping, The Incorporated Statistician, 5, 115-145.&#10;&#10;I de Moran&#10;&#10;*http://en.wikipedia.org/wiki/Moran's_I   [en ingl&#233;s]&#10;*Moran, P.A.P. (1950), Notes on Continuous Stochastic Phenomena, Biometrika, 37, 17-33." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="a elegir entre las capas de puntos de una vista." description="Puntos" type="3">
+		</element>
+		<element name="FIELD" text="variable que se quiere estudiar." description="Campo" type="3">
+		</element>
+		<element name="INTERVAL" text="distancia que se quiere aplicar para la autocorrelaci&#243;n." description="Intervalo de distancia" type="3">
+		</element>
+		<element name="CREATECLOUD" text="si se activa esta opci&#243;n se crea una tabla con todos los valores de semivarianza entre todos los puntos." description="Crear tabla con nube del variograma" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Correlaci&#243;n espacial" type="2">
+			<image description="" file="autocorrelacion_espacial.jpg">
+			</image>
+			<image description="" file="nube_del_variograma.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

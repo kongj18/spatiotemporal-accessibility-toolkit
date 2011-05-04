@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="This algorithm generates two new layers, creating one surface area of estimated values from a series of exact values through the interpolation method of Universal Kriging.&#10;&#10;The method is based on a previous spatial autocorrelation analysis of the variable through the theoretical veriograma. One characteristic of this method is that this is used when the estacionariedad de primer orden cannot be assumed and a marked tendency (tendencia) in the estimated mean value in different points  (gradual tendency of data).&#10;&#10;The variable for estimation is made up of two components, the tendency and the residual. First the tendency is shown through a polinomic function, calculating the averages of the weights  of the points calcul&#225;ndose el promedio de los pesos de los puntos en el &#225;mbito de la vecindad del valor que se va a estimar; eliminada la tendencia que rompia la asunci&#243;n de estacionariedad, los residuales se convierten en estacionarios y sobre ellos se realiza el kriging. After the interpolated residues will be added to the tendency to calculate the estimated values. " description="Description" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Additional information" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Extension created by" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya" description="Help file created by" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="User_notes" type="0">
+		</element>
+		<element name="LAYER" text="The points layer for interpolation." description="Point layer" type="3">
+		</element>
+		<element name="FIELD" text="the field that contains the value for interpolation for each point. " description="Field" type="3">
+		</element>
+		<element name="DIST" text="the distance within which all are considered observation points  (same unit as the layer). Only the points within the search radius are used which makes it convinient to use a minimum radius to be assured that sufficient number of  points will be found around all the cells." description="Search radius" type="3">
+		</element>
+		<element name="GRIDS" text="select the layers that will act as predictives." description="Predictors" type="3">
+		</element>
+		<element name="MINPOINTS" text="the minimum number of points that will be used  in the forecast. If there are less points near the cell than the minimum specified, this cell will recieve a no data value." description="M&#237;nimo_numero_puntos" type="3">
+		</element>
+		<element name="MAXPOINTS" text="the maximum number of points that will be used for the forecast." description="M&#225;ximo_numero_puntos" type="3">
+		</element>
+		<element name="MODEL" text="the semivariogram model that may be used:&#10;* Spherical&#10;* Exponential&#10;* Gaussian" description="Model" type="3">
+		</element>
+		<element name="NUGGET" text="the value in which the semivariogram model intersects with the y axis." description="Nugget" type="3">
+		</element>
+		<element name="SILL" text="the value of the semivariogram for the range." description="Sill" type="3">
+		</element>
+		<element name="RANGE" text="the distance where no more spatial correlation exists." description="Range" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Description" type="2">
+		</element>
+		<element name="CROSSVALIDATION" text="" description="Cross validation" type="2">
+			<image description="" file="kriging_uni_tabla.jpg">
+			</image>
+		</element>
+		<element name="VARIANCE" text="" description="Variances" type="2">
+			<image description="" file="kriging_uni_varianza.jpg">
+			</image>
+		</element>
+		<element name="RESULT" text="" description="Result" type="2">
+			<image description="" file="kriging_uni_interpolado.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula el &#237;ndice de vegetaci&#243;n Transformed Vegetation Index (TVI) (Deering et al., 1975). Este &#237;ndice modifica el NVDI a&#241;adiendo una constante de 0.50 para todos los valores y tomando la ra&#237;z cuadrada. El &#237;ndice es el resultado de la siguiente formula:" description="Descripci&#243;n" type="0">
+			<image description="" file="tvi.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="* Deering DW, Rouse JW, Haas RH and Schell JA. 1975. Measuring Forage Production of Grazing Units From Landsat MSS Data. Proceedings of the 10th International Symposium on Remote Sensing of Environment II. 1169-1178.&#10;" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYERRED" text="seleccionar la capa raster con valores de la banda del rojo." description="Capa rojo" type="3">
+		</element>
+		<element name="BANDRED" text="seleccionar la banda del rojo." description="Banda rojo" type="3">
+		</element>
+		<element name="LAYERNIR" text="seleccionar la capa raster con valores de la banda del infrarrojo cercano." description="Capa infrarrojo cercano" type="3">
+		</element>
+		<element name="BANDNIR" text="seleccionar la banda del infrarrojo." description="Banda infrarrojo cercano" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

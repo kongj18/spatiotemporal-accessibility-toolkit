@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una capa raster interpolando a partir de una capa de puntos mediante el m&#233;todo de v&#233;cino m&#225;s pr&#243;ximo. El valor asignado a cada celda es el correspondiente al punto m&#225;s cercano." description="Descripci&#243;n" type="0">
+			<image description="" file="../es.unex.sextante.rasterize.nearestNeighbour/nn.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de puntos de partida" description="Capa de puntos" type="3">
+		</element>
+		<element name="FIELD" text="El campo de la tabla de atributos asociada a la tabla que contiene los valores a usar para la interpolaci&#243;n." description="Campo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La capa raster interpolada a partir de los puntos de entrada mediante el m&#233;todo de vecino m&#225;s pr&#243;ximo." description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

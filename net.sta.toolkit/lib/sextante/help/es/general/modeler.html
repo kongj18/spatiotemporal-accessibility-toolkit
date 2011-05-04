@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>El modelizador gráfico</TITLE>
+<META NAME="description" CONTENT="El modelizador gráfico">
+<META NAME="keywords" CONTENT="ManualElementosSEXTANTE">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="ManualElementosSEXTANTE.css">
+
+</HEAD>
+
+<BODY >
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html166"
+  HREF="node5.html#SECTION00510000000000000000">Introducción</A>
+<LI><A NAME="tex2html167"
+  HREF="node5.html#SECTION00520000000000000000">Definición de entradas</A>
+<LI><A NAME="tex2html168"
+  HREF="node5.html#SECTION00530000000000000000">Definición de procesos</A>
+<LI><A NAME="tex2html169"
+  HREF="node5.html#SECTION00540000000000000000">Edición del modelo sobre el lienzo</A>
+<LI><A NAME="tex2html170"
+  HREF="node5.html#SECTION00550000000000000000">Almacenamiento y recuperación de modelos</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00500000000000000000">
+El modelizador gr&#225;fico</A>
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION00510000000000000000">
+Introducci&#243;n</A>
+</H1>
+
+<P>
+El <SPAN  CLASS="textit">modelizador gr&#225;fico</SPAN> permite combinar varios algoritmos gr&#225;ficamente, creando un proceso mayor que engloba varios subprocesos (algoritmos). 
+
+<P>
+Cuando se trabaja con un SIG, la mayor&#237;a de las operaciones est&#225;n separadas entre s&#237;. Con el modelizar gr&#225;fico las distintos an&#225;lisis se pueden encadenar para conseguir un proceso que englobe a varios algoritmos. De este modo, un s&#243;lo algoritmo, que se ha definido con el modelizador, puede ejecutar diferentes algoritmos, consiguiendo un mayor ahorro de tiempo y esfuerzo, especialmente para modelos complejos y largos. Procesos que implican varios pasos puede reducirse as&#237; a uno &#250;nico, definiendo el flujo de datos entre los distintos algoritmos involucrados.
+
+<P>
+El modelizador cuenta con un lienzo de trabajo donde se ve la estructura del modelo planteado, y en la parte izquierda un conjunto de elementos que se pueden a&#241;adir al modelo para ir conform&#225;ndolo progresivamente.
+<BR>
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="718" HEIGHT="503" ALIGN="BOTTOM" BORDER="0"
+ SRC="./modelizador.png"
+ ALT="Image modelizador">
+
+</DIV>
+
+<P>
+La creaci&#243;n de un modelo implica 2 pasos:
+
+<UL>
+<LI><SPAN  CLASS="textit">Definici&#243;n de las entradas necesarias</SPAN>. &#201;stas ser&#225;n las que se le pidan al usuario que ejecute la extensi&#243;n para llevar a cabo el correspondiente an&#225;lisis. El modelo que se crea es en s&#237; mismo un algoritmo de SEXTANTE y se relaciona como tal con los distintos elementos de la librer&#237;a SEXTANTE.
+</LI>
+<LI><SPAN  CLASS="textit">Definici&#243;n del flujo de datos</SPAN>. Establecer c&#243;mo los datos seleccionados por el usuario y los generados por las distintas extensiones han de usarse para alimentar los procesos que componen el modelo. 
+</LI>
+</UL>
+
+<P>
+
+<H1><A NAME="SECTION00520000000000000000">
+Definici&#243;n de entradas</A>
+</H1>
+
+<P>
+El primer paso para definir el modelo es la definici&#243;n de las entradas. En la pesta&#241;a <SPAN  CLASS="textit">entradas</SPAN> de la parte izquierda de la ventana encontramos las siguientes opciones:
+
+<P>
+
+<UL>
+<LI>Banda
+</LI>
+<LI>Capa raster 
+</LI>
+<LI>Capa vectorial 
+</LI>
+<LI>Cadena de texto
+</LI>
+<LI>Campo de tabla
+</LI>
+<LI>Coordenada (Punto)  
+</LI>
+<LI>Tabla 
+</LI>
+<LI>Tabla fija
+</LI>
+<LI>Entrada m&#250;ltiple
+</LI>
+<LI>Selecci&#243;n 
+</LI>
+<LI>Valor num&#233;rico 
+</LI>
+<LI>Valor booleano 
+</LI>
+</UL>
+
+<P>
+Haciendo doble clic sobre cada uno de ellos, aparece una ventana intermedia en la que podemos definir los par&#225;metros particulares de esa entrada. Ser&#225; preciso siempre asignarle una descripci&#243;n, que es lo que el usuario ver&#225; una vez se ejecute el modelo. Algunas entradas, por su parte, requieren informaci&#243;n adicional. As&#237;, como se ve en la siguiente imagen, si se a&#241;ade un valor num&#233;rico, es necesario especificar si se desea que est&#233; acotado superior e inferiormente, el tipo de valor que es (entero o real), o el valor por defecto que tendr&#225;.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="390" HEIGHT="233" ALIGN="BOTTOM" BORDER="0"
+ SRC="./valor_numerico.png"
+ ALT="Image valor_numerico">
+
+</DIV>
+
+<P>
+Por cada entrada a&#241;adida se coloca un elemento en el lienzo, se&#241;alado con un signo de suma.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="361" HEIGHT="86" ALIGN="BOTTOM" BORDER="0"
+ SRC="./entradas_modelo.png"
+ ALT="Image entradas_modelo">
+
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00530000000000000000">
+Definici&#243;n de procesos</A>
+</H1>
+
+<P>
+Una vez que se han definido las entradas, debe definirse el conjunto de procesos que se van utilizar con ellas. Para ello, deben escogerse los distintos algoritmos de la pesta&#241;a <SPAN  CLASS="textit">Procesos</SPAN>, en la cual se encuentran &#233;stos del mismo modo que en el gestor de extensiones habitual. 
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="748" HEIGHT="528" ALIGN="BOTTOM" BORDER="0"
+ SRC="./modelizador2.png"
+ ALT="Image modelizador2">
+
+</DIV>
+
+<P>
+Haciendo doble clic sobre cualquiera de las extensiones, aparece un cuadro de di&#225;logo similar al que encontramos si llamamos a esa misma extensi&#243;n desde el gestor de extensiones de SEXTANTE. 
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="490" HEIGHT="336" ALIGN="BOTTOM" BORDER="0"
+ SRC="./proceso.png"
+ ALT="Image proceso">
+
+</DIV>
+
+<P>
+Encontramos, no obstante, algunas diferencias. En primer lugar, no existen varias pesta&#241;as, sino &#250;nicamente la correspondiente a los par&#225;metros. En segundo lugar, para las salidas generadas por la extensi&#243;n, no existe la posibilidad de seleccionar si se grabar&#225;n en un archivo temporal o especificar el archivo que se desea utilizar. En su lugar, debe introducirse una descripci&#243;n para la salida e indicar si se desea que esa salida se incorpore a la vista al acabar de procesar el modelo.
+
+<P>
+Si no se marca la casilla correspondiente, esa salida se genera y puede ser empleada como entrada para otro proceso, pero despu&#233;s no se mantiene. Si, por el contrario, se marca la casilla, esa salida se generar&#225;, y ser&#225; el usuario en el momento de ejecutar el m&#243;dulo quien elija d&#243;nde desea guardarla. La descripci&#243;n que el usuario ver&#225; de ese resultado ser&#225; la que se a&#241;ada en este paso al definir el modelo.
+
+<P>
+La forma en que en estas ventanas de par&#225;metros pueden introducirse valores es, en cierta medida, distinta a la que se presenta en la ejecuci&#243;n aislada de una extensi&#243;n normal, adapt&#225;ndose al contexto del modelizador en el que se encuentran. A continuaci&#243;n se puede ver por separado, para cada tipo de par&#225;metro, siempre que existan diferencias apreciables.
+
+<P>
+
+<UL>
+<LI>Capas (raster y vectoriales) y tablas. Se seleccionan de modo similar en una lista desplegable. No obstante, las opciones disponibles no son las capas o tablas cargadas en el SIG, sino las capas o tablas que han sido definidas como entradas al modelo o bien han sido generadas en alguno de los procesos previamente introducidos.  
+</LI>
+<LI>Valores num&#233;ricos. Pueden introducirse valores fijos, simplemente tecle&#225;ndolos de la forma habitual. La caja de texto, no obstante, es tambi&#233;n un desplegable, y en &#233;l pueden seleccionarse los valores que en forma de par&#225;metros se hayan introducido en el modelo, siempre que el modelo tenga alguna entrada de tipo valor num&#233;rico. 
+</LI>
+<LI>Cadenas. Al igual que el caso anterior, puede teclearse directamente el valor o seleccionar una cadena de lista en caso de que exista alguna entrada compatible. 
+</LI>
+<LI>Puntos. No existe la posibilidad de seleccionar las coordenadas en este paso, sino &#250;nicamente tomar un punto que haya sido definido como entrada, y que ser&#225; especificado en el momento de ejecutar el modelo. 
+</LI>
+<LI>Bandas. No puede saberse, en el momento de definir un modelo, el n&#250;mero de bandas de la que depende un par&#225;metro de tipo banda. Por ello, se puede seleccionar bandas del 1 al 250, as&#237; como las bandas de entrada que hayan podido definirse en el modelo. La validez de esta banda se comprobar&#225; en tiempo de ejecuci&#243;n, y si la capa en cuesti&#243;n no posee dicha banda, el modelo arrojar&#225; un error y no se ejecutar&#225; correctamente. 
+</LI>
+<LI>Campo en tabla o capa. Al igual que en el caso anterior, los campos disponibles no pueden conocerse de antemano y mostrarse en una lista desplegable. Por ello, se ha de tomar, o bien un campo definido como entrada, y que el usuario lo seleccionar&#225; en el momento de ejecutar el modelo, o bien teclear directamente en nombre de dicho campo en la caja de texto. Si a la hora de ejecutar el modelo no existe un campo con dicho nombre, el modelo arrojar&#225; un error y no se ejecutar&#225; completamente. 
+</LI>
+<LI>Selecci&#243;n. Aparecen las opciones del algoritmo, y adem&#225;s aquellas entradas de tipo selecci&#243;n que se hayan definido en el modelo. 
+</LI>
+</UL>
+
+<P>
+Una vez que se rellenan los par&#225;metros y se hace clic en <SPAN  CLASS="textit">Aceptar</SPAN>, se a&#241;ade al lienzo de trabajo un nuevo elemento, se&#241;alado con un icono de proceso. &#201;ste se encuentra enlazado a todas aquellas entradas o procesos preexistentes de los cuales tome datos, conform&#225;ndose as&#237; la estructura del modelo.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="405" HEIGHT="364" ALIGN="BOTTOM" BORDER="0"
+ SRC="./modelo.png"
+ ALT="Image modelo">
+
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00540000000000000000">
+Edici&#243;n del modelo sobre el lienzo</A>
+</H1>
+
+<P>
+Una vez que el modelo ha sido dise&#241;ado y se han a&#241;adido todas las entradas y procesos que lo componen, puede ejecutarse pulsando el bot&#243;n <SPAN  CLASS="textit">Ejecutar</SPAN>. No obstante, puede editarse para incorporar modificaciones, sin necesidad de que ello suponga a&#241;adir nuevos elementos. Si cualquier algoritmo del modelo genera capas raster, la pesta&#241;a <SPAN  CLASS="textit">Salida raster</SPAN> ser&#225; a&#241;adida a la ventana. 
+
+<P>
+Por una parte, pueden moverse los distintos elementos para que la configuraci&#243;n sea m&#225;s clara que la que resulta por defecto y pueda verse de forma m&#225;s intuitiva el flujo de datos. Para ello, basta pinchar sobre el elemento y arrastrar &#233;ste hasta la nueva posici&#243;n. Los enlaces que muestran el flujo de datos entre procesos se actualizan inmediatamente.
+
+<P>
+Si se quieren cambiar los par&#225;metros de un proceso, puede hacerse doble clic sobre &#233;l y la ventana de par&#225;metros correspondiente volver&#225; a aparecer para que nuevos par&#225;metros sean seleccionados.
+
+<P>
+Para eliminar un proceso, debe hacerse clic con el bot&#243;n derecho sobre &#233;l y seleccionar el comando <SPAN  CLASS="textit">Eliminar</SPAN>. Si este proceso alimenta a otros procesos (es decir, otros procesos dependen de &#233;l), SEXTANTE mostrar&#225; un mensaje de error indicando que no puede eliminarlo. S&#243;lo pueden eliminarse aquellos procesos que, en el &#225;rbol del proceso global, se sit&#250;an en un extremo y no tienen otros procesos que se ejecuten en base a ellos.
+
+<P>
+
+<H1><A NAME="SECTION00550000000000000000">
+Almacenamiento y recuperaci&#243;n de modelos</A>
+</H1>
+
+<P>
+Una vez creado, un modelo puede almacenarse para futuros usos. Para ello, basta con hacer clic sobre el bot&#243;n <SPAN  CLASS="textit">Guardar</SPAN> y seleccionar el nombre del fichero que contendra el modelo, que ser&#225; un fichero XML con extensi&#243;n .<TT>model</TT>. Haciendo clic sobre el bot&#243;n <SPAN  CLASS="textit">Abrir</SPAN>, se abre un modelo ya guardado, pudiendo editarse o ejecutarse.
+
+<P>
+Los modelos guardados se podr&#225;n visualizarse, consultarse y ejecutarse en el gestor de extensiones de SEXTANTE, siempre que la carpeta de modelos seleccionada en la configuraci&#243;n de &#233;ste coincida con la carpeta de modelos establecida en SEXTANTE. Puedes configurar la carpeta de modelos abriendo el di&#225;logo de configuraci&#243;n (en el gestor de extensiones encontrar&#225;s un bot&#243;n en su parte inferior derecha) y haciendo clic despu&#233;s en el bloque de par&#225;metros de configuraci&#243;n denominado ``Carpetas''. Cuando se lanza el gestor de extensiones, SEXTANTE buscar&#225; en esa carpeta y cargar&#225; los modelos que en ella encuentre, a&#241;adi&#233;ndolos al &#225;rbol de algoritmos.
+
+<P>
+Los modelos aparecen en el &#225;rbol de algoritmos dentro del grupo seleccionado en el desplegable que encontrar&#225;s en la parte superior derecha de la ventana del modelizador. En esa lista tienes todos los nombres de los grupos ya existentes (en los que se agrupan los algoritmos que vienen de serie con SEXTANTE), as&#237; como un grupo llamado ``Modelos''. Si ninguno de ellos te parece adecuado para incluir en &#233;l tu modelo, puedes definir tu propio grupo tecleando sobre la caja de texto de la propia lista desplegable, ya que &#233;sta es editable. En la caja de texto contigua, introduce el nombre del modelo, que ser&#225; con el que aparezca en el &#225;rbol de algoritmos.
+
+<P>
+Aunque un modelo es un algoritmo de SEXTANTE como tal y no existe diferencia a la hora de ejecutarlo y usarlo, &#233;stos se muestran con un icono distinto para que sea m&#225;s sencillo reconocerlos.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="364" HEIGHT="196" ALIGN="BOTTOM" BORDER="0"
+ SRC="./modelosGuardados.png"
+ ALT="Image modelosGuardados">
+
+</DIV>
+
+<P>
+Los modelos guardados no s&#243;lo aparecer&#225;n en la ventana del gestor de extensiones, sino tambi&#233;n en el &#225;rbol de algoritmos de la pesta&#241;a <SPAN  CLASS="textit">Procesos</SPAN> de la ventana del modelizador gr&#225;fico. Esto significa que se puede incorporar un modelo a otro modelo, justamente igual que al a&#241;adir un algoritmo simple. 
+
+<P>
+La carpeta de modelos por defecto coincide con la carpeta de ayuda de SEXTANTE, y contiene algunos modelos de ejemplo que puedes abrir para estudiarlos y as&#237; comprender mejor el funcionamiento del modelizador. Los modelos tienen a su vez ayuda, que puedes tambi&#233;n consultar. No olvides que, como se ha dicho, un modelo es un algoritmo m&#225;s, por lo que su ayuda puede editarse de igual forma.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Victor Olaya
+2010-02-18
+</ADDRESS>
+</BODY>
+</HTML>
