@@ -2,14 +2,27 @@
 
 = Introduction =
 
-Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools.
+Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools. This has so far resulted in the library being made compatible with the popular GeoTools library.
 
-= Details =
+= Functionalities =
 
-Specific Functionalities:
   * create equal ranges of potential path areas (e.g. one area for every ten minutes up to a chosen time limit) *OR* discrete ranges for single or multiple time values (e.g. two areas for 12 and 44 minutes).  
   * Create both rings or disk areas
   * Output either as contours (polylines) or as areas (polygons)
+
+= Requirements =
+
+  * Topologically correct network dataset with one attribute field for each network element representing the speeds in Kmph of the movement across it 
+  * recommended that your system at least 2GB RAM (for large network datasets)
+
+= How it works =
+
+  * Calculate spatio-temporal distance from origin to all network nodes using Dijkstra Algorithm (GeoTools) 
+  * Build a triangulation of these nodes
+  * contour the triangulation using the values supplied by the user as the breaks
+  * Polygonize (Sextante) the contours if required to produce areas
+
+
 
 *Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich, Switzerland*
 
