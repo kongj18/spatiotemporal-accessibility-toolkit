@@ -7,11 +7,19 @@ Project that aims to allow the dynamic creation of potential path areas compatib
 = Details =
 
 Specific Functionalities:
-  * create equal ranges of potential path areas (e.g. one area for every ten minutes up to a chosen time limit) *OR* discrete ranges for single or multiple time values (e.g. two areas for 15 and 45 minutes).  
-  * create single or discrete of potential path areas, e.g. one area for every ten       minutes up to a chosen limit
-  * Create both rings and disks
-  * Output either as contours (polylines) or as Areas (polygons)
+  * create equal ranges of potential path areas (e.g. one area for every ten minutes up to a chosen time limit) *OR* discrete ranges for single or multiple time values (e.g. two areas for 12 and 44 minutes).  
+  * Create both rings or disk areas
+  * Output either as contours (polylines) or as areas (polygons)
 
-*Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich*
+*Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich, Switzerland*
 
 <img src="http://ploader.net/files/4b3fc7895ccf29c6ebb777267aac836c.png" border="5"/>
+
+
+*Image Below : discrete values for 10 minutes and 35 minutes for Zürich, Switzerland*
+
+<img src="http://ploader.net/files/6f414a8b75266a697c03a7153c8c2c80.png " border="5"/>
+
+*Image Below : discrete values represented as contours for 10 minutes and 35 minutes for Zürich, Switzerland*
+
+<img src="http://ploader.net/files/28c614ac90dd90bb7716373b8f444ce4.png" border="5"/>
