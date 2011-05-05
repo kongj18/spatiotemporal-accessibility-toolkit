@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools. This has so far resulted in the library being made compatible with the popular GeoTools library.
+Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6).
 
 = Functionalities =
 
