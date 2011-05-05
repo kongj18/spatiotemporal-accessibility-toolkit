@@ -12,7 +12,7 @@ Project that aims to allow the dynamic creation of potential path areas compatib
 
 = Requirements =
 
-  * Topologically correct network dataset with one attribute field for each network element representing the speeds in Kmph of the movement across it 
+  * Topologically correct network dataset with one attribute field (this field must be named _SpeedLimit_) for each network element representing the speeds in Kmph of the movement across it 
   * recommended that your system at least 2GB RAM (for large network datasets)
 
 = How it works =
