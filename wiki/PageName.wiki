@@ -17,10 +17,12 @@ Project that aims to allow the dynamic creation of potential path areas compatib
 
 = How it works =
 
-  * Calculate spatio-temporal distance from origin to all network nodes using Dijkstra Algorithm (GeoTools) 
+  * Calculate spatio-temporal distance from origin to all network nodes using Dijkstra Algorithm (using GeoTools graph library) 
   * Build a triangulation of these nodes
   * contour the triangulation using the values supplied by the user as the breaks
-  * Polygonize (Sextante) the contours if required to produce areas
+  * Polygonize (using Sextante) the contours if required to produce areas  
+  * Output is in the form of a GeoTools FeatureClass which contains either the contours or areas with each object also possessing a time attribute.
+  * Times to create these areas depends on number of unique break value and the speed of the system available, as a guide the three images below took 56 seconds, 7 seconds and 5 seconds respectively to produce on a system with 3.3Ghz and 8GB RAM.
 
 
 
