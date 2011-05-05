@@ -14,4 +14,4 @@ Specific Functionalities:
 
 *Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich*
 
-<img style="border:2px dotted #545565" src="http://www.freeimagehosting.net/uploads/4c65f966e5.png">
+<img src="http://ploader.net/files/4b3fc7895ccf29c6ebb777267aac836c.png" border="5"/>
