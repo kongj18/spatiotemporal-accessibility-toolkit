@@ -1,0 +1,17 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools.
+
+= Details =
+
+Specific Functionalities:
+  * create equal ranges of potential path areas (e.g. one area for every ten minutes up to a chosen time limit) *OR* discrete ranges for single or multiple time values (e.g. two areas for 15 and 45 minutes).  
+  * create single or discrete of potential path areas, e.g. one area for every ten       minutes up to a chosen limit
+  * Create both rings and disks
+  * Output either as contours (polylines) or as Areas (polygons)
+
+*Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich*
+
+<img style="border:2px dotted #545565" src="http://www.freeimagehosting.net/uploads/4c65f966e5.png">
