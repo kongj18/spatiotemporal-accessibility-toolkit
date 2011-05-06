@@ -1,4 +1,3 @@
-
 = Introduction =
 
 Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6).
@@ -12,7 +11,7 @@ Project that aims to allow the dynamic creation of potential path areas compatib
 = Requirements =
 
   * Topologically correct network dataset with one attribute field (this field must be named _SpeedLimit_) for each network element representing the speeds in Kmph of the movement across it 
-  * recommended that your system at least 2GB RAM (for large network datasets)
+  * recommended that your system has at least 2GB RAM (for large network datasets)
 
 = How it works =
 
