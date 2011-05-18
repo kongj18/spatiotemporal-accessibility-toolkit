@@ -1,6 +1,6 @@
 = Introduction =
 
-Project that aims to allow the dynamic creation of potential path areas compatible with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6).
+The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of potential path areas and to allow compatibility with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6).
 
 = Functionalities =
 
