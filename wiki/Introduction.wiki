@@ -35,4 +35,4 @@ The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of p
 
 *Image Below : discrete values represented as contours for 10 minutes and 35 minutes for Zürich, Switzerland*
 
-<img src="http://ploader.net/files/28c614ac90dd90bb7716373b8f444ce4.png" border="5"/>
+<img src="https://lh4.googleusercontent.com/-3Pc-7oW_9AE/Tl3dBKde5_I/AAAAAAAAA7Q/LzbvfL4Hrfk/s576/PPA_Example_discreteContour.png" border="5"/>
