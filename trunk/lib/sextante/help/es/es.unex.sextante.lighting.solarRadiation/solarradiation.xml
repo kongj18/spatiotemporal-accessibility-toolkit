@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n radiaci&#243;n solar calcula la energ&#237;a proveniente de la radiaci&#243;n solar que llega a cada celda del MDE. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="SOLARCONST" text="cantidad de energ&#237;a recibida en forma de radiaci&#243;n solar por unidad de tiempo y unidad de superficie.  " description="Constante solar [W/m&#178;]" type="3">
+		</element>
+		<element name="METHOD" text="el m&#233;todo a utilizar, a elegir entre los siguientes:&#10;* Transmitancia atmosf&#233;rica global.&#10;* Calculo individual de componentes. Seleccionar si se quiere realizar un calculo m&#225;s detallado, con distintos par&#225;metros relativos a la atm&#243;sfera como presi&#243;n atmosf&#233;rica, contenido de agua atmosf&#233;rico y polvo. " description="M&#233;todo" type="3">
+		</element>
+		<element name="TRANSMITTANCE" text="si se selecciona esta opci&#243;n como m&#233;todo (Transmitancia atmosf&#233;rica global), se utiliza un valor de transmitancia global, y no se hace un calculo detallado con los par&#225;metros siguientes. El valor de esa transmitancia debe introducirse en este campo. Por tanto, este valor, que por defecto es 70, quiere decir que de toda la energ&#237;a procedente del sol, s&#243;lo el 70 % alcanza la superficie terrestre tras atravesar la atm&#243;sfera.&#10;" description="Transmitancia global" type="3">
+		</element>
+		<element name="PRESSURE" text="" description="Presi&#243;n atmosf&#233;rica [mb]" type="3">
+		</element>
+		<element name="WATER" text="" description="Contenido de agua atmosf&#233;rico [cm]" type="3">
+		</element>
+		<element name="DUST" text="" description="Polvo [ppm]" type="3">
+		</element>
+		<element name="LATITUDE" text="La latitud de la zona a analizar, para calcular la posici&#243;n solar" description="Latitud [&#176;]" type="3">
+		</element>
+		<element name="HOURSTEP" text="cada d&#237;a se divide en periodos seg&#250;n un intervalo dado. Cuanto m&#225;s corto sea el interalo, m&#225;s calculos se realizan y m&#225;s tiempo dura el proceso, al tiempo que resulta m&#225;s preciso." description="Intervalo para calculo de insolaci&#243;n diaria [h]" type="3">
+		</element>
+		<element name="DAILYSTEP" text="el periodo total de c&#225;lculo se divide en subperiodos seg&#250;n un intervalo dado. Cuanto m&#225;s corto sea ese intervalo, m&#225;s calculos se realizan y m&#225;s tiempo dura el proceso, al tiempo que resulta m&#225;s preciso." description="Intervalo para calculo de insolacion global [d&#237;as]" type="3">
+		</element>
+		<element name="INITMONTH" text="" description="Mes inicial" type="3">
+		</element>
+		<element name="INITDAY" text="" description="D&#237;a inicial" type="3">
+		</element>
+		<element name="ENDMONTH" text="" description="Mes final" type="3">
+		</element>
+		<element name="ENDDAY" text="" description="D&#237;a final" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="TIME" text="Tiempo total durante el que la celda recibe radiaci&#243;n solar durante el periodo especificado." description="Tiempo de insolaci&#243;n" type="2">
+		</element>
+		<element name="RADIATION" text="suma de energ&#237;a recibida en la celda, en Kw/hora&#183;m2" description="Radiaci&#243;n solar" type="2">
+			<image description="" file="radiacion_solar.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

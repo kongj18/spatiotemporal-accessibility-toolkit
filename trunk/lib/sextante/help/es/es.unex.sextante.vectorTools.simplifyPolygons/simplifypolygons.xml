@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo simplifica una capa de pol&#237;gonos, reduciendo el n&#250;mero de nodos necesarios para representar &#233;stos. El n&#250;mero de puntos eliminados depende de un valor umbral establecido y los puntos a eliminar son seleccionados tratando de preservar la forma de los pol&#237;gonos en la mayor medida posible." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de pol&#237;gonos de entrada" description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="TOLERANCE" text="El valor de tolerancia a aplicar. Valores mayores implican una mayor reducci&#243;n, eliminandose m&#225;s puntos y dando lugar a formas m&#225;s angulosas." description="Tolerancia" type="3">
+		</element>
+		<element name="PRESERVE" text="si se selecciona este campo, el algoritmo preservar&#225; la topolog&#237;a al hacer la reducci&#243;n." description="Preservar topolog&#237;a" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n" type="2">
+		</element>
+		<element name="RESULT" text="La capa de pol&#237;gonos simplificados. La tabla de atributos de esta capa es identica a la de la capa de entrada." description="Pol&#237;gonos simplificados" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

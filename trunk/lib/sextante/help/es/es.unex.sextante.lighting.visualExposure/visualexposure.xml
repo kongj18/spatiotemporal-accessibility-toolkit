@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n Exposici&#243;n visual realiza un an&#225;lisis de visibilidad que permite conocer qu&#233; n&#250;mero de celdas es visible desde cada celda de un conjunto dado. Pueden ponderarse las celdas para adjudicar un significado m&#225;s concreto a estos valores. Por ejemplo, si ponderamos las celdas en funci&#243;n de su valor paisaj&#237;stico, el n&#250;mero de celdas vistas ser&#225; un indicador de la belleza esc&#233;nica de la misma. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="FEATURES" text="estos elementos deben contener cualquier valor num&#233;rico a excepci&#243;n de cero, mientras que las restantes celdas deben tener cero o bien ser celdas sin datos. El valor en la celda representa la altura del elemento." description="Elementos" type="3">
+		</element>
+		<element name="WEIGHTS" text="una capa que se quiera ponderar para el an&#225;lisis." description="Ponderaci&#243;n" type="3">
+		</element>
+		<element name="METHOD" text="el m&#233;todo a utilizar, a elegir entre los siguientes:&#10;* Irradiar valores: Las celdas emisoras (celdas de la capa Elementos) irradian sus valores de ponderaci&#243;n, y suman este a las celdas visibles dentro del radio de alcance. Dicho de otro modo, desde cada entidad de la capa Elementos se analiza todas las celdas que se ver&#237;an alrededor del valor del radio de alcance. Si si visualizan desde ese valor de radio de alcance se les a&#241;ade el valor de la ponderaci&#243;n. Los valores de exposici&#243;n visual quedan fuera de las celdas de cauce.&#10;* Colectar valores: Las celdas emisoras (celdas de la capa Elementos) colectan los valores de ponderaci&#243;n de las celdas visibles dentro del radio de alcance, sumando estos valores a la propia celda emisora. Dicho de otro modo, este m&#233;todo analiza que celdas, de la capa Elementos, se ver&#237;an fuera de la misma, sum&#225;ndose ese valor a las propias celdas de la capa Elementos. Los valores de la exposici&#243;n visual quedan en la propia capa de Elementos." description="M&#233;todo" type="3">
+		</element>
+		<element name="RADIUS" text="el valor debe estar en las mismas unidades de la vista. Es conveniente establecer un &#243;ptimo valor de radio de alcance debido a que esta extensi&#243;n requiere un elevado tiempo de ejecuci&#243;n. " description="Radio de alcance" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="el valor de cada celda (num&#233;rico entero) refleja el n&#250;mero de veces que  es visible desde cada una de las celdas restantes del elemento considerado." description="Exposici&#243;n visual" type="2">
+			<image description="" file="Exposicion visual.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

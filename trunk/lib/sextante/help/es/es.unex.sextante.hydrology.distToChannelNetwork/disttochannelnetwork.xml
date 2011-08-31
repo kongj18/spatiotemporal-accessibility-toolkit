@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la distancia hidrol&#243;gica entre cada celda y el cauce m&#225;s cercano a la misma." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="NETWORK" text="seleccionar una capa de red de drenaje, que debe contener valores v&#225;lidos en las celdas de cauce, y ser celdas sin datos las restantes. " description="Red de drenaje" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="DIST" text="los valores de distancia se expresan en las mismas unidades que el MDE o tama&#241;o de celda del mismo.&#10;&#10;Estas distancias a red de drenaje no son distancias eucl&#237;deas, sino hidrol&#243;gicas, tomando en consideraci&#243;n el propio movimiento del flujo a trav&#233;s del MDE." description="Distancia a red de drenaje" type="2">
+			<image description="Distancia a red de drenaje" file="distancia_a_red_de_drenaje.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

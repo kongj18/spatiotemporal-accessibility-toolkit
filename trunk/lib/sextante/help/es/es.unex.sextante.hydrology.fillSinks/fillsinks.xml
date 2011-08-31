@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text='Este algoritmo elimina las depresiones existentes en un MDE, "rellenandolas". Esta operaci&#243;n es un paso previo para poder analizar hidrol&#243;gicamente el MDE, posibilitando la asignaci&#243;n de direcciones de flujo en todas las celdas.&#10;&#10;Las depresiones se sustituyen por una superficie plana, o un plano inclinado, en funci&#243;n del &#225;ngulo m&#237;nimo entre celdas especificado. ' description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="El algoritmo implementado en esta extensi&#243;n se describe en&#10;&#10;*O. Planchon and F. Darboux. A fast, simple and versatile algorithm to fill the depressions of digital elevation models. Catena, 46:159-176, 2001." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones. " description="MDE" type="3">
+		</element>
+		<element name="MINSLOPE" text="&#193;ngulo del plano por el que se sustituyen las depresiones. Si este &#225;ngulo es cero, las depresiones se sustituyen por una superficie plana." description="&#193;ngulo m&#237;nimo entre celdas [&#176;]" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="nuevo MDE con depresiones rellenadas." description="Preprocesado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la funci&#243;n K de Ripley para un conjunto de puntos. Esta funci&#243;n se emplea para el an&#225;lisis de procesos puntuales, y para la determinaci&#243;n del tipo de distribuci&#243;n de estos, que puede ser aleatoria, agregada o regular:" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="Descripci&#243;n m&#225;s detallada del par&#225;metro se encuentra en&#10;&#10;*B.D. Ripley. Modelling spatial patterns. Journal of the Royal Statistical Society. Series B 30, pp 172{192, 1977.&#10;&#10;Mas informaci&#243;n en&#10;&#10;*http://www.revistaecosistemas.net/pdfs/448.pdf" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POINTS" text="Capa de puntos de entrada" description="Puntos" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="La tabla contiene los siguientes campos:&#10;* Distancia&#10;* K: K de ripley para la distancia anterior&#10;* K Te&#243;rica Poisson. K a la distancia anterior para una distribucion de Poisson (aleatoriedad completa)&#10;* L" description="K de Ripley" type="2">
+			<image description="" file="k_de_ripley.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

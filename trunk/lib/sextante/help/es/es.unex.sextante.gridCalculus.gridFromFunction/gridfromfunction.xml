@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera una nueva capa cuyos valores z, los contenidos en cada celda, dependen de las coordenadas x e y de cada una de ellas, seg&#250;n la expresi&#243;n:&#10;&#10;* z = f(x,y)&#10;&#10;Pueden utilizarse todas las funciones descritas en el modulo calculadora de mapas, incluyendo las funciones l&#243;gicas. La diferencia radica en que en esta ocasi&#243;n no se utiliza el valor de la celda en s&#237;, sino su posici&#243;n dentro de la malla de datos de la capa. &#10;&#10;Las coordenadas que se usan como valores x e y no son coordenadas reales (por ejemplo, coordenadas UTM), sino coordenadas definidas por el m&#243;dulo seg&#250;n un esquema muy sencillo. &#10;&#10;Hay cuatro valores de frontera: x Min, x Max, y Min e y Max. &#201;stos se definen en los campos del mismo nombre dentro de la ventana de par&#225;metros. Utilizando estos valores, que corresponden a los l&#237;mites indicados en las esquinas de la figura anterior, se define un sistema de coordenadas para la capa. El modulo calcula las coordenadas de las celdas en este sistema y esas coordenadas dan los valores a utilizar en la f&#243;rmula. De este modo, pueden obtenerse distintos resultados para una misma la f&#243;rmula." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="MINX" text="valor de frontera X Min." description="X min" type="3">
+		</element>
+		<element name="MAXX" text="valor de frontera X Max." description="X Max" type="3">
+		</element>
+		<element name="MINY" text="valor de frontera Y Min." description="Y Min" type="3">
+		</element>
+		<element name="MAXY" text="valor de frontera Y Max." description="Y Max" type="3">
+		</element>
+		<element name="FORMULA" text="la formula a utilizar. &#10;&#10;Pueden emplearse las siguiente funciones:&#10;&#10;* sin(x): devuelve el seno de x (x debe estar en radianes).&#10;* cos(x): devuelve el coseno de x (x debe estar en radianes).&#10;* tan(x): devuelve la tangente de x (x debe estar en radianes).&#10;* asin(x): devuelve el arcoseno de x (x debe estar en radianes).&#10;* acos(x): devuelve el arcocoseno de x (x debe estar en radianes).&#10;* atan(x): devuelve la arcotangente de x (x debe estar en radianes).&#10;* atan2(x/y): devuelve la arcotangente de x/y (x/y debe estar en radianes).&#10;* sinh(x): devuelve el seno hiperb&#243;lico de x (x debe estar en radianes).&#10;* cosh(x): devuelve el coseno hiperb&#243;lico de x (x debe estar en radianes).&#10;* atanh(x): devuelve la tangente hiperb&#243;lica inversa de x (x debe estar en radianes).&#10;* In(x): devuelve el logaritmo neperiano de x.&#10;* log(x): devuelve el logaritmo en base 10.&#10;* exp(x): devuelve la funci&#243;n exponencial de x.&#10;* abs(x): devuelve el valor absoluto de x.&#10;* rand(): devuelve un valor aleatorio en coma flotante, en el rango 0 a 1.0.&#10;* mod(x/y): devuelve el m&#243;dulo de x/y.&#10;* sqrt(x): devuelve la raiz cuadrada no negativa de x.&#10;* if(): devuelve 1 si es verdadera la expresion dentro del par&#233;ntesis, 0  en caso contrario.&#10;Los siguientes operadores pueden emplearse, y la precedencia de operadores es la habitual : suma y resta se eval&#250;an tras multiplicaci&#243;n y divisi&#243;n, y &#233;stos despu&#233;s del operador de potencia. Usar par&#233;ntesis en caso de duda, para estar seguro de c&#243;mo el programa evaluar&#225; la f&#243;rmula introducida.&#10;* + (suma*&#10;* - (resta)&#10;* (multiplicaci&#243;n)&#10;* / (divis&#243;n)&#10;*  % (porcentaje)&#10;* ! (NOT)&#10;*  ^ (elevado a)&#10;* &amp;&amp; (AND)&#10;* || (OR)&#10;* &lt; (menor que)&#10;* &gt; (mayor que)&#10;* &lt;= (menor o igual que)&#10;* &gt;= (mayor o igual que)&#10;*  == (igual a)&#10;* != (distinto de)" description="F&#243;rmula" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="nueva capa raster, se muestran unos ejemplos:" description="Grid a partir de f&#243;rmula" type="2">
+			<image description="" file="grid_funcion_matematica3.jpg">
+			</image>
+			<image description="" file="grid_funcion_matematica4.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

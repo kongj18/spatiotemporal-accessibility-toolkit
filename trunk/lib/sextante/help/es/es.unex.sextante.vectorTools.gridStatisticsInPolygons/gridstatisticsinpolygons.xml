@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula estad&#237;sticas de una o varias capa raster dentro de los pol&#237;gonos de una capa dada, generando nuevos campos en la tabla de atributos de dicha capa." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de pol&#237;gonos de entrada" description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="GRIDS" text="Las capas raster de entrada" description="Grids" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="id&#233;ntica a la capa de entrada de pol&#237;gonos, pero cre&#225;ndose nuevos campos en su tabla de atributos con los resultados del c&#225;lculo estad&#237;stico: media, varianza, m&#237;nimo, m&#225;ximo." description="Pol&#237;gonos" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

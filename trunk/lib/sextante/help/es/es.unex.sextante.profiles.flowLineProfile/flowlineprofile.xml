@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la ruta del flujo hacia aguas abajo, desde el punto de salida definido por el usuario. El proceso se detiene cuando se alcanza una celda sin datos, una depresi&#243;n (un MDE sin preprocesar), o bien uno de los l&#237;mites de la capa. &#10;" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="Modelo Digital de Elevaciones" description="MDE" type="3">
+		</element>
+		<element name="LAYERS" text="las capas cuyos valores se quieren estudiar a lo largo del pefil seg&#250;n l&#237;nea de flujo." description="Capas adicionales de datos" type="3">
+		</element>
+		<element name="POINT" text="el punto de iniciao desde el que se quiere crear el perfil seg&#250;n l&#237;nea de flujo." description="Punto de inicio" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="* Nueva gr&#225;fica con el perfil seg&#250;n l&#237;nea de flujo." description="Descripci&#243;n general" type="2">
+			<image description="" file="resultado_perfil.jpg">
+			</image>
+		</element>
+		<element name="PROFILELINE" text="el perfil de l&#237;nea va desde el punto de salida sleccionado hasta el fondo de uno de los sumidores del MDE seleccionado." description="Perfil [l&#237;nea]" type="2">
+			<image description="Nueva capa de perfil seg&#250;n l&#237;nea de flujo (l&#237;nea color amarillo)  sobre el fondo del MDE." file="perfil_segun_linea_de_flujo.jpg">
+			</image>
+		</element>
+		<element name="PROFILEPOINTS" text="una nueva capa de puntos con los siguientes campos en su tabla de atributos:&#10;* X: coordenada X de cada punto&#10;* Y: coordenada Y de cada punto&#10;* Z: coordenada Z de cada punto&#10;* Distancia horizontal: distancia proyectada recorrida desde el origen&#10;* Distancia real: distancia real recorrida desde el origen&#10;&#10;Se toma un punto por cada celda que cruza." description="Perfil [puntos]" type="2">
+			<image description="Tabla de atributos de la nueva capa de puntos Perfil" file="perfil_puntos_tabla.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este geoproceso crea una nueva capa vectorial de pol&#237;gonos, generados como zonas de influencia alrededor de las geometr&#237;as de los elementos vectoriales de una capa de entrada.&#10;&#10;Las geometr&#237;as de la capa de entrada pueden ser tanto de puntos, como de l&#237;neas o pol&#237;gonos. Se pueden generar varios anillos conc&#233;ntricos equidistantes en torno a las geometr&#237;as de entrada. Adem&#225;s, en el caso de geometr&#237;as de entrada poligonales el &#225;rea de influencia puede ser exterior, interior, o exterior e interior al pol&#237;gono original.&#10;&#10;Las zonas de influencia tienen un tama&#241;o definido por el valor de uno de sus campos, de forma que no todas las zonas creadas han de tener el mismo tama&#241;o." description="Descripci&#243;n" type="0">
+			<image description="" file="zona_de_influencia.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="V&#237;ctor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="V&#237;ctor Olaya" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de entrada con entidades a partir de las que calcular las zonas de influencia" description="Capa de entrada" type="3">
+		</element>
+		<element name="FIELD" text="El campo de la tabla de atributos que contiene la distancia a utilizar para crear la zona de influencia alrededor de cada entidad." description="Campo para distancia" type="3">
+		</element>
+		<element name="TYPES" text="A elegir entre:&#10;* Dentro del pol&#237;gono&#10;* Dentro y fuera del pol&#237;gono&#10;* Fuera del pol&#237;gono" description="Tipo de buffer" type="3">
+		</element>
+		<element name="RINGS" text="El n&#250;mero de anillos concentricos a crear (de 1 a 3)" description="N&#250;mero de anillos" type="3">
+		</element>
+		<element name="NOTROUNDED" text="Si se selecciona esta opcion, los pol&#237;gonos resultantes no se redondear&#225;n" description="No redondear pol&#237;gonos" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="La capa resultante con las zonas de influencia" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Buffer" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este geoproceso crea una nueva capa vectorial de pol&#237;gonos, generados como zonas de influencia alrededor de las geometr&#237;as de los elementos vectoriales de una capa de entrada.&#10;&#10;Las geometr&#237;as de la capa de entrada pueden ser tanto de puntos, como de l&#237;neas o pol&#237;gonos. Se pueden generar varios anillos conc&#233;ntricos equidistantes en torno a las geometr&#237;as de entrada. Adem&#225;s, en el caso de geometr&#237;as de entrada poligonales el &#225;rea de influencia puede ser exterior, interior o exterior e interior al pol&#237;gono original.&#10;&#10;Este Geoproceso puede ser de gran utilidad para la realizaci&#243;n de an&#225;lisis de corredor. Por ejemplo:&#10;* Qu&#233; zonas urbanos no tienen una parada de autobuses en un radio de 500 m.&#10;* Qu&#233; zonas urbanas carecen de colegios en un radio de 1000 m.&#10;* Qu&#233; pozos incumplen la normativa al no respetar la distancia m&#237;nima entre dos consecutivos.&#10;* Etc." description="Descripci&#243;n" type="0">
+			<image description="" file="zona_de_influencia.png">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="&#193;lvaro Zabala" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="seleccionar la capa de entrada." description="Capa de entrada" type="3">
+		</element>
+		<element name="FIELD" text="Campo con distancia a aplicar para cada geometr&#237;a, en caso de seleccionar distancia variable" description="Campo para distancia" type="3">
+		</element>
+		<element name="DISTANCE" text="valor de distancia a aplicar en caso de aplicar una distancia fija" description="Distancia" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* Distancia fija&#10;* Distancia en campo de tabla" description="Tipo de distancia" type="3">
+		</element>
+		<element name="TYPE" text="a elegir entre:&#10;* Dentro del pol&#237;gono&#10;* Dentro y fuera del pol&#237;gono&#10;* Fuera del pol&#237;gono" description="Tipo de buffer" type="3">
+		</element>
+		<element name="RINGS" text="hasta un m&#225;ximo de tres." description="N&#250;mero de anillos conc&#233;ntricos" type="3">
+		</element>
+		<element name="ROUNDED" text="la opci&#243;n por defecto deja un borde del buffer redondeado." description="No usar borde redondeado" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Buffer" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

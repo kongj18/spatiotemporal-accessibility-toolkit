@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Esta extensi&#243;n calcula la semivarianza en una capa raster, calculando la media de todas las semivarianzas en una serie de intervalos. A partir de cada celda, se toman las celdas en horizontal y vertical a distancias sucesivas hasta un m&#225;ximo y se calculan sus semivarianzas, promedi&#225;ndose &#233;stas despu&#233;s." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="La capa de entrada conteniendo la variable sobre la que se quieren calcular las semivarianzas" description="Capa" type="3">
+		</element>
+		<element name="MAXDIST" text="Distancia m&#225;xima a la que se estudia la semivarianza, expresada en celdas. Desde cada celda de la capa se estudia una ventana de radio igual a este valor." description="Maxima distancia (pixels)" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="con tres campos: distancia, semivarianza horizontal, semivarianza vertical." description="Semivarianzas" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

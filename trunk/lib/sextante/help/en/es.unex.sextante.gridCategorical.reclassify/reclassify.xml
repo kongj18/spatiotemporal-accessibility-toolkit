@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="This algorithm changes the values of cells in a raster layer according to a given look-up table" description="Description" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Additional information" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Extension created by" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya" description="Help file created by" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="User_notes" type="0">
+		</element>
+		<element name="INPUT" text="The layer to reclassify." description="Layer to reclassify" type="3">
+		</element>
+		<element name="METHOD" text="Criteria should be chosen from:&#10;* Min lt x lt Max&#10;* Min lt x leq Max&#10;&#10;" description="Method" type="3">
+		</element>
+		<element name="LUT" text='The table contains three fields: "Minimum value", "Maximum value" and  "New value", that will be used based on the previously selected criteria.' description="Look-up table" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Description" type="2">
+		</element>
+		<element name="RECLASS" text="Reclassified layer" description="Reclassify" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

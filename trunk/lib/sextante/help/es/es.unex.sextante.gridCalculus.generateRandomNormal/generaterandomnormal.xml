@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo genera una nueva capa raster aleatoria, de tal modo que los valores de la capa resultante presentan una distribuci&#243;n normal con los par&#225;metros de media y desviaci&#243;n t&#237;pica introducidos por el usuario." description="Descripci&#243;n" type="0">
+			<image description="" file="generar_grid_aleatorio_normal_funcion.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="MEAN" text="valor de media." description="Media" type="3">
+		</element>
+		<element name="STDDEV" text="valor de desviaci&#243;n t&#237;pica." description="Desviaci&#243;n t&#237;pica" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="PROB" text="" description="Probabilidad" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n zona de influencia (se conoce habitualmente como buffer), es una de las tareas m&#225;s &#250;tiles y habituales dentro de un SIG. Generalmente, se consideran como algo propio de un enfoque vectorial, pero tambi&#233;n pueden crearse con cartograf&#237;a raster, como se describe en la presente extensi&#243;n.&#10;&#10;La diferencia de realizar zonas de influencia con capas vectoriales o raster estriba, en que en &#233;stas &#250;ltimas no se trata de una operaci&#243;n geom&#233;trica, y de que la zona no es exacta, pues su forma y precisi&#243;n depende de la resoluci&#243;n de celda." description="Descripci&#243;n" type="0">
+			<image description="Capa raster de zona de influencia para una capa de red de drenaje, con una distancia fija de 500 m." file="zona_de_influencia_distanciafija.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="seleccionar una capa raster que contenga informaci&#243;n sobre los elementos alrededor de los cuales definir dicho &#225;rea de influencia. Estos elementos deben contener cualquier valor num&#233;rico a excepci&#243;n de cero, mientras que las restantes celdas deben tener cero o bien ser celdas sin datos." description="Capa origen" type="3">
+		</element>
+		<element name="METHOD" text="El m&#233;todo a utilizar, a elegir entre los siguientes:&#10;* Distancia fija: misma distancia para todas las celdas.&#10;* Usar valor de celda como distancia: el valor a situar alrededor de cada celda corresponde al valor contenido en la misma, permitiendo la creaci&#243;n de &#225;reas de influencia variables.&#10; " description="M&#233;todo" type="3">
+		</element>
+		<element name="DIST" text="introducir la distancia fija. Esta distancia debe estar expresada en las mismas unidades que el tama&#241;o de celda de la capa sobre la que se quiere definir el buffer.&#10;&#10;" description="Distancia" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="BUFFER" text="la descripci&#243;n del valor de las celdas es la siguiente:&#10;* valor 0: celdas fuera del buffer.&#10;* valor 1: celdas pertenecientes a los elementos originales a partir de los cuales se ha realizado el buffer.&#10;* valor 2: celdas en el buffer. " description="Buffer" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

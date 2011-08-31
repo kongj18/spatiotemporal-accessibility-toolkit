@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Dada una serie de puntos y una capa de coste unitario, esta extensi&#243;n calcula el coste desde cada uno de dichos puntos a cada celda en cuesti&#243;n, y asigna a la capa resultante en dicha celda la suma de todos esos costes. Este par&#225;metro puede servir para estimar influencias y afecciones de esos puntos a las localizaciones de su entorno.&#10;&#10;Los costes se calculan como costes isotr&#243;picos, es decir, suponiendo que son iguales en todas las direcciones de desplazamiento." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="COST" text="la capa que contiene una superficie de coste." description="Coste unitario" type="3">
+		</element>
+		<element name="FEATURES" text="los puntos deben caer sobre celdas con un valor de coste v&#225;lido, y las restantes celdas deben tener valor de sin datos." description="Puntos de origen/destino" type="3">
+		</element>
+		<element name="THRESHOLD" text="a&#241;adir un valor si se quiere marcar el valor m&#237;nimo de la diferencia existente entre rutas. Si la diferencia es menor a ese umbral, la ruta se considerada identicas y no se recalcula. Si tiene valor 0, tal y como sucede por defecto, la precisi&#243;n es m&#225;xima, as&#237; como el tiempo de proceso." description="Umbral para diferenciaci&#243;n de rutas" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="ACCCOST" text="La capa con la suma de costes a cada celda." description="Coste acumulado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

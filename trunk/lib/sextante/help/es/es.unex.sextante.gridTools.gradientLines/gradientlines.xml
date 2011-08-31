@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo obtiene el gradiente vectorial orientado en la direcci&#243;n en la que el campo escalar experimenta una mayor variaci&#243;n, represent&#225;ndolo como un segmento orientado." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="la capa de entrada." description="Capa origen" type="3">
+		</element>
+		<element name="MIN" text="tama&#241;o minimo de cada l&#237;nea de gradiente, en unidades de mapa." description="Tama&#241;o m&#237;nimo" type="3">
+		</element>
+		<element name="MAX" text="tama&#241;o m&#225;ximo de cada l&#237;nea de gradiente, en unidades de mapa." description="Tama&#241;o m&#225;ximo" type="3">
+		</element>
+		<element name="SKIP" text="si es igual a 1 se a&#241;ade una l&#237;nea por cada celda,  si es 2, uno por cada 4 celdas, y as&#237; sucesivamente." description="Intervalo entre celdas analizadas" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="LINES" text="La capa con las l&#237;neas de gradiente. En su tabla de atributos presenta dos campos:&#10;* Pendiente&#10;* Orientaci&#243;n" description="L&#237;neas de gradiente" type="2">
+			<image description="L&#237;neas de gradiente" file="gradiente.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

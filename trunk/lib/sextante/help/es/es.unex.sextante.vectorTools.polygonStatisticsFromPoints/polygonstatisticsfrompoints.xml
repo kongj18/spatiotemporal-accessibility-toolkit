@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula estad&#237;sticas de una capa de puntos dentro de unos pol&#237;gonos definidos.&#10;" description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="POLYGONS" text="Los pol&#237;gonos dentro de los cuales se situan los puntos a estudiar" description="Pol&#237;gonos" type="3">
+		</element>
+		<element name="POINTS" text="La capa de puntos con los valores" description="Puntos" type="3">
+		</element>
+		<element name="FIELD" text="El campo de la capa de puntos del que se tomar&#225; la informaci&#243;n para el c&#225;lculo de estad&#237;sticas." description="Campo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text=" id&#233;ntica a la capa de entrada de pol&#237;gonos, pero cre&#225;ndose nuevos campos en su tabla de atributos resultado del c&#225;lculo estad&#237;stico: media, varianza, m&#237;nimo, m&#225;ximo" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

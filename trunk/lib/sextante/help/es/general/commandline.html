@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Procesos por lotes</TITLE>
+<META NAME="description" CONTENT="Procesos por lotes">
+<META NAME="keywords" CONTENT="ManualElementosSEXTANTE">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="ManualElementosSEXTANTE.css">
+
+</HEAD>
+
+<BODY >
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsecciones</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html185"
+  HREF="node6.html#SECTION00610000000000000000">Introducción</A>
+<LI><A NAME="tex2html186"
+  HREF="node6.html#SECTION00620000000000000000">La tabla de parámetros</A>
+<LI><A NAME="tex2html187"
+  HREF="node6.html#SECTION00630000000000000000">Rellenando la tabla de parámetros</A>
+<LI><A NAME="tex2html188"
+  HREF="node6.html#SECTION00640000000000000000">Estableciendo las características de las salidas raster</A>
+<LI><A NAME="tex2html189"
+  HREF="node6.html#SECTION00650000000000000000">Ejecutando el proceso por lotes</A>
+<LI><A NAME="tex2html190"
+  HREF="node6.html#SECTION00660000000000000000">Procesos por lotes con capas ya cargadas</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00600000000000000000">
+Procesos por lotes</A>
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION00610000000000000000">
+Introducci&#243;n</A>
+</H1>
+
+<P>
+Todas las extensiones de SEXTANTE (incluyendo los modelos) pueden ejecutarse como procesos por lotes. Es decir, pueden ejecutarse repetidamente sobre un conjunto de par&#225;metros de entrada, sin necesidad de llamar en varias ocasiones a la extensi&#243;n correspondiente a trav&#233;s del gestor de extensiones. Esto sirve, entre otras cosas, para ejecutar una operaci&#243;n (por ejemplo, la aplicaci&#243;n de un filtro) sobre un conjunto de capas, tales como todas las contenidas en una carpeta dada.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="377" HEIGHT="488" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes1.png"
+ ALT="Image ProLotes1">
+
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00620000000000000000">
+La tabla de par&#225;metros</A>
+</H1>
+
+<P>
+Ejecutar un proceso por lotes no es muy diferente de ejecutar una extensi&#243;n de SEXTANTE de la forma habitual. Basta con especificar los par&#225;metros que controlan la ejecuci&#243;n del algoritmo correspondiente, las entradas de &#233;ste y sus salidas. Estas tareas se realizan en una tabla, como la mostrada en la siguiente figura.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="818" HEIGHT="385" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes5.png"
+ ALT="Image ProLotes5">
+
+</DIV>
+
+<P>
+Cada l&#237;nea de la tabla representa una ejecuci&#243;n individual de la extensi&#243;n, y las celdas de esa l&#237;nea contienen los valores de los par&#225;metros, de la misma forma que &#233;stos se introducir&#237;an en los distintos campos.
+
+<P>
+Por defecto, la tabla contiene &#250;nicamente dos filas. Puede variarse el n&#250;mero de &#233;stas utilizando los botones <SPAN  CLASS="textit">A&#241;adir fila</SPAN> y <SPAN  CLASS="textit">Eliminar fila</SPAN> situados en la parte derecha de la ventana.
+
+<P>
+Una vez que se ha definido el tama&#241;o deseado de la tabla, el siguiente paso es rellenar cada una de las celdas con los valores adecuados.
+
+<P>
+
+<H1><A NAME="SECTION00630000000000000000">
+Rellenando la tabla de par&#225;metros</A>
+</H1>
+
+<P>
+Todas las celdas de la tabla contienen una cadena de texto como valor asociado, con independencia del tipo de par&#225;metro al que se asocien. Haciendo doble clic sobre una celda, puede editarse su contenido y teclear el texto que se desee introducir. Salvo que el par&#225;metro asociado sea un valor num&#233;rico o una cadena como tal, aparecer&#225; en la parte derecha de la celda un bot&#243;n que permite introducir el valor del par&#225;metro de una forma distinta.
+
+<P>
+Por ejemplo, en el caso de una selecci&#243;n, que en la ejecuci&#243;n normal de la extensi&#243;n se elegir&#237;a de una lista desplegable, se puede  introducir el valor directamente (el texto que se seleccionar&#237;a en dicha lista), o hacer clic sobre el bot&#243;n de la parte derecha de la celda y utilizar la lista que aparece en un cuadro de di&#225;logo nuevo.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="350" HEIGHT="119" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes6.png"
+ ALT="Image ProLotes6">
+
+</DIV>
+
+<P>
+Con independencia del tipo de par&#225;metro, si el valor que se ha introducido es correcto, el texto correspondiente aparece en negro. Si no lo es (por ejemplo, una selecci&#243;n que no existe en las opciones disponibles, un valor alfanum&#233;rico en un campo donde se espera un n&#250;mero, o un valor num&#233;rico fuera del rango v&#225;lido), aparecer&#225; en rojo.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="406" HEIGHT="86" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes7.png"
+ ALT="Image ProLotes7">
+
+</DIV>
+
+<P>
+Una diferencia importante con respecto a la ejecuci&#243;n de una extensi&#243;n de la forma habitual es que todos los objetos de entrada (capas raster, capas vectoriales y tablas) se toman directamente de ficheros y no del proyecto actual o la vista activa. Por esta raz&#243;n, cualquier extensi&#243;n puede ejecutarse como un proceso por lotes con independencia de cu&#225;l sea la ventana activa o la informaci&#243;n que contenga, a diferencia de lo que sucede con esa misma extensi&#243;n si se llama desde el gestor de extensiones.
+
+<P>
+Los nombres de los archivos de entrada se introducen directamente tecle&#225;ndose sobre la celda en edici&#243;n o mediante el cuadro de di&#225;logo que aparece al hacer clic en el bot&#243;n lateral. Este cuadro de di&#225;logo permite la selecci&#243;n de m&#250;ltiples archivos. Si el par&#225;metro editado es una selecci&#243;n m&#250;ltiple, todos los nombres de archivo pasan a la celda, separados por comas. En caso de ser una capa simple o una tabla, el nombre del primer archivo pasa a la celda, y los restantes se ponen en las celdas situadas por debajo de &#233;sta. De este modo, se facilita la ejecuci&#243;n de un proceso sobre un conjunto de archivos, tales como todos los de una carpeta.
+
+<P>
+En el caso de requerirse la selecci&#243;n de m&#250;ltiples bandas,  aparece un cuadro algo m&#225;s complejo, con una nueva tabla. En ella debe seleccionarse en la columna izquierda el fichero deseado, y en la columna derecha las bandas de &#233;ste a emplear. Por defecto se pueden escoger bandas en el rango 1-250, ya que a priori no se conoce el n&#250;mero de bandas del archivo (ser&#237;a necesario abrirlo). Si se selecciona una banda por encima del rango de bandas disponibles en un archivo dado, SEXTANTE arrojar&#225; un error informar&#225; de ello una vez se lance la ejecuci&#243;n del proceso por lotes.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="577" HEIGHT="457" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes2.png"
+ ALT="Image ProLotes2">
+
+</DIV>
+
+<P>
+Para el caso de archivos de salida, no existe la opci&#243;n de almacenar el resultado en un archivo temporal, siendo obligatorio especificar un nombre de archivo para guardarlo de forma permanente. Tambi&#233;n en este caso encontramos un elemento que facilita el rellenar las celdas correspondientes. El cuadro de di&#225;logo que aparece en este caso contiene componentes adicionales en su lado derecho.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="782" HEIGHT="454" ALIGN="BOTTOM" BORDER="0"
+ SRC="./dialogo_lotes_salida.png"
+ ALT="Image dialogo_lotes_salida">
+
+</DIV> 
+
+<P>
+Si dejamos la opci&#243;n por defecto <SPAN  CLASS="textit">No autorellenar</SPAN>, el archivo seleccionado pasa a la celda en cuesti&#243;n, no a&#241;adi&#233;ndose nada m&#225;s en otras celdas. Con cualquiera de las otras opciones, se toma el nombre de dicho archivo como nombre base y se rellenan todas las celdas situadas por debajo con nuevos nombres de archivo creados a partir dicho nombre base y valores num&#233;ricos correlativos, o los valores de otro par&#225;metro seleccionado.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="202" HEIGHT="101" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes8.png"
+ ALT="Image ProLotes8">
+
+</DIV>
+
+<P>
+Pueden seleccionarse celdas pinchando y arrastrando sobre la tabla. Esta selecci&#243;n puede copiarse y pegarse en otras partes, utilizando las funciones que aparecen al hacer clic con el bot&#243;n derecho del rat&#243;n sobre la tabla. De esta forma, resulta m&#225;s sencillo completar la tabla cuando aparezcan valores repetidos.
+
+<P>
+
+<H1><A NAME="SECTION00640000000000000000">
+Estableciendo las caracter&#237;sticas de las salidas raster</A>
+</H1>
+
+<P>
+Al igual que en la ejecuci&#243;n de una extensi&#243;n individualmente, es necesario establecer las dimensiones y el tama&#241;o de celda cuando la extensi&#243;n en concreto genere capas raster. En el caso de un proceso por lotes, este proceso se lleva a cabo de igual modo, estableciendo una configuraci&#243;n &#250;nica que se aplica a todos los subprocesos. &#201;sta se establece mediante una pesta&#241;a independiente, aunque, a diferencia de la ejecuci&#243;n normal de una extensi&#243;n, no existen las opciones de ajuste a la vista y ajuste a una capa. Por lo dem&#225;s, el manejo es igual.
+
+<P>
+La selecci&#243;n elegida en la Salida raster sera aplicada a todas las operaciones. Si se quiere usar una configuraci&#243;n diferente de Salida raster, entonces se debe definir un proceso por lotes diferente.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="484" HEIGHT="418" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes4.png"
+ ALT="Image ProLotes4">
+
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00650000000000000000">
+Ejecutando el proceso por lotes</A>
+</H1>
+
+<P>
+Con la tabla ya definida, s&#243;lo resta hacer clic sobre el bot&#243;n <SPAN  CLASS="textit">Aceptar</SPAN> para lanzar la ejecuci&#243;n de los procesos. Al t&#233;rmino de la ejecuci&#243;n, SEXTANTE muestra un resumen textual de todos los procesos desarrollados, indicando los valores que se han empleado en cada uno de ellos, o informando de posibles errores. Las nuevas capas creadas se guardan en el directorio que por defecto se ha establecido anteriormente.
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+  WIDTH="509" HEIGHT="337" ALIGN="BOTTOM" BORDER="0"
+ SRC="./ProLotes9.png"
+ ALT="Image ProLotes9">
+
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00660000000000000000">
+Procesos por lotes con capas ya cargadas</A>
+</H1>
+
+<P>
+Existe una forma adicional de ejecutar un proceso por lotes, en este caso empleando capas que ya est&#233;n abiertas dentro de la aplicaci&#243;n SIG (las mismas que podr&#237;as utilizar para ejecutar un algoritmo de forma individual). Haz clic sobre el nombre del algoritmo y selecciona <SPAN  CLASS="textit">Ejecutar como proceso por lotes con capas cargadas</SPAN>. La ventana que ver&#225;s se asemeja a la del proceso por lotes que ya hemos visto, con la diferencia de que las capas de entrada no se eligen como ficheros, sino seleccionando los nombres de capas que ya estuvieran abiertas previamente. Esto te permitir&#225; procesar de forma m&#225;s r&#225;pida un bloque de capas que hayas abierto previamente en tu SIG, o que hayan podido ser generadas por otros algoritmos de SEXTANTE que hayas usado en tu sesi&#243;n de trabajo.
+<BR><HR>
+<ADDRESS>
+Victor Olaya
+2010-02-18
+</ADDRESS>
+</BODY>
+</HTML>
