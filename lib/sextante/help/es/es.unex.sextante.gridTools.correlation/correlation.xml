@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo permite conocer la correlaci&#243;n estad&#237;stica entre dos capas raster." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="GRID" text="x" description="Capa 1" type="3">
+		</element>
+		<element name="GRID2" text="y" description="Capa 2" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;* Mejor ajuste posible (prueba todas las opciones restantes y escoge la que d&#233; un valor mayor de R.)&#10;* y = a + bx&#10;* y = a + b / x&#10;* y = a / (b - x)&#10;* y = ax ^b&#10;* y = a e^(bx)&#10;* y = a + b X ln(x)&#10; " description="Tipo de ecuaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="Gr&#225;fico" description="Descripci&#243;n general" type="2">
+			<image description="Correlaci&#243;n entre capas" file="correlacion_entre_capas.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

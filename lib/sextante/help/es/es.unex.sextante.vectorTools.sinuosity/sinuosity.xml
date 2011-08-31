@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una nueva capa vectorial id&#233;ntica a la capa de entrada con nuevos campos en la tabla de atributos en los que se miden la longitud de la l&#237;nea, la longitud rectilinea (distancia euclidea entre primer y &#250;ltimo punto) y la sinuosidad como cociente entre los anteriores." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="ROUTES" text="seleccionar la capa de entrada." description="Rutas" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="nueva capa raster con nuevos campos en su tabla." description="Sinuosidad" type="2">
+			<image description="" file="sinuosidad_salida.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

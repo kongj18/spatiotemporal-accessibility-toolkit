@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo permite clasificar una capa o un conjunto de ellas en distintas clases, de forma que la clases son lo m&#225;s homog&#233;neas posibles.  No es necesario definir dichas clases de antemano, ya que son definidas por el algoritmo para lograr maximizar la mencionada homogeneidad de cada clase." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="Para equiparar el peso de las capas a la hora de realizar las agrupaciones de las celdas en clases, puede utilizarse la extensi&#243;n Normalizar, tambien incluida con SEXTANTE. En caso contrario, las capas con valores mayores (como en el caso de ejemplo la elevacion frente a la pendiente) tendr&#225;n mayor peso y har&#225;n que las restantes no tengan apenas influencia." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="Una o varias bandas con variables para utilizar en la definici&#243;n de clases." description="Bandas para clasificaci&#243;n" type="3">
+		</element>
+		<element name="NUMCLASS" text="El n&#250;mero de clases diferentes a definir en la capa resultante. " description="N&#250;mero de clases" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULTLAYER" text="Nueva capa con las clases definidas." description="Agregados" type="2">
+			<image description="Nueva capa de diez clases a partir del empleo de las capas MDE y pendiente" file="clasificacion_no_supervisada_clustering.jpg">
+			</image>
+		</element>
+		<element name="RESULTTABLE" text='Tabla que contiene informaci&#243;n sobre cada una de las clases creadas. Cada clase tiene un identificador (campo "Clase") y se muestra el n&#250;mero de celdas ocupadas por la misma (campo "Conteo"). Adem&#225;s, se crea un nuevo campo por cada capa de entrada utilizada, en la que se recoge el valor medio de dicha capa en la clase.' description="Estad&#237;sticas" type="2">
+			<image description="" file="clasificacion_no_supervisada_clustering2.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

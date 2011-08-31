@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo crea una nueva capa raster en la que cada celda se le asigna el orden de Strahler.&#10;&#10;Los &#243;rdenes de Strahler son una forma de establecer una clasificaci&#243;n jer&#225;rquica de los r&#237;os. No es necesario definir una red de drenaje, ya que para esta extensi&#243;n todas las celdas son parte de ella, de tal forma que la capa resultante no contiene celdas sin datos (salvo, por supuesto, si &#233;stas existen en el propio MDE)." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="seleccionar un Modelo Digital de Elevaci&#243;n." description="MDE" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="los valores de las celdas indican el orden jer&#225;rquico (de Strahler) del cauce que fluye a trav&#233;s de cada una de ellas.  " description="Orden de Strahler" type="2">
+			<image description="Orden de Strahler" file="orden_de_strahler.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

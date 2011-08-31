@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n Horizonte visible lleva a cabo un an&#225;lisis de visibilidad que permite conocer el horizonte topogr&#225;fico que puede ver el observador desde un punto seleccionado. Adem&#225;s permite conocer la distancia y &#225;ngulo en forma de gr&#225;fico. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones." description="MDE" type="3">
+		</element>
+		<element name="POINT" text="Coordenadas del observador" description="Coordenadas emisor/receptor" type="3">
+		</element>
+		<element name="HEIGHT" text="Altura del observador" description="Altura emisor/receptor" type="3">
+		</element>
+		<element name="RADIUS" text="El radio m&#225;ximo de visibilidad. La visibilidad se analizar&#225; unicamente hasta esta distancia." description="Radio de alcance" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="GRAPHDIST" text="gr&#225;fico que muestra la distancia  del horizonte topogr&#225;fico desde la posici&#243;n del observador, con el azimut (eje x) y la distancia (eje y)." description="Distancia" type="2">
+			<image description="" file="hor_vis_distancia.jpg">
+			</image>
+		</element>
+		<element name="RESULT" text="." description="Horizonte" type="2">
+			<image description="" file="horizonte_visible_salida.jpg">
+			</image>
+		</element>
+		<element name="GRAPHSLOPE" text="gr&#225;fico que muestra el &#225;ngulo del horizonte topogr&#225;fico, con el azimut (eje x) y el &#225;ngulo vertical (eje y)." description="&#193;ngulo" type="2">
+			<image description="" file="hor_vis_angulo.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

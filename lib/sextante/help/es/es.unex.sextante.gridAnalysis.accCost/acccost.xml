@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula la superficie de coste acumulado isotr&#243;pica, es decir, mismo coste en todas direcciones. El valor en cada celda resultante es el coste hasta la punto de destino mas cercano (entendida esta cercan&#237;a no como cercan&#237;a geogr&#225;fica, sino en t&#233;rminos de coste)." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="COST" text='la capa que contiene una superficie de coste (superficie de fricci&#243;n). Todas las celdas sin datos en la capa coste permanecen como tales en la capa de salida "Coste acumulado", es decir, son ignoradas y no se pueden recorrer. Por ejemplo, si se emplea una capa de v&#237;as, solo las celdas situadas sobre alg&#250;n tipo de v&#237;a son consideradas.' description="Coste unitario" type="3">
+		</element>
+		<element name="FEATURES" text="los puntos se representan como celdas con datos v&#225;lidos, es decir con cualquier valor distinto del valor de sin datos." description="Puntos de origen/destino" type="3">
+		</element>
+		<element name="THRESHOLD" text="a&#241;adir un valor si se quiere marcar el valor m&#237;nimo de la diferencia existente entre rutas. Si la diferencia es menor a ese umbral, la ruta se considerada id&#233;ntica y no se recalcula. Si tiene valor 0, tal y como sucede por defecto, la precisi&#243;n es m&#225;xima, as&#237; como el tiempo de proceso. " description="Umbral para diferenciaci&#243;n de rutas" type="3">
+		</element>
+		<element name="DISTANCE" text="Este par&#225;metro regula la forma en la que se calcula la distancia entre celdas contiguas.&#10;&#10;A elegir entre:&#10;* Euclidea: Distancia euclidea entre celdas&#10;* Chessboard. Distancia de Chebyshev (http://en.wikipedia.org/wiki/Chessboard_distance)&#10;* Manhattan. Distancia de Manhattan o Taxicab (http://en.wikipedia.org/wiki/Manhattan_distance)&#10;* Chamfer 3:4&#10;* 5 X 5. Distancia euclidea pero con ventana 5 X 5 en lugar de la ventana 3 X 3 de los anteriores.&#10;&#10; " description="Tipo de distancia" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="ACCCOST" text="La superficie de coste acumulado, que contiene el coste desde cada celda hasta el punto de destino m&#225;s cercano." description="Coste acumulado" type="2">
+			<image description="" file="costeAcumuladoIsotropico_vias.jpg">
+			</image>
+		</element>
+		<element name="CLOSESTPOINT" text="Esta capa indica cu&#225;l de los puntos de destino es el m&#225;s cercano en cada caso. El valor de celda representa el n&#250;mero de dicho punto." description="Punto m&#225;s cercano" type="2">
+			<image description="" file="costeAcumIsotropico_punto_mas_cercano.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

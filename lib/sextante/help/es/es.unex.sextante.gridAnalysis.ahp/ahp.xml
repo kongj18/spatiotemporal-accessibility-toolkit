@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo aplica el modelo de Jerarqu&#237;as Anal&#237;ticas (en ingl&#233;s, Analytical Hierarchy Process, AHP) (Saaty, 1977). Este m&#233;todo se emplea para el c&#225;lculo de pesos relativos al combinar diversos factores en un par&#225;metro dado. El algoritmo emplea las capas de entrada y una tabla con el n&#250;mero de factores (igual al n&#250;mero de capas) relacionados dos a dos con sus pesos comparativos para calcular una nueva capa como combinaci&#243;n lineal de las capas de entrada. Los coeficientes de la combinaci&#243;n lineal son calculados por el algoritmo de forma autom&#225;tica en funci&#243;n de los pesos comparativos." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="INPUT" text="Conjunto de capas que se desean combinar aplicando una combinaci&#243;n lineal." description="Capas" type="3">
+		</element>
+		<element name="PAIRWISE" text="seleccionar una tabla definiendo la relevancia de cada factor contenido en dichas capas, a partir de comparaciones con cada una de las restantes. La tabla debe tener n filas y n columnas, siendo n el n&#250;mero de factores (esto es, de capas) a las que asignarles un valor comparativo. Estos valores se recomienda establecerlos entre 1 y 9 seg&#250;n las siguientes reglas:&#10;* 1 = Misma importancia&#10;* 3 = Predominancia moderada de una valor sobre otro&#10;* 5 = Predominancia fuerte&#10;* 7 = Predominancia muy fuerte&#10;* 9 = Predominancia extrema&#10;* 2, 4, 6, 8 = Valores intermedios" description="Comparaciones de pesos dos a dos" type="3">
+			<image description="Ejemplo de una posible matriz de comparaciones para el caso de tres capas" file="jerarquias_analisiticas_ahp.jpg">
+			</image>
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

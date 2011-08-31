@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo permite conocer la correlaci&#243;n entre campos de una tabla de atributos." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="" description="Extensi&#243;n creada por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="TABLE" text="elegir la tabla de atributos." description="Tabla" type="3">
+		</element>
+		<element name="FIELD" text="primer campo." description="Campo" type="3">
+		</element>
+		<element name="FIELD2" text="segundo campo." description="Campo2" type="3">
+		</element>
+		<element name="METHOD" text="a elegir entre:&#10;*Mejor ajuste posible &#10;*y = a + bx &#10;*y = a + b / x &#10;*y = a / (b - x) &#10;*y = ax ^b &#10;*y = a e^(bx) &#10;*y = a + b ln(x)" description="Tipo de ecuaci&#243;n" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="REGRESSION" text="" description="Regresi&#243;n" type="2">
+			<image description="" file="correlacion_entre_campos.jpg">
+			</image>
+		</element>
+		<element name="REGRESSION_DATA" text="" description="Datos del ajuste" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

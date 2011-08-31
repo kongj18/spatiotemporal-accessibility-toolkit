@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="La extensi&#243;n Change Vector Analysis (CVA) eval&#250;a un factor din&#225;mico, mostrando la variaci&#243;n que ha tenido lugar en dos im&#225;genes (dos bandas) entre dos fechas. Se necesita, por tanto, cuatro im&#225;genes, dos tomadas en una fecha inicial (normalmente bandas del rojo y del infrarrojo), y las mismas pero en una fecha posterior. &#10;&#10;Tomando una de las bandas (por ejemplo banda 1) como eje X, y la otra (sea banda 2) como eje Y, obtenemos 4 coordenadas y dos puntos de la forma (x, y). Uno de dichos puntos representa la fecha inicial, mientras que el otro representa la final. El vector desde el inicial al final puede ser expresado en coordenadas polares de la forma (modulo, &#225;ngulo)." description="Descripci&#243;n" type="0">
+			<image description="" file="change_vector_analysis.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="A1" text="seleccionar primera capa tomada en una fecha inicial." description="Capa 1 Inicial" type="3">
+		</element>
+		<element name="A2" text="seleccionar segunda capa tomada en una fecha inicial." description="Capa 2 Inicial" type="3">
+		</element>
+		<element name="B1" text="seleccionar primera capa tomada en una fecha posterior." description="Capa 1 Final" type="3">
+		</element>
+		<element name="B2" text="seleccionar segunda capa tomada en una fecha posterior." description="Capa 2 Final" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="ANGLE" text="" description="&#193;ngulo" type="2">
+		</element>
+		<element name="DIST" text="" description="M&#243;dulo" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

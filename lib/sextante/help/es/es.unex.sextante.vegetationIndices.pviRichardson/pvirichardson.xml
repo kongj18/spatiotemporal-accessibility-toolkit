@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text='Este algoritmo calcula el &#237;ndice de vegetaci&#243;n Perpendicular Vegetation Index (PVI) (Richardson and Wiegand, 1977).  El objetivo de los PVI es eliminar los efectos del brillo del suelo en casos donde la vegetaci&#243;n es escasa y existe un contenido mixto en las celdas de cobertura vegetal y el suelo. Por ello, hacen uso de la denominada "linea del suelo", la cual se obtiene mediante una regresi&#243;n entre los valores del rojo y el infrarrojo cercano para un conjunto de pixels sin cobertura vegetal (es decir, suelo desnudo).&#10;' description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="* A.J. Richardson and C.L. Wiegand. Distinguishing vegetation from  background soil information. Photogrammetric Engineering and Remote Sensing, 43:1541-1552, 1977." description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYERRED" text="seleccionar la capa raster con valores de la banda del rojo." description="Capa rojo" type="3">
+		</element>
+		<element name="BANDRED" text="seleccionar la banda del rojo." description="Banda rojo" type="3">
+		</element>
+		<element name="LAYERNIR" text="seleccionar la capa raster con valores de la banda del infrarrojo cercano." description="Capa infrarrojo cercano" type="3">
+		</element>
+		<element name="BANDNIR" text="seleccionar la banda del infrarrojo." description="Banda infrarrojo cercano" type="3">
+		</element>
+		<element name="SLOPE" text="" description="Pendiente de la l&#237;nea de suelo" type="3">
+		</element>
+		<element name="INTERCEPT" text="" description="Ordenada en el origen de la l&#237;nea del suelo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="" description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

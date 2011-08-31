@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="This algorithm analyzes the statistical correlation between two raster layers. " description="Description" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Additional information" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Extension created by" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya" description="Help file created by" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="User_notes" type="0">
+		</element>
+		<element name="GRID" text="x." description="Layer 1" type="3">
+		</element>
+		<element name="GRID2" text="y." description="Layer 2" type="3">
+		</element>
+		<element name="METHOD" text="* Best fit (try all the possible options and choose the one that gives a higher correlation value.)&#10;* y = a + b * x&#10;* y = a + b / x&#10;* y = a / (b - x)&#10;* y = a * x ^b&#10;* y = a e^(b * x)&#10;* y = a + b * ln(x)" description="Function type" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="A scatterplot graph" description="Description" type="2">
+			<image description="" file="correlacion_entre_capas.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo extrae la cuenca vertiente aguas arriba de un punto dado." description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="DEM" text="un Modelo Digital de Elevaciones. " description="MDE" type="3">
+		</element>
+		<element name="OUTLET" text="Las coordenadas del punto de salida" description="Punto de salida" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="las celdas con valores 1 son las &#225;reas aguas arriba, y las celdas sin valores (N/D) son las &#225;reas exteriores al &#225;rea aguas arriba." description="&#193;rea aguas arriba" type="2">
+			<image description="Cuenca vertiente a un punto dado" file="cuenca_vertiente_a_un_punto_dado.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

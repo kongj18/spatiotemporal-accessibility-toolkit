@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo calcula el valor de densidad de puntos para cada celda de la capa raster de salida. La densidad representa la intensidad (propiedad de primer orden) del patr&#243;n de puntos, que es una realizaci&#243;n concreta del proceso de puntos que lo ha generado. &#10;" description="Descripci&#243;n" type="0">
+			<image description="En esta figura se puede ver exquema sencillo con el c&#225;lculo de densidades utilizando un &#225;rea de influencia fija de dos &#250;nicos puntos. Donde ambas &#225;reas intersecan, la densidad es, l&#243;gicamente, mayor. Las celdas que no est&#225;n en el &#225;rea de influencia de ning&#250;n pnto tienen un valor de densidad nulo. " file="densidad_uno.jpg">
+			</image>
+			<image description="En esta figura se puede un exquema del c&#225;lculo de densidades utilizando un &#225;rea de influencia fija y ponderaci&#243;n seg&#250;n valores. El punto inferior izquierdo tien un peso p = 2, mientras que el superior derecho un peso p = 1. " file="densidad_dos.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="En el caso por ejemplo de las observaciones de una especie, la capa de densidad nos proporciona una medida de la probabilidad de encontrar esa especie en cada celda. El c&#225;lculo de estas probabilidades es la base para el desarrollo de modelos predictivos m&#225;s complejos. " description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" description="Algoritmo creado por" text="Victor Olaya" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordoñez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="LAYER" text="capa de puntos de entrada." description="Capa vectorial" type="3">
+		</element>
+		<element name="FIELD" text="seleccionar el atributo de la capa de puntos para ponderar &#233;stos." description="Campo" type="3">
+		</element>
+		<element name="DISTANCE" text="se necesita establecer el &#225;rea de influencia m&#225;xima de cada punto. Se asume por defecto que el &#225;rea de influencia es circular (mismo alcance de dicha influencia en todas direcciones), y que es la misma para todos los puntos. Este par&#225;metro es el m&#225;s importante y debe seleccionarse de acuerdo con la distribuci&#243;n de los puntos (ya que condiciona directamente al resultado)." description="Radio de b&#250;squeda" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="DENSITY" text="el valor de cada celda es el numero de puntos (ponderados correspondientemente) a una distancia de dicha celda menor que el radio de b&#250;squeda.&#10;&#10;En la siguiente figura se puede ver capas de densidad a partir de una capa de puntos. El tama&#241;o del radio de influencia en (b) es el doble que en (a)." description="Densidad" type="2">
+			<image description="Densidad" file="densidad.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

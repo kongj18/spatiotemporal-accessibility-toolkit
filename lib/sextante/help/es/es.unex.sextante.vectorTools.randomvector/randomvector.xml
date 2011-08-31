@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este geoalgoritmo crea una nueva capa vectorial aleatoria, del tipo de geometr&#237;a seleccionada, donde las nuevas entidades espaciales se ajustan a los par&#225;metros establecidos." description="Descripci&#243;n" type="0">
+			<image description="" file="randomvector.jpg">
+			</image>
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="XMIN" text="La coordenada X m&#237;nima del rect&#225;ngulo donde se crear&#225;n las entidades.." description="X Min" type="3">
+		</element>
+		<element name="XMAX" text="La coordenada X m&#225;xima del rect&#225;ngulo donde se crear&#225;n las entidades." description="X Max" type="3">
+		</element>
+		<element name="YMIN" text="La coordenada Y m&#237;nima del rect&#225;ngulo donde se crear&#225;n las entidades." description="Y Min" type="3">
+		</element>
+		<element name="YMAX" text="La coordenada Y m&#225;xima del rect&#225;ngulo donde se crear&#225;n las entidades." description="Y Max" type="3">
+		</element>
+		<element name="COUNT" text="El n&#250;mero de entidades que se quiere crear. " description="N&#250;mero de geometr&#237;as" type="3">
+		</element>
+		<element name="TYPE" text="El tipo de geometr&#237;a a crear: punto, l&#237;nea o pol&#237;gono." description="Tipo" type="3">
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Nueva capa vectorial del tipo de geometr&#237;a elegida en el par&#225;metro Tipo. " description="Resultado" type="2">
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>

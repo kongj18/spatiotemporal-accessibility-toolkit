@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+	<help>
+		<element name="DESCRIPTION" text="Este algoritmo aplica una ecualizaci&#243;n a una imagen monobanda. Generalmente, &#233;sta aumenta el constraste de una imagen, especialmente cuando los datos (celdas) de la imagen son representados por valores de contraste pr&#243;ximos, de esta forma todos los valores de las celdas de la imagen se redistribuyen. " description="Descripci&#243;n" type="0">
+		</element>
+		<element name="ADDITIONAL_INFO" text="" description="Informaci&#243;n adicional" type="0">
+		</element>
+		<element name="EXTENSION_AUTHOR" text="Victor Olaya" description="Algoritmo creado por" type="0">
+		</element>
+		<element name="HELP_AUTHOR" text="Victor Olaya y Antonio Ordo&#241;ez" description="Ayuda creada por" type="0">
+		</element>
+		<element name="USER_NOTES" text="" description="Notas de usuario" type="0">
+		</element>
+		<element name="IMAGE" text="Imagen a ecualizar" description="Imagen" type="3">
+			<image description="" file="ecualizacion_entrada.jpg">
+			</image>
+		</element>
+		<element name="OUTPUT_DESCRIPTION" text="" description="Descripci&#243;n general" type="2">
+		</element>
+		<element name="RESULT" text="Imagen ecualizada" description="Resultado" type="2">
+			<image description="" file="ecualizacion_salida.jpg">
+			</image>
+		</element>
+	</help>
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
