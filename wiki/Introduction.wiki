@@ -26,12 +26,12 @@ The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of p
 
 *Image Below : ranges for every 10 minutes up to a limit of 60 minutes for Zürich, Switzerland*
 
-<img src="http://ploader.net/files/4b3fc7895ccf29c6ebb777267aac836c.png" border="5"/>
+<img src="https://lh4.googleusercontent.com/-1CMeMImCnWM/Tl3dBKJacaI/AAAAAAAAA7U/ZK6rgsYLUxU/s576/PPA_Example.png" border="5"/>
 
 
 *Image Below : discrete values for 10 minutes and 35 minutes for Zürich, Switzerland*
 
-<img src="http://ploader.net/files/6f414a8b75266a697c03a7153c8c2c80.png " border="5"/>
+<img src="https://lh5.googleusercontent.com/-gDJ6niF2Xjg/Tl3dBCW7LII/AAAAAAAAA7Y/eYzLFDjOxnk/s576/PPA_Example_discrete.png " border="5"/>
 
 *Image Below : discrete values represented as contours for 10 minutes and 35 minutes for Zürich, Switzerland*
 
