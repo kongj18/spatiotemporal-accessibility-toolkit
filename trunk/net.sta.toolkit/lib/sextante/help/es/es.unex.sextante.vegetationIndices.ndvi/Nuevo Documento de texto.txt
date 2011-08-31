@@ -1,6 +1,0 @@
-http://earthobservatory.nasa.gov/Library/MeasuringVegetation/
-
-NDVI is calculated from the visible and near-infrared light reflected by vegetation. Healthy vegetation (left) absorbs most of the visible light that hits it, and reflects a large portion of the near-infrared light. Unhealthy or sparse vegetation (right) reflects more visible light and less near-infrared light. The numbers on the figure above are representative of actual values, but real vegetation is much more varied. (Illustration by Robert Simmon).
-
-http://www-gem.jrc.it/stars/vis.htm
-http://en.wikipedia.org/wiki/NDVI
