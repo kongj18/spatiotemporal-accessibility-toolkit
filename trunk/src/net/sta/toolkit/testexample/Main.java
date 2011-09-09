@@ -116,10 +116,10 @@ public class Main {
         
         GeometryFactory gf = new GeometryFactory();
 		Point originPoint=gf.createPoint(new 
-				Coordinate(681994,247610)); 
+				Coordinate(685393.0, 246083.0)); 
 		
 		ArrayList<Double> timeDiscretizations = new ArrayList<Double>();
-		timeDiscretizations.add(10.0);
+		timeDiscretizations.add(1.0);
 		//timeDiscretizations.add(35.0);
 		
 		
@@ -134,16 +134,16 @@ public class Main {
         PotentialPathAreaAnalysis ppa = new PotentialPathAreaAnalysis();
         
         //creates range of contours from 10 to 100 minutes
-        /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
+        resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
 				PotentialPathAreaAnalysis.RangeorDiscrete.RANGED, PotentialPathAreaAnalysis.ContourorRegion.CONTOURS,
 				null,
-				nodeSource.getSchema().getCoordinateReferenceSystem(), 100);*/
+				nodeSource.getSchema().getCoordinateReferenceSystem(), 5);
         
        //creates one discrete polygon for 10 minutes
-        resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
+        /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
 				PotentialPathAreaAnalysis.RangeorDiscrete.DISCRETE, PotentialPathAreaAnalysis.ContourorRegion.REGIONS,
 				PotentialPathAreaAnalysis.RingorDisk.DISK,
-				nodeSource.getSchema().getCoordinateReferenceSystem(), 0);
+				nodeSource.getSchema().getCoordinateReferenceSystem(), 0);*/
         
         //creates a range of polygon rings from 10 to 100 minutes
         /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
