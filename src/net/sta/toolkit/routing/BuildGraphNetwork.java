@@ -76,7 +76,7 @@ public class BuildGraphNetwork {
 			public double getWeight(org.geotools.graph.structure.Edge e) {
 				SimpleFeature aLineString = (SimpleFeature) e.getObject(); 
 				 Geometry geom = (Geometry) aLineString.getDefaultGeometry();
-				 Integer speedLimit = (Integer) aLineString.getAttribute(speedFieldkmh);
+				 Short speedLimit = (Short) aLineString.getAttribute(speedFieldkmh);
 				 Double stDistance = geom.getLength()/((speedLimit*1000)/60);
                  return stDistance;	}
 					};

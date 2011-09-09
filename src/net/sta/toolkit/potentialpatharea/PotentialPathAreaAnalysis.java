@@ -136,7 +136,7 @@ public FeatureCollection DoProcessing(FeatureSource fs,ArrayList<Double> timeDis
 				}
 				else if (RorD == RangeorDiscrete.DISCRETE&&timeDiscretizations.size()>1){
 						
-						if (time<timeDiscretizations.get(timeDiscretizations.size()-1)+10.0)
+						if (time<timeDiscretizations.get(timeDiscretizations.size()-1)+20.0)
 						{
 						Coordinate coordinate = new Coordinate(p.getX(), p.getY(), time);
 						triangulation.insertPoint(coordinate);				
@@ -238,7 +238,9 @@ private FeatureCollection CombineIsoLineGeometry(FeatureCollection fc, String at
 		Filter filter = CQL.toFilter(attributeName+"="+uniquevalue);
 		FeatureCollection uniqueFeatures = isolineSource.getFeatures( filter );
 		SimpleFeature combinedFeature = CombineGeometry(uniqueFeatures); 
+		
 		combinedFC.add(combinedFeature);
+		
 	}
 	
 	
