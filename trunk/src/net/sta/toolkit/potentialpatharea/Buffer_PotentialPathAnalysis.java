@@ -39,6 +39,7 @@ private static ArrayList<Double> timeDiscretizations = new ArrayList<Double>();
 private static FeatureSource graphNodes;
 private Double speedKM;
 private GeometryFactory gf=new GeometryFactory();
+private FeatureCollection outputVectorFC=FeatureCollections.newCollection();
 
 public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateReferenceSystem cRS,ArrayList<Double> timeDiscretizations,Double speedKM) throws IOException, CQLException, SchemaException{
 	this.graphNodes=fs;
@@ -50,7 +51,7 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 	//remove nodes outside the largest time discretization
 	FeatureCollection graphFC=fs.getFeatures();	
 	//got to build the geomteries
-	FeatureCollection outputFC=FeatureCollections.newCollection();
+	
 	
 	Iterator<Double> listIT= timeDiscretizations.iterator();
 	while (listIT.hasNext()){		
@@ -59,7 +60,7 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 		FeatureCollection filteredFC=graphFC.subCollection(filter);
 		Geometry convexHulls=getCombinedBuffered(timeValue, graphFC);	
 		SimpleFeature outputFeature =BuildNewPolygonisedFeature(timeValue,convexHulls);
-		outputFC.add(outputFeature);
+		outputVectorFC.add(outputFeature);
 	}
 	
 	System.out.println("beginning procesing...." );
