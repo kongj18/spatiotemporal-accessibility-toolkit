@@ -45,7 +45,6 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 	
 	
 	Iterator<Double> listIT= timeDiscretizations.iterator();
-	
 	while (listIT.hasNext()){		
 		Double timeValue=listIT.next();
 		Filter filter=CQL.toFilter("time<"+timeValue);
@@ -78,23 +77,26 @@ private Double getHighestValue(ArrayList<Double> list){
 	return maxValue;
 }
 
-private double getDistanceInMetresFromSpeed(){
+private double getDistanceInMetresFromSpeed(Double timeToNode){
 	double distance=0.0;
 	return distance;
 }
 
 private Geometry getCombinedBuffered(Double timeValue, FeatureCollection inputFC){
-	Geometry outputFC = null;
+	Geometry outputGeom = null;
 	
 	FeatureIterator featIT=inputFC.features();
-	
+	int i = 0;
 	while(featIT.hasNext()){
 		SimpleFeature feature=(SimpleFeature) featIT.next();
+		Double timeToNode=(Double) feature.getAttribute("time");
 		Point point=(Point) feature.getDefaultGeometry();
-		
+		Double distanceToBuffer=getDistanceInMetresFromSpeed(timeToNode);
+		outputGeom=point.buffer(timeToNode);
+		i++;
 	}
 	
-	return outputFC;
+	return outputGeom;
 }
 
 }
