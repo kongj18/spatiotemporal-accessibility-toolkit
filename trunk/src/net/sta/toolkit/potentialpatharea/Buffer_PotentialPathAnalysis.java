@@ -52,7 +52,7 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 	FeatureCollection graphFC=fs.getFeatures();	
 	//got to build the geomteries
 	
-	
+	if(vR==VectorOrRaster.VECTOR){
 	Iterator<Double> listIT= timeDiscretizations.iterator();
 	while (listIT.hasNext()){		
 		Double timeValue=listIT.next();
@@ -62,15 +62,18 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 		SimpleFeature outputFeature =BuildNewPolygonisedFeature(timeValue,convexHulls);
 		outputVectorFC.add(outputFeature);
 	}
+	}
+	
+	if(vR==VectorOrRaster.RASTER){
+		
+	}
 	
 	System.out.println("beginning procesing...." );
 	
 }
 
 private FeatureCollection getVectorOutput(){
-	FeatureCollection outputFC=FeatureCollections.newCollection();
-	
-	return outputFC;
+	return 	outputVectorFC;
 }
 
 
@@ -129,6 +132,22 @@ private static SimpleFeature BuildNewPolygonisedFeature(Double time,  Geometry p
     SimpleFeature feature = featureBuilder.buildFeature(null);
 	return feature;
 	
+}
+
+public void setImageWidth(int imageWidth) {
+	this.imageWidth = imageWidth;
+}
+
+public int getImageWidth() {
+	return imageWidth;
+}
+
+public void setImageHeight(int imageHeight) {
+	this.imageHeight = imageHeight;
+}
+
+public int getImageHeight() {
+	return imageHeight;
 }
 
 }
