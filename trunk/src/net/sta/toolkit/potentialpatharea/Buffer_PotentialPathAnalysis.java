@@ -8,12 +8,15 @@ import java.util.ListIterator;
 import org.geotools.data.FeatureSource;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.FeatureCollections;
+import org.geotools.feature.FeatureIterator;
 import org.geotools.filter.text.cql2.CQL;
 import org.geotools.filter.text.cql2.CQLException;
+import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.filter.Filter;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.Point;
 
 
 
@@ -47,8 +50,7 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 		Double timeValue=listIT.next();
 		Filter filter=CQL.toFilter("time<"+timeValue);
 		FeatureCollection filteredFC=graphFC.subCollection(filter);
-		Geometry convexHulls=getCombinedBuffered(timeValue, graphFC);
-		
+		Geometry convexHulls=getCombinedBuffered(timeValue, graphFC);		
 	}
 	
 	System.out.println("beginning procesing...." );
@@ -83,6 +85,15 @@ private double getDistanceInMetresFromSpeed(){
 
 private Geometry getCombinedBuffered(Double timeValue, FeatureCollection inputFC){
 	Geometry outputFC = null;
+	
+	FeatureIterator featIT=inputFC.features();
+	
+	while(featIT.hasNext()){
+		SimpleFeature feature=(SimpleFeature) featIT.next();
+		Point point=(Point) feature.getDefaultGeometry();
+		
+	}
+	
 	return outputFC;
 }
 
