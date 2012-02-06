@@ -29,7 +29,7 @@ The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of p
 <img src="https://lh4.googleusercontent.com/-1CMeMImCnWM/Tl3dBKJacaI/AAAAAAAAA7U/ZK6rgsYLUxU/s576/PPA_Example.png" border="5"/>
 
 
-*Image Below : discrete values for 10 minutes and 35 minutes for Zürich, Switzerland*
+*Image Below : discrete values for 10 minute and 35 minute polygons for Zürich, Switzerland*
 
 <img src="https://lh5.googleusercontent.com/-gDJ6niF2Xjg/Tl3dBCW7LII/AAAAAAAAA7Y/eYzLFDjOxnk/s576/PPA_Example_discrete.png " border="5"/>
 
