@@ -14,6 +14,7 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.JToolBar;
 
+import net.sta.toolkit.potentialpatharea.Buffer_PotentialPathAnalysis;
 import net.sta.toolkit.potentialpatharea.Triangulation_PotentialPathAreaAnalysis;
 import net.sta.toolkit.routing.BuildGraphNetwork;
 
@@ -131,14 +132,15 @@ public class Main {
         FeatureSource nodeSource = DataUtilities.source(nodeCollection);
         //writetoShape(nodeCollection.getSchema().getTypeName(),nodeCollection, nodeCollection.getSchema().getCoordinateReferenceSystem()); 
         
-        Triangulation_PotentialPathAreaAnalysis ppa = new Triangulation_PotentialPathAreaAnalysis();
+        Triangulation_PotentialPathAreaAnalysis tppa = new Triangulation_PotentialPathAreaAnalysis();
         
         //creates range of contours from 10 to 100 minutes
-        resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
+        resultFC = tppa.DoProcessing(nodeSource, timeDiscretizations,
 				Triangulation_PotentialPathAreaAnalysis.RangeorDiscrete.RANGED, Triangulation_PotentialPathAreaAnalysis.ContourorRegion.CONTOURS,
 				null,
 				nodeSource.getSchema().getCoordinateReferenceSystem(), 5);
         
+        Buffer_PotentialPathAnalysis vppa = new Buffer_PotentialPathAnalysis();
        //creates one discrete polygon for 10 minutes
         /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
 				PotentialPathAreaAnalysis.RangeorDiscrete.DISCRETE, PotentialPathAreaAnalysis.ContourorRegion.REGIONS,
