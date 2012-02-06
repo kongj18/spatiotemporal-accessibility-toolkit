@@ -14,7 +14,7 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.JToolBar;
 
-import net.sta.toolkit.potentialpatharea.PotentialPathAreaAnalysis;
+import net.sta.toolkit.potentialpatharea.Triangulation_PotentialPathAreaAnalysis;
 import net.sta.toolkit.routing.BuildGraphNetwork;
 
 import org.geotools.data.DataUtilities;
@@ -131,11 +131,11 @@ public class Main {
         FeatureSource nodeSource = DataUtilities.source(nodeCollection);
         //writetoShape(nodeCollection.getSchema().getTypeName(),nodeCollection, nodeCollection.getSchema().getCoordinateReferenceSystem()); 
         
-        PotentialPathAreaAnalysis ppa = new PotentialPathAreaAnalysis();
+        Triangulation_PotentialPathAreaAnalysis ppa = new Triangulation_PotentialPathAreaAnalysis();
         
         //creates range of contours from 10 to 100 minutes
         resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
-				PotentialPathAreaAnalysis.RangeorDiscrete.RANGED, PotentialPathAreaAnalysis.ContourorRegion.CONTOURS,
+				Triangulation_PotentialPathAreaAnalysis.RangeorDiscrete.RANGED, Triangulation_PotentialPathAreaAnalysis.ContourorRegion.CONTOURS,
 				null,
 				nodeSource.getSchema().getCoordinateReferenceSystem(), 5);
         
