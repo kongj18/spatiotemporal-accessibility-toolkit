@@ -335,7 +335,7 @@ private static SimpleFeature BuildNewPolygonisedRingFeature(Double toBreak,Doubl
 }
 
 private static SimpleFeature BuildNewPolygonisedFeature(Double time,  Geometry LineStrings) throws SchemaException{
-	
+	////////////////////////////////////////////////////CHANGE THIS TO REMOVE 21781
 	final SimpleFeatureType TYPE = DataUtilities.createType("Location",
             "geom:MultiPolygon:srid=21781," + // <- the geometry attribute: Polyline type
             "time:Double"// <- a String attribute
