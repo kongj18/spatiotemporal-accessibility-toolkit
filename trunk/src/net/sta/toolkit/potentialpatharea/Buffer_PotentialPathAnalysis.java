@@ -13,6 +13,8 @@ import org.geotools.filter.text.cql2.CQLException;
 import org.opengis.filter.Filter;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
+import com.vividsolutions.jts.geom.Geometry;
+
 
 
 public class Buffer_PotentialPathAnalysis {
@@ -44,9 +46,8 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 	while (listIT.hasNext()){		
 		Double timeValue=listIT.next();
 		Filter filter=CQL.toFilter("time<"+timeValue);
-		graphFC=graphFC.subCollection(filter);
-		
-		
+		FeatureCollection filteredFC=graphFC.subCollection(filter);
+		Geometry convexHulls=getCombinedBuffered(timeValue, graphFC);
 		
 	}
 	
@@ -80,8 +81,8 @@ private double getDistanceInMetresFromSpeed(){
 	return distance;
 }
 
-private FeatureCollection getCombinedBuffered(Double timeValue, FeatureCollection inputFC){
-	FeatureCollection outputFC = FeatureCollections.newCollection();
+private Geometry getCombinedBuffered(Double timeValue, FeatureCollection inputFC){
+	Geometry outputFC = null;
 	return outputFC;
 }
 
