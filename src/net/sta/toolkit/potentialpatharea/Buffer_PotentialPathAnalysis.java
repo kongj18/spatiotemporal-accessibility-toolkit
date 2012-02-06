@@ -16,6 +16,7 @@ import org.opengis.filter.Filter;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
 
 
@@ -32,6 +33,7 @@ private static ArrayList<Double> possibleTimeDiscretizations = new ArrayList<Dou
 private static ArrayList<Double> timeDiscretizations = new ArrayList<Double>();
 private static FeatureSource graphNodes;
 private Double speedKM;
+private GeometryFactory gf=new GeometryFactory();
 
 public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateReferenceSystem cRS,ArrayList<Double> timeDiscretizations,Double speedKM) throws IOException, CQLException{
 	this.graphNodes=fs;
@@ -78,23 +80,27 @@ private Double getHighestValue(ArrayList<Double> list){
 }
 
 private double getDistanceInMetresFromSpeed(Double timeToNode){
-	double distance=0.0;
+	double distance=timeToNode/(speedKM*1000);
 	return distance;
 }
 
 private Geometry getCombinedBuffered(Double timeValue, FeatureCollection inputFC){
 	Geometry outputGeom = null;
-	
+	Geometry[] arrayGeom=new Geometry[inputFC.size()];
 	FeatureIterator featIT=inputFC.features();
 	int i = 0;
+	
 	while(featIT.hasNext()){
 		SimpleFeature feature=(SimpleFeature) featIT.next();
 		Double timeToNode=(Double) feature.getAttribute("time");
 		Point point=(Point) feature.getDefaultGeometry();
 		Double distanceToBuffer=getDistanceInMetresFromSpeed(timeToNode);
-		outputGeom=point.buffer(timeToNode);
+		arrayGeom[i]=point.buffer(distanceToBuffer);
 		i++;
 	}
+	
+	
+	
 	
 	return outputGeom;
 }
