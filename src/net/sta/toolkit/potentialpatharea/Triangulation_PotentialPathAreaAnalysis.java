@@ -75,11 +75,12 @@ import es.unex.sextante.vectorTools.delaunay.Triangulation;
 import es.unex.sextante.vectorTools.delaunay.Triangulation.Triangle;
 
 
-public class PotentialPathAreaAnalysis {
+public class Triangulation_PotentialPathAreaAnalysis {
 
 	public enum RangeorDiscrete {RANGED, DISCRETE};
 	public enum ContourorRegion {CONTOURS, REGIONS};
 	public enum RingorDisk {RING, DISK, BOUNDINGBOX};
+	
 	private static RangeorDiscrete RorD;
 	private ContourorRegion CorR;
 	private RingorDisk ringorDisk;
@@ -90,7 +91,7 @@ public class PotentialPathAreaAnalysis {
 	private static String geometryAttributeName;
 	private Coordinate[] m_Coords = null;
 	
-	private static PotentialPathAreaAnalysis.RingorDisk RingDisk;
+	private static Triangulation_PotentialPathAreaAnalysis.RingorDisk RingDisk;
 	private static CoordinateReferenceSystem crs ;
 	private static Double rangeStep;
 	private static ArrayList<Double> possibleTimeDiscretizations = new ArrayList<Double>();
