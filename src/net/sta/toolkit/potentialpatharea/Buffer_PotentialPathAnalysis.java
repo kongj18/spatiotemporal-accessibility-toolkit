@@ -33,12 +33,19 @@ public void doProcessing(FeatureSource fs, VectorOrRaster vOrR, CoordinateRefere
 	this.crs = cRS;
 	this.vR = vOrR;
 	this.timeDiscretizations = timeDiscretizations;
+	this.speedKM=speedKM;
 	
 	//remove nodes outside the largest time discretization
 	FeatureCollection graphFC=fs.getFeatures();	
 	Double maxTime = getHighestValue(timeDiscretizations);
 	Filter filter=CQL.toFilter("time<"+maxTime);
 	graphFC=graphFC.subCollection(filter);	
+	
+	Iterator<Double> listIT= timeDiscretizations.iterator();
+	
+	while (listIT.hasNext()){
+		
+	}
 	
 	System.out.println("beginning procesing...." );
 	
@@ -66,7 +73,8 @@ private Double getHighestValue(ArrayList<Double> list){
 }
 
 private double getDistanceInMetresFromSpeed(){
-	
+	double distance=0.0;
+	return distance;
 }
 
 }
