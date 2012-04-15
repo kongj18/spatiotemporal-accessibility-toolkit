@@ -6,8 +6,8 @@ Main Ideas -
 instead of the all this triangulation and polygon building, simply build the network and the loop through it. For each node that takes less time to reach than the total time budget, create a buffer the size of the distance the user would be able to walk in the time left over.
 
 e.g. 
-TimeBudget=20 minutes;
-FilteredNodes=Filter out all points over 20minutes away;
+TimeBudget=20 minutes</br>
+FilteredNodes=Filter out all points over 20minutes away
 
 for all FilteredNodes{
 Node 1 = 10 minutes to reach;
