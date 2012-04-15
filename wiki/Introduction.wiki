@@ -1,6 +1,6 @@
 = Introduction =
 
-The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of potential path areas and to allow compatibility with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6). The source code includes an example Java class (net.sta.toolkit.testexample.Main.java) of how to use the toolkit and a trial road dataset can be found under the downloads tab along with a pre-compiled jar file to drop straight into an existing project.
+The spatiotemporal-accessibility-toolkit aims to allow the dynamic creation of potential path areas and to allow compatibility with existing Java open source tools. The library is therefore fully compatible with the popular GeoTools library (version 2.6). The source code includes an example Java class (net.sta.toolkit.testexample.Main.java) to demonstrate how to use the toolkit and a trial road dataset can be found under the downloads tab along with a pre-compiled jar file to drop straight into an existing project.
 
 = Functionalities =
 
