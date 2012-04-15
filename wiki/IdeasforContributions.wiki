@@ -7,8 +7,8 @@ instead of the all this triangulation and polygon building, simply build the net
 
 e.g. 
 TimeBudget=20 minutes<br></br>
-FilteredNodes=Filter out all points over 20minutes away
-
+FilteredNodes=Filter out all points over 20minutes away<br></br>
+<br></br>
 for all FilteredNodes{
 Node 1 = 10 minutes to reach;
 timeLeftOver=10 minutes;
