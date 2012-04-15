@@ -113,20 +113,21 @@ public class Main {
 	public static void main(String[] args) throws IOException, ParseException, SchemaException, CQLException, GeoAlgorithmExecutionException {
 		
 		        
-        FeatureCollection networkFC = getGeneralisedNetworkData();
+        FeatureCollection networkFC = getNetworkData();
         
         GeometryFactory gf = new GeometryFactory();
 		Point originPoint=gf.createPoint(new 
 				Coordinate(685393.0, 246083.0)); 
 		
 		ArrayList<Double> timeDiscretizations = new ArrayList<Double>();
-		timeDiscretizations.add(1.0);
-		//timeDiscretizations.add(35.0);
+		timeDiscretizations.add(10.0);
+		timeDiscretizations.add(35.0);
 		
 		
 		//build the network using the point of origin and the network dataset
 		BuildGraphNetwork routeCalculator = new BuildGraphNetwork();
-		routeCalculator.BuildNetwork(networkFC, originPoint, "SpeedLimit");
+		//speedlimit value is the name of the field caontaing speed limits for the network edges, always in Km per hour
+		routeCalculator.BuildNetwork(networkFC, originPoint, "speedlimit");
 		//build to source and put into the calulcationTODOTODOTOD
 		nodeCollection = routeCalculator.getNodeFeatureCollection();
         FeatureSource nodeSource = DataUtilities.source(nodeCollection);
@@ -135,17 +136,18 @@ public class Main {
         Triangulation_PotentialPathAreaAnalysis tppa = new Triangulation_PotentialPathAreaAnalysis();
         
         //creates range of contours from 10 to 100 minutes
-        resultFC = tppa.DoProcessing(nodeSource, timeDiscretizations,
+        /*resultFC = tppa.DoProcessing(nodeSource, timeDiscretizations,
 				Triangulation_PotentialPathAreaAnalysis.RangeorDiscrete.RANGED, Triangulation_PotentialPathAreaAnalysis.ContourorRegion.CONTOURS,
 				null,
-				nodeSource.getSchema().getCoordinateReferenceSystem(), 5);
+				nodeSource.getSchema().getCoordinateReferenceSystem(), 5);*/
         
-        Buffer_PotentialPathAnalysis vppa = new Buffer_PotentialPathAnalysis();
-       //creates one discrete polygon for 10 minutes
-        /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
-				PotentialPathAreaAnalysis.RangeorDiscrete.DISCRETE, PotentialPathAreaAnalysis.ContourorRegion.REGIONS,
-				PotentialPathAreaAnalysis.RingorDisk.DISK,
-				nodeSource.getSchema().getCoordinateReferenceSystem(), 0);*/
+        //Buffer_PotentialPathAnalysis vppa = new Buffer_PotentialPathAnalysis();
+       //creates two discrete polygons -  for 10 minutes & 35 minutes
+        resultFC = tppa.DoProcessing(nodeSource, timeDiscretizations,
+        		Triangulation_PotentialPathAreaAnalysis.RangeorDiscrete.DISCRETE, 
+        		Triangulation_PotentialPathAreaAnalysis.ContourorRegion.REGIONS,
+        		Triangulation_PotentialPathAreaAnalysis.RingorDisk.DISK,
+				nodeSource.getSchema().getCoordinateReferenceSystem(), 0);
         
         //creates a range of polygon rings from 10 to 100 minutes
         /*resultFC = ppa.DoProcessing(nodeSource, timeDiscretizations,
@@ -159,9 +161,10 @@ public class Main {
 				PotentialPathAreaAnalysis.RingorDisk.DISK,
 				nodeSource.getSchema().getCoordinateReferenceSystem(), 100);*/
 		
-        writetoShape(resultFC.getSchema().getTypeName(),resultFC, nodeSource.getSchema().getCoordinateReferenceSystem()); 
+        //If you want to write the accessible areas to a shepfile then uncomment the line below
+        //writetoShape(resultFC.getSchema().getTypeName(),resultFC, nodeSource.getSchema().getCoordinateReferenceSystem()); 
         
-		
+		System.out.println("building map styles and rendering, please wait.....");
 		MapContext map = new DefaultMapContext();
         map.setTitle("Feature selection tool example");
         
@@ -282,15 +285,6 @@ private static void writetoShape(String tp,FeatureCollection<SimpleFeatureType, 
 	    
 	
 	FeatureSource<SimpleFeatureType, SimpleFeature> outputFS = DataUtilities.source(sfc);
-	/*Filter filter = Filter.INCLUDE;
-	DefaultQuery   query = new DefaultQuery( tp, filter); 
-	  org.opengis.filter.sort.SortBy[] sortby = new SortByImpl[1];
-	  System.out.println(sfc.getSchema());
-	  sortby[0] = ff.sort("time", SortOrder.ASCENDING); 
-	  query.setSortBy(sortby);
-	  FeatureCollection<SimpleFeatureType, SimpleFeature> newFC = outputFS.getFeatures(query);*/
-	
-	
 	
     ShapefileDataStoreFactory dataStoreFactory = new ShapefileDataStoreFactory();
 
@@ -358,20 +352,13 @@ private static File getNewShapeFile() {
 }
 	
 private static FeatureCollection getNetworkData() throws IOException{
-	File networkFile = new File("C:/Users/pcrease/Documents/ArcFiles/GISdata_Source/Roads_25_ZH_walkspeed.shp");
+	File networkFile = new File("C:/TEMP/Roads_25_ZH.shp");
 	FileDataStore networkStore = FileDataStoreFinder.getDataStore(networkFile);
 	FeatureSource networkSource = networkStore.getFeatureSource();
     FeatureCollection networkFC = networkSource.getFeatures();
 	return networkFC;
 }
 
-private static FeatureCollection getGeneralisedNetworkData() throws IOException{
-	File networkFile = new File("C:/Users/pcrease/Documents/ArcFiles/GISdata_Source/AllRoads_VEC200.shp");
-	FileDataStore networkStore = FileDataStoreFinder.getDataStore(networkFile);
-	FeatureSource networkSource = networkStore.getFeatureSource();
-    FeatureCollection networkFC = networkSource.getFeatures();
-	return networkFC;
-}
 
 
 
