@@ -18,4 +18,4 @@ e.g.
 
 then union the buffers using JTS.
 
-To make this faster create only a raster image using the BaTIK toolkit. create an SVG circles instead of the buffers, with the r attribute based on the bufferSize result above.
+To make this faster create only a raster image using the BaTIK toolkit. create SVG circles instead of the buffers, with the r attribute based on the bufferSize result above.
