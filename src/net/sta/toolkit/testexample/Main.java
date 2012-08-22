@@ -119,6 +119,7 @@ public class Main {
 		Point originPoint=gf.createPoint(new 
 				Coordinate(685393.0, 246083.0)); 
 		
+		//timeDiscretizations of times required
 		ArrayList<Double> timeDiscretizations = new ArrayList<Double>();
 		timeDiscretizations.add(10.0);
 		timeDiscretizations.add(35.0);
